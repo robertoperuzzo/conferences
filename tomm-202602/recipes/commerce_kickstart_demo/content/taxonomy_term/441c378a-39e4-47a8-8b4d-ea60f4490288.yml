@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: 441c378a-39e4-47a8-8b4d-ea60f4490288
+  bundle: product_collections
+  default_langcode: en
+  depends:
+    ee76c0d2-5c5e-40ed-9239-f8c6b8acaec9: taxonomy_term
+default:
+  status:
+    -
+      value: true
+  name:
+    -
+      value: 'Pool & Beach'
+  weight:
+    -
+      value: 0
+  parent:
+    -
+      entity: ee76c0d2-5c5e-40ed-9239-f8c6b8acaec9
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0

@@ -1,0 +1,34 @@
+name: 'Commerce Recipe: Shipping'
+description: 'Add Shipping integration with default configuration'
+type: 'Commerce'
+recipes:
+  - commerce_recipe_core
+install:
+  - commerce_shipping
+  - physical
+config:
+  strict: true
+  import:
+    commerce_shipping: '*'
+    physical: '*'
+  actions:
+    commerce_order.commerce_order_type.default:
+      setThirdPartySettings:
+        - module: commerce_checkout
+          key: checkout_flow
+          value: shipping
+        - module: commerce_shipping
+          key: shipment_type
+          value: default
+    commerce_checkout.commerce_checkout_flow.shipping:
+      simpleConfigUpdate:
+        configuration.panes.order_summary.view: commerce_checkout_order_summary
+    profile.type.shipping:
+      setThirdPartySettings:
+        - module: commerce_order
+          key: customer_profile_type
+          value: true
+    commerce_shipping.commerce_shipment_type.default:
+      simpleConfigUpdate:
+        profileType: shipping
+        sendConfirmation: true

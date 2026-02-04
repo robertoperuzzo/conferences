@@ -1,0 +1,63 @@
+_meta:
+  version: '1.0'
+  entity_type: commerce_product
+  uuid: eb5041ad-4bab-4c80-ac9c-1b79414d39c5
+  bundle: physical
+  default_langcode: en
+  depends:
+    f812b134-42ef-4fc9-9270-66ba5183e278: commerce_store
+    4061ca42-433a-4a9f-ba69-165c1458e367: commerce_product_variation
+    24eae5f3-5060-47b1-b343-5f256183a1a7: file
+    26723a4d-3e8d-44e5-a16d-2fe116de4d41: file
+    0a3e84ac-163b-4276-8e85-090aec9c3cdc: taxonomy_term
+    5f5b51cf-4d21-47d0-a5d9-620088db53f2: taxonomy_term
+default:
+  uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  stores:
+    -
+      entity: f812b134-42ef-4fc9-9270-66ba5183e278
+  title:
+    -
+      value: 'Side Table'
+  variations:
+    -
+      entity: 4061ca42-433a-4a9f-ba69-165c1458e367
+  default_variation:
+    -
+      entity: 4061ca42-433a-4a9f-ba69-165c1458e367
+  path:
+    -
+      alias: /products/side-table
+      langcode: en
+      pathauto: 1
+  created:
+    -
+      value: 1631898010
+  body:
+    -
+      value: "<p>With a clean, modern aesthetic our furniture range is made from predominantly solid oak and oak veneers for a durable and visually striking finish. You'll enjoy the beautiful natural grain of the wood, as well as the enduring style and an elegant profile that will stand the test of time.</p>\r\n\r\n<p>This quirky side table can also be used as a bookcase and is ideal for minimalist storage.</p>\r\n"
+      format: basic_html
+      summary: ''
+  images:
+    -
+      entity: 24eae5f3-5060-47b1-b343-5f256183a1a7
+      alt: 'Side Table'
+      title: ''
+      width: 1280
+      height: 1918
+    -
+      entity: 26723a4d-3e8d-44e5-a16d-2fe116de4d41
+      alt: 'Side Table'
+      title: ''
+      width: 1920
+      height: 2880
+  product_collections:
+    -
+      entity: 0a3e84ac-163b-4276-8e85-090aec9c3cdc
+    -
+      entity: 5f5b51cf-4d21-47d0-a5d9-620088db53f2

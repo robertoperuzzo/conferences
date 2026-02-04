@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 63fdbc6f-497d-4a7e-a4dd-99aa1d595958
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: ai-generated-9675274_1920.jpg
+  uri:
+    -
+      value: 'public://2025-10/ai-generated-9675274_1920.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 251593
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1759836765

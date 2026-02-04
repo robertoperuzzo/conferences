@@ -1,0 +1,55 @@
+_meta:
+  version: '1.0'
+  entity_type: commerce_shipping_method
+  uuid: 55b2d7c3-85d3-4e9b-8ec6-667ac8a09d5e
+  default_langcode: en
+  depends:
+    f812b134-42ef-4fc9-9270-66ba5183e278: commerce_store
+default:
+  stores:
+    -
+      entity: f812b134-42ef-4fc9-9270-66ba5183e278
+  plugin:
+    -
+      target_plugin_id: flat_rate
+      target_plugin_configuration:
+        rate_label: 'US Next day (order by 8pm)'
+        rate_description: 'Our carrier delivers next day (order by 8pm the day before) or on a day of your choice 7 days a week, 7.30am - 6.30pm.'
+        rate_amount:
+          number: '6.95'
+          currency_code: USD
+        services:
+          - default
+        default_package_type: custom_box
+        workflow: shipment_default
+  name:
+    -
+      value: 'US Next day (order by 8pm: small & medium items)'
+  conditions:
+    -
+      target_plugin_id: shipment_address
+      target_plugin_configuration:
+        zone:
+          territories:
+            -
+              country_code: US
+        negate: 0
+    -
+      target_plugin_id: shipment_weight
+      target_plugin_configuration:
+        operator: '<'
+        weight:
+          number: '20'
+          unit: kg
+  condition_operator:
+    -
+      value: AND
+  weight:
+    -
+      value: 0
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1648225225

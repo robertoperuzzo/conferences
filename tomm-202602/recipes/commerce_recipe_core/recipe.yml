@@ -1,0 +1,41 @@
+name: 'Commerce Recipe: Core'
+description: 'Recipe that installs selected Commerce Core modules and configuration.'
+type: 'Commerce'
+recipes: []
+install:
+  # Commerce.
+  - commerce
+  - commerce_log
+  - commerce_checkout
+  - commerce_cart
+  - commerce_order
+  - commerce_product
+  - commerce_price
+  - commerce_store
+  - commerce_payment
+
+  # Contrib.
+  - address
+  - profile
+  - entity
+  - inline_entity_form
+  - state_machine
+  - recipe_tracker
+
+config:
+  strict: false
+  import:
+    address: '*'
+    profile: '*'
+    entity: '*'
+    inline_entity_form: '*'
+    state_machine: '*'
+    commerce: '*'
+    commerce_log: '*'
+    commerce_checkout: '*'
+    commerce_cart: '*'
+    commerce_order: '*'
+    commerce_product: '*'
+    commerce_price: '*'
+    commerce_store: '*'
+    commerce_payment: '*'

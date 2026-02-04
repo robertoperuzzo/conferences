@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+name: 'Product Collections'
+vid: product_collections
+description: null
+weight: 0
+new_revision: false

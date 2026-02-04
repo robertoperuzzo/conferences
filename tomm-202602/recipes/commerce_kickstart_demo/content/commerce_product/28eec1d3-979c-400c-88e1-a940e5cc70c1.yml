@@ -1,0 +1,91 @@
+_meta:
+  version: '1.0'
+  entity_type: commerce_product
+  uuid: 28eec1d3-979c-400c-88e1-a940e5cc70c1
+  bundle: physical
+  default_langcode: en
+  depends:
+    f812b134-42ef-4fc9-9270-66ba5183e278: commerce_store
+    97d4db89-f70d-48a9-8e6f-02757a225365: commerce_product_variation
+    f43dd686-e26d-42aa-a7c1-af7e26b522a0: file
+    33198f14-bc4f-4029-8cfb-76b8b57a946b: file
+    aa7cf5cf-76e1-40ba-aa6c-6d48d1d1c16b: file
+    da6ba596-d31d-47c9-936e-9de31ba0d29f: file
+    2a1bcda4-a56c-46dc-8c59-ab145f0e5b9a: file
+    34942599-d694-48da-907d-05847899e545: taxonomy_term
+    da804d6b-b9b0-47d2-9c75-cc1dfdf42ef1: taxonomy_term
+    ee76c0d2-5c5e-40ed-9239-f8c6b8acaec9: taxonomy_term
+    441c378a-39e4-47a8-8b4d-ea60f4490288: taxonomy_term
+default:
+  uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  stores:
+    -
+      entity: f812b134-42ef-4fc9-9270-66ba5183e278
+  title:
+    -
+      value: 'Gigantic Inflatable Flamingo'
+  variations:
+    -
+      entity: 97d4db89-f70d-48a9-8e6f-02757a225365
+  default_variation:
+    -
+      entity: 97d4db89-f70d-48a9-8e6f-02757a225365
+  path:
+    -
+      alias: /products/gigantic-inflatable-flamingo
+      langcode: en
+      pathauto: 1
+  created:
+    -
+      value: 1647872324
+  body:
+    -
+      value: "<p>Bring THE life to the party with this hilarious, oversized pool toy. Kids are sure to get a kick out of it, whether they're riding it themselves or laughing at the adults reliving their childhood dreams. Constructed with extra durability to withstand cannon balls, jack knifes, and belly flops.</p>\r\n\r\n<p>Keep an eye out for upcoming variations, including unicorns, heffalumps, and air bison! Pool not included.</p>\r\n"
+      format: basic_html
+      summary: ''
+  images:
+    -
+      entity: f43dd686-e26d-42aa-a7c1-af7e26b522a0
+      alt: 'Gigantic Inflatable Flamingo'
+      title: ''
+      width: 670
+      height: 630
+    -
+      entity: 33198f14-bc4f-4029-8cfb-76b8b57a946b
+      alt: 'Gigantic Inflatable Flamingo'
+      title: ''
+      width: 1280
+      height: 1920
+    -
+      entity: aa7cf5cf-76e1-40ba-aa6c-6d48d1d1c16b
+      alt: 'Gigantic Inflatable Flamingo'
+      title: ''
+      width: 1280
+      height: 853
+    -
+      entity: da6ba596-d31d-47c9-936e-9de31ba0d29f
+      alt: 'Gigantic Inflatable Flamingo'
+      title: ''
+      width: 1280
+      height: 853
+    -
+      entity: 2a1bcda4-a56c-46dc-8c59-ab145f0e5b9a
+      alt: 'Gigantic Inflatable Flamingo'
+      title: ''
+      width: 1920
+      height: 1440
+  product_brand:
+    -
+      entity: 34942599-d694-48da-907d-05847899e545
+  product_collections:
+    -
+      entity: da804d6b-b9b0-47d2-9c75-cc1dfdf42ef1
+    -
+      entity: ee76c0d2-5c5e-40ed-9239-f8c6b8acaec9
+    -
+      entity: 441c378a-39e4-47a8-8b4d-ea60f4490288

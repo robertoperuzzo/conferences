@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 429ec250-beae-4c34-a2cc-229ca80e13dd
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: alice30.pdf
+  uri:
+    -
+      value: 'private://2022-03/alice30.pdf'
+  filemime:
+    -
+      value: application/pdf
+  filesize:
+    -
+      value: 246901
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1648462818

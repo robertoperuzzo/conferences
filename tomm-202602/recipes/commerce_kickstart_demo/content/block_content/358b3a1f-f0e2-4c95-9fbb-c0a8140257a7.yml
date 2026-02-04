@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: block_content
+  uuid: 358b3a1f-f0e2-4c95-9fbb-c0a8140257a7
+  bundle: cklb_hero
+  default_langcode: en
+default:
+  status:
+    -
+      value: true
+  info:
+    -
+      value: 'Inline block'
+  reusable:
+    -
+      value: false
+  cklb_cta:
+    -
+      uri: 'internal:/products/adventures-sherlock-holmes-arthur-conan-doyle'
+      title: 'Buy now'
+      options: {  }
+  cklb_subtitle:
+    -
+      value: 'See how to do it on one product with multiple product variations.'
+  cklb_title:
+    -
+      value: 'Drupal Commerce sells physical and digital versions of the same media.'

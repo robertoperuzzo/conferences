@@ -1,0 +1,31 @@
+_meta:
+  version: '1.0'
+  entity_type: commerce_product_variation
+  uuid: b3d9811a-3bad-4ab0-9f94-2e2a37001ca4
+  bundle: media_physical
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  sku:
+    -
+      value: book-frankenstein-hard-copy
+  title:
+    -
+      value: 'Frankenstein by Mary Wollstonecraft Shelley'
+  price:
+    -
+      number: '10.000000'
+      currency_code: USD
+      formatted: $10.00
+  created:
+    -
+      value: 1648463099
+  weight:
+    -
+      number: '350.000000'
+      unit: g

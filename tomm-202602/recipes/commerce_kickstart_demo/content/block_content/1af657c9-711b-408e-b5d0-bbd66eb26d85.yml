@@ -1,0 +1,30 @@
+_meta:
+  version: '1.0'
+  entity_type: block_content
+  uuid: 1af657c9-711b-408e-b5d0-bbd66eb26d85
+  bundle: cklb_products
+  default_langcode: en
+  depends:
+    3ab8b1b5-f18d-4149-afaf-198e62188a61: commerce_product
+    28eec1d3-979c-400c-88e1-a940e5cc70c1: commerce_product
+    06de2d59-450c-4abe-878d-7148706f0ce1: commerce_product
+default:
+  status:
+    -
+      value: true
+  info:
+    -
+      value: 'Inline block'
+  reusable:
+    -
+      value: false
+  cklb_products:
+    -
+      entity: 3ab8b1b5-f18d-4149-afaf-198e62188a61
+    -
+      entity: 28eec1d3-979c-400c-88e1-a940e5cc70c1
+    -
+      entity: 06de2d59-450c-4abe-878d-7148706f0ce1
+  cklb_title:
+    -
+      value: 'Best sellers'

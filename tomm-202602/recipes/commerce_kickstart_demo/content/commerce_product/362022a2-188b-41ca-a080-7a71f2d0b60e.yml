@@ -1,0 +1,63 @@
+_meta:
+  version: '1.0'
+  entity_type: commerce_product
+  uuid: 362022a2-188b-41ca-a080-7a71f2d0b60e
+  bundle: media
+  default_langcode: en
+  depends:
+    f812b134-42ef-4fc9-9270-66ba5183e278: commerce_store
+    6c85c61d-15c5-4e93-b612-80a203ef8935: commerce_product_variation
+    275034a6-a9de-47a6-b9ed-70e62ef83150: commerce_product_variation
+    c29155ad-e613-4dad-953f-5f57b9db79e5: file
+    4d5d9879-ab5d-45e8-b278-240f479845b1: taxonomy_term
+    5581e5e6-6145-44e4-8da6-51d5f22497a8: taxonomy_term
+    08e5c462-8ed8-4c6a-b1dc-13e9b52f1aa4: taxonomy_term
+default:
+  uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  stores:
+    -
+      entity: f812b134-42ef-4fc9-9270-66ba5183e278
+  title:
+    -
+      value: 'The Mysteries of Udolpho by Ann Ward Radcliffe'
+  variations:
+    -
+      entity: 6c85c61d-15c5-4e93-b612-80a203ef8935
+    -
+      entity: 275034a6-a9de-47a6-b9ed-70e62ef83150
+  default_variation:
+    -
+      entity: 6c85c61d-15c5-4e93-b612-80a203ef8935
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 1
+  created:
+    -
+      value: 1648465735
+  body:
+    -
+      value: "<p>Author:&nbsp;Radcliffe, Ann Ward, 1764-1823</p>\r\n\r\n<p>Title: The Mysteries of Udolpho</p>\r\n\r\n<p>Original release date:&nbsp;May 8, 1794</p>\r\n\r\n<p>This book is available in hard copy and as digital download.</p>\r\n"
+      format: basic_html
+      summary: ''
+  images:
+    -
+      entity: c29155ad-e613-4dad-953f-5f57b9db79e5
+      alt: 'The Mysteries of Udolpho by Ann Ward Radcliffe'
+      title: ''
+      width: 2718
+      height: 2480
+  product_brand:
+    -
+      entity: 4d5d9879-ab5d-45e8-b278-240f479845b1
+  product_collections:
+    -
+      entity: 5581e5e6-6145-44e4-8da6-51d5f22497a8
+    -
+      entity: 08e5c462-8ed8-4c6a-b1dc-13e9b52f1aa4

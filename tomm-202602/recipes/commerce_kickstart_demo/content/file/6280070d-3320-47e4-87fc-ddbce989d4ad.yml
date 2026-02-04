@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 6280070d-3320-47e4-87fc-ddbce989d4ad
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: pexels-cottonbro-4620623.jpg
+  uri:
+    -
+      value: 'public://2025-10/pexels-cottonbro-4620623.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 187847
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1759836780

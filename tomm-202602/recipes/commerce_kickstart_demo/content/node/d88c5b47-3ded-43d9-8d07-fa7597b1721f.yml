@@ -1,0 +1,62 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: d88c5b47-3ded-43d9-8d07-fa7597b1721f
+  bundle: article
+  default_langcode: en
+  depends:
+    401569c1-703e-4a7b-b7c4-a6d52fe910c4: file
+    9cc0234d-b8cc-48bd-806e-275d538e8496: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Surround Yourself with Beauty: How Wall Art Shapes Mood'
+  created:
+    -
+      value: 1759576355
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /blog/lifestyle/surround-yourself-beauty-how-wall-art-shapes-mood
+      langcode: en
+      pathauto: 1
+  body:
+    -
+      value: '<p>We all live in spaces where walls silently influence our mood. When you walk into a room, your eyes land on color, shapes, and images before anything else. That’s why wall art is more than decoration — it’s atmosphere.</p><p>Start with choosing pieces that speak to you. A forest print or a misty landscape can bring calm and serenity. Bold, abstract works inject energy and contrast. When you select art that resonates with your personality, you invite your space to feel like “you.”</p><p>Next, think of scale and placement. A small print on a vast wall may feel lost. Alternatively, combining smaller prints into a gallery grouping brings balance and depth. Let your pieces breathe — avoid crowding.</p><p>Finally, consider the story behind the art. Whether it’s a local artist, a photo that captures a personal memory, or a print that evokes a dream, that narrative brings meaning. In the end, the best rooms aren’t just filled — they’re curated.</p>'
+      format: basic_html
+      summary: 'Art doesn’t just decorate walls — it transforms how we feel in a space. Choosing pieces that resonate can raise energy, calm the mind, or spark joy.'
+  comment:
+    -
+      status: 2
+      cid: 0
+      last_comment_timestamp: 1759490030
+      last_comment_name: ''
+      last_comment_uid: 1
+      comment_count: 0
+  field_image:
+    -
+      entity: 401569c1-703e-4a7b-b7c4-a6d52fe910c4
+      alt: 'Surround Yourself with Beauty: How Wall Art Shapes Mood'
+      title: ''
+      width: 1920
+      height: 1280
+  field_tags:
+    -
+      entity: 9cc0234d-b8cc-48bd-806e-275d538e8496

@@ -1,0 +1,95 @@
+_meta:
+  version: '1.0'
+  entity_type: commerce_product
+  uuid: 4b35f1dc-6274-4576-8783-afebecc4bb69
+  bundle: physical
+  default_langcode: en
+  depends:
+    f812b134-42ef-4fc9-9270-66ba5183e278: commerce_store
+    668950db-06f3-4e6a-9e31-a60e7fea7d61: commerce_product_variation
+    59f70517-df06-4ee9-8160-ebb257be37e0: file
+    3893f899-5552-450d-a046-bb0d7630ef98: file
+    1a135331-75f1-460b-9df0-8940c8fcd2ee: file
+    5e333814-7d53-40e9-8981-9d1fe2c46adb: file
+    53489835-0e73-4c4e-ba17-8b34502e68c4: file
+    efd25cfe-1476-4501-8649-9542aee6f3d3: file
+    dd15e8ce-a070-41b1-b24e-cbbcddf3f362: taxonomy_term
+    0a3e84ac-163b-4276-8e85-090aec9c3cdc: taxonomy_term
+    5f5b51cf-4d21-47d0-a5d9-620088db53f2: taxonomy_term
+default:
+  uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  stores:
+    -
+      entity: f812b134-42ef-4fc9-9270-66ba5183e278
+  title:
+    -
+      value: 'Nordic White Writing Desk'
+  variations:
+    -
+      entity: 668950db-06f3-4e6a-9e31-a60e7fea7d61
+  default_variation:
+    -
+      entity: 668950db-06f3-4e6a-9e31-a60e7fea7d61
+  path:
+    -
+      alias: /products/nordic-white-writing-desk
+      langcode: en
+      pathauto: 1
+  created:
+    -
+      value: 1759841895
+  body:
+    -
+      value: '<p>Designed for calm, focused moments. The Nordic White Writing Desk blends minimalist form with natural warmth — crisp white surfaces, soft wood accents, and timeless simplicity that suits any corner of your home. Ideal for journaling, working, or simply keeping your favorite vase and books within reach.</p>'
+      format: basic_html
+      summary: ''
+  images:
+    -
+      entity: 59f70517-df06-4ee9-8160-ebb257be37e0
+      alt: 'Nordic White Writing Desk'
+      title: ''
+      width: 1280
+      height: 1920
+    -
+      entity: 3893f899-5552-450d-a046-bb0d7630ef98
+      alt: 'Nordic White Writing Desk with laptop'
+      title: ''
+      width: 1280
+      height: 853
+    -
+      entity: 1a135331-75f1-460b-9df0-8940c8fcd2ee
+      alt: 'Nordic White Writing Desk left side'
+      title: ''
+      width: 1280
+      height: 1920
+    -
+      entity: 5e333814-7d53-40e9-8981-9d1fe2c46adb
+      alt: 'Nordic White Writing Desk right side'
+      title: ''
+      width: 1280
+      height: 1904
+    -
+      entity: 53489835-0e73-4c4e-ba17-8b34502e68c4
+      alt: 'Nordic White Writing Desk top'
+      title: ''
+      width: 1280
+      height: 1920
+    -
+      entity: efd25cfe-1476-4501-8649-9542aee6f3d3
+      alt: 'Nordic White Writing Desk top'
+      title: ''
+      width: 1280
+      height: 1920
+  product_brand:
+    -
+      entity: dd15e8ce-a070-41b1-b24e-cbbcddf3f362
+  product_collections:
+    -
+      entity: 0a3e84ac-163b-4276-8e85-090aec9c3cdc
+    -
+      entity: 5f5b51cf-4d21-47d0-a5d9-620088db53f2

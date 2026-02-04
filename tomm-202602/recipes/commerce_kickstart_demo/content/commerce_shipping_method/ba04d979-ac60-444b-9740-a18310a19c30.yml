@@ -1,0 +1,62 @@
+_meta:
+  version: '1.0'
+  entity_type: commerce_shipping_method
+  uuid: ba04d979-ac60-444b-9740-a18310a19c30
+  default_langcode: en
+  depends:
+    f812b134-42ef-4fc9-9270-66ba5183e278: commerce_store
+default:
+  stores:
+    -
+      entity: f812b134-42ef-4fc9-9270-66ba5183e278
+  plugin:
+    -
+      target_plugin_id: flat_rate
+      target_plugin_configuration:
+        rate_label: 'Standard Delivery'
+        rate_description: 'Smaller items are usually delivered within 5 working days, Monday to Saturday, 7.30am - 6.30pm. Some couriers may deliver slight'
+        rate_amount:
+          number: '0'
+          currency_code: USD
+        services:
+          - default
+        default_package_type: custom_box
+        workflow: shipment_default
+  name:
+    -
+      value: 'US Free Standard Delivery'
+  conditions:
+    -
+      target_plugin_id: shipment_address
+      target_plugin_configuration:
+        zone:
+          territories:
+            -
+              country_code: US
+        negate: 0
+    -
+      target_plugin_id: order_total_price
+      target_plugin_configuration:
+        operator: '>='
+        amount:
+          number: '50'
+          currency_code: USD
+    -
+      target_plugin_id: shipment_weight
+      target_plugin_configuration:
+        operator: '<'
+        weight:
+          number: '20'
+          unit: kg
+  condition_operator:
+    -
+      value: AND
+  weight:
+    -
+      value: 0
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1648225225

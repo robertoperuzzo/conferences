@@ -1,0 +1,31 @@
+_meta:
+  version: '1.0'
+  entity_type: commerce_product_variation
+  uuid: 344d224b-5141-48db-8c2d-e7a9e0114a39
+  bundle: physical
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  sku:
+    -
+      value: whtsh
+  title:
+    -
+      value: 'White sweatshirt'
+  price:
+    -
+      number: '15.000000'
+      currency_code: USD
+      formatted: $15.00
+  created:
+    -
+      value: 1759839787
+  weight:
+    -
+      number: '250.000000'
+      unit: g

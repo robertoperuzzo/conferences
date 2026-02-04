@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: d544bdaa-01dd-467f-9e36-3f8a09ad081c
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: mediamodifier-7cERndkOyDw-unsplash.jpg
+  uri:
+    -
+      value: 'public://2025-10/mediamodifier-7cERndkOyDw-unsplash.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 417611
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1759836752

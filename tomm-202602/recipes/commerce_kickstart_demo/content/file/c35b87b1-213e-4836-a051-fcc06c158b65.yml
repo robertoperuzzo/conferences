@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: c35b87b1-213e-4836-a051-fcc06c158b65
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: hanna-balan-QTBTvxmaHv8-unsplash.jpg
+  uri:
+    -
+      value: 'public://2025-10/hanna-balan-QTBTvxmaHv8-unsplash.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 640158
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1759840658

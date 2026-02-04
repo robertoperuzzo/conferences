@@ -1,0 +1,30 @@
+_meta:
+  version: '1.0'
+  entity_type: block_content
+  uuid: 1bb1f883-5d6d-4216-a3f3-5f3a30ea6961
+  bundle: cklb_products
+  default_langcode: en
+  depends:
+    8c0549b0-9faa-4ae9-8d4d-2e8a54eaa4e5: commerce_product
+    eb5041ad-4bab-4c80-ac9c-1b79414d39c5: commerce_product
+    98b7b387-1aa5-4131-ad27-63c86548355b: commerce_product
+default:
+  status:
+    -
+      value: true
+  info:
+    -
+      value: 'Inline block'
+  reusable:
+    -
+      value: false
+  cklb_products:
+    -
+      entity: 8c0549b0-9faa-4ae9-8d4d-2e8a54eaa4e5
+    -
+      entity: eb5041ad-4bab-4c80-ac9c-1b79414d39c5
+    -
+      entity: 98b7b387-1aa5-4131-ad27-63c86548355b
+  cklb_title:
+    -
+      value: 'New products'

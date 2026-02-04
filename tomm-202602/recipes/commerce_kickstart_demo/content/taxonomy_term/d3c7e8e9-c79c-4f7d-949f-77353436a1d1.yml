@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: d3c7e8e9-c79c-4f7d-949f-77353436a1d1
+  bundle: product_collections
+  default_langcode: en
+default:
+  status:
+    -
+      value: true
+  name:
+    -
+      value: Electricals
+  weight:
+    -
+      value: 9
+  parent:
+    -
+      target_id: 0
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0

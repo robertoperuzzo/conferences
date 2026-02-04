@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: f6b132c3-2bd3-49b8-90d3-318d3a3da3ba
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: pexels-miriam-alonso-7622518.jpg
+  uri:
+    -
+      value: 'public://2025-10/pexels-miriam-alonso-7622518.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 98463
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1759834296

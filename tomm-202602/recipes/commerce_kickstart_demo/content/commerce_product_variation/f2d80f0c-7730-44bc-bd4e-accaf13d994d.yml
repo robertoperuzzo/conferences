@@ -1,0 +1,42 @@
+_meta:
+  version: '1.0'
+  entity_type: commerce_product_variation
+  uuid: f2d80f0c-7730-44bc-bd4e-accaf13d994d
+  bundle: media_license_download
+  default_langcode: en
+  depends:
+    77ce459b-df18-4fba-a641-05d4a55e4b7f: file
+default:
+  uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  sku:
+    -
+      value: 'book-gulliver''s-travels-digital-download'
+  title:
+    -
+      value: 'Gulliver''s Travels by Jonathan Swift - Digital download'
+  price:
+    -
+      number: '9.000000'
+      currency_code: USD
+      formatted: $9.00
+  created:
+    -
+      value: 1648467003
+  commerce_file:
+    -
+      entity: 77ce459b-df18-4fba-a641-05d4a55e4b7f
+      display: true
+      description: 'Gulliver''s Travels into Several Remote Nations of the World by Jonathan Swift - Digital download'
+  license_expiration:
+    -
+      target_plugin_id: unlimited
+      target_plugin_configuration: {  }
+  license_type:
+    -
+      target_plugin_id: commerce_file
+      target_plugin_configuration: {  }

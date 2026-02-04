@@ -1,0 +1,62 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: d05a4f62-df23-4490-a8dd-82ef363ccd97
+  bundle: article
+  default_langcode: en
+  depends:
+    959633e3-7418-493c-bb6b-1d1922bc756a: file
+    934aa2bb-d962-4ef7-9e2f-031b607d7260: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Top Tips for Building a Reading Habit'
+  created:
+    -
+      value: 1759509612
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /blog/books/top-tips-building-reading-habit
+      langcode: en
+      pathauto: 1
+  body:
+    -
+      value: '<p>Many people say they want to read more but struggle to find the time. The truth is that building a reading habit isn’t about huge goals — it’s about small, steady steps. Start by setting aside just ten minutes a day. Carrying a book with you, or keeping one on your nightstand, makes it easy to pick up a few pages instead of scrolling on your phone.</p><p>Another useful tip is to choose books you genuinely enjoy rather than those you feel you “should” read. Whether it’s a classic novel like <a href="/products/alices-adventures-wonderland-lewis-carroll"><em>Alice’s Adventures in Wonderland</em></a> or a detective story like <a href="/products/poirot-investigates-agatha-christie"><em>Poirot Investigates</em></a>, enjoyment is what keeps the habit alive. Audiobooks can also be a great way to add more reading into your routine while commuting, exercising, or cooking.</p><p>Over time, these small efforts add up. What starts as a short daily session often grows into longer stretches of focused reading. The key is consistency and making the experience enjoyable. Before long, you’ll find that books naturally become part of your everyday rhythm, offering both relaxation and inspiration.</p>'
+      format: basic_html
+      summary: 'Reading doesn’t have to be a challenge. A few small habits can help books fit easily into daily life. Start simple, stay consistent, and let the joy of reading grow.'
+  comment:
+    -
+      status: 2
+      cid: 0
+      last_comment_timestamp: 1759423282
+      last_comment_name: ''
+      last_comment_uid: 1
+      comment_count: 0
+  field_image:
+    -
+      entity: 959633e3-7418-493c-bb6b-1d1922bc756a
+      alt: 'Top Tips for Building a Reading Habit'
+      title: ''
+      width: 1920
+      height: 1280
+  field_tags:
+    -
+      entity: 934aa2bb-d962-4ef7-9e2f-031b607d7260

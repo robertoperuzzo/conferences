@@ -1,0 +1,1384 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 80b8b211-ed70-4bd6-9ef0-1098d5a60e31
+  bundle: cklb_landing_page
+  default_langcode: en
+  depends:
+    1e6906a3-e144-4b20-986a-4e670b59625c: block_content
+    358b3a1f-f0e2-4c95-9fbb-c0a8140257a7: block_content
+    c73dd627-8087-40f2-a0a3-1a08d1a8ab70: block_content
+    1af657c9-711b-408e-b5d0-bbd66eb26d85: block_content
+    1bb1f883-5d6d-4216-a3f3-5f3a30ea6961: block_content
+    66037587-872c-4704-864e-a8c0195f613b: block_content
+    f5aca97a-35e5-4588-8109-f4e0ca09dc15: block_content
+    a26d6acd-2cc9-456d-90b3-fefd7e22c91f: block_content
+    26a35724-2435-476e-a8a1-5c92fcd7d18e: block_content
+    81db4212-3e15-4e98-9751-7a2ec1f7c366: block_content
+    50e5704f-fc8d-486b-a7f8-3d085ad0b579: block_content
+    66e5ddc9-ea53-49d7-b507-c93133a83480: block_content
+    6599d746-700f-434b-a557-242871fd7601: block_content
+    515d3f69-23f3-47aa-8e6c-90eaa29bbda9: block_content
+    0267d67f-d60b-4882-be45-875e8e51ca7e: block_content
+    59f78bc4-51df-4d15-925c-68349aaa531f: media
+    5ad8a508-ff44-44b0-8548-f2814d63e446: media
+    84c384a8-d36f-4b34-885d-2ca70bc28353: media
+    b5737357-25fb-4062-b8bc-b6d70eceb2bc: media
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Explore the Demo Store'
+  created:
+    -
+      value: 1650276503
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /frontpage
+      langcode: en
+      pathauto: 0
+  cklb_description:
+    -
+      value: 'Explore the Commerce Kickstart demo store.'
+  layout_builder__layout:
+    -
+      section:
+        layout_id: cklb_slideshow
+        layout_settings:
+          label: Header
+          container_wrapper_classes: ''
+          container_wrapper_attributes: null
+          container_wrapper:
+            bootstrap_styles:
+              background:
+                background_type: color
+              background_color:
+                class: null
+              background_media:
+                image:
+                  media_id: null
+                video:
+                  media_id: null
+                background_options:
+                  background_position: center
+                  background_repeat: no-repeat
+                  background_attachment: not_fixed
+                  background_size: cover
+              padding:
+                class: _none
+              padding_left:
+                class: _none
+              padding_top:
+                class: _none
+              padding_right:
+                class: _none
+              padding_bottom:
+                class: _none
+              margin:
+                class: _none
+              margin_left:
+                class: _none
+              margin_top:
+                class: _none
+              margin_right:
+                class: _none
+              margin_bottom:
+                class: _none
+          container_wrapper_bg_color_class: ''
+          container_wrapper_bg_media: null
+          container: w-100
+          section_classes: ''
+          section_attributes: null
+          regions_classes:
+            main: ''
+          regions_attributes:
+            main: {  }
+          breakpoints: {  }
+          layout_regions_classes: {  }
+          remove_gutters: '1'
+          context_mapping: {  }
+        components:
+          13d329ef-93db-42b3-858a-c8e4f468969f:
+            uuid: 13d329ef-93db-42b3-858a-c8e4f468969f
+            region: main
+            configuration:
+              id: 'inline_block:cklb_hero'
+              label: 'Inline block'
+              label_display: false
+              provider: layout_builder
+              view_mode: full
+              block_id: '2'
+              block_revision_id: '16'
+              block_serialized: null
+              context_mapping: {  }
+            weight: 0
+            additional:
+              bootstrap_styles:
+                block_style:
+                  background:
+                    background_type: image
+                  background_color:
+                    class: null
+                  background_media:
+                    image:
+                      media_uuid: 59f78bc4-51df-4d15-925c-68349aaa531f
+                    video:
+                      media_uuid: null
+                    background_options:
+                      background_position: center
+                      background_repeat: no-repeat
+                      background_attachment: not_fixed
+                      background_size: cover
+                  text_color:
+                    class: text-white
+                  text_alignment:
+                    class: null
+                  padding:
+                    class: _none
+                  padding_left:
+                    class: _none
+                  padding_top:
+                    class: pt-6
+                  padding_right:
+                    class: _none
+                  padding_bottom:
+                    class: pb-6
+                  margin:
+                    class: _none
+                  margin_left:
+                    class: _none
+                  margin_top:
+                    class: _none
+                  margin_right:
+                    class: _none
+                  margin_bottom:
+                    class: _none
+                  scroll_effects:
+                    class: null
+              target_uuid: 1e6906a3-e144-4b20-986a-4e670b59625c
+          8e1f384f-525b-4061-9a22-2c833bf82574:
+            uuid: 8e1f384f-525b-4061-9a22-2c833bf82574
+            region: main
+            configuration:
+              id: 'inline_block:cklb_hero'
+              label: 'Inline block'
+              label_display: false
+              provider: layout_builder
+              view_mode: full
+              block_id: '1'
+              block_revision_id: '17'
+              block_serialized: null
+              context_mapping: {  }
+            weight: 1
+            additional:
+              bootstrap_styles:
+                block_style:
+                  background:
+                    background_type: image
+                  background_color:
+                    class: null
+                  background_media:
+                    image:
+                      media_uuid: 5ad8a508-ff44-44b0-8548-f2814d63e446
+                    video:
+                      media_uuid: null
+                    background_options:
+                      background_position: center
+                      background_repeat: no-repeat
+                      background_attachment: not_fixed
+                      background_size: cover
+                  text_color:
+                    class: text-white
+                  text_alignment:
+                    class: text-end
+                  padding:
+                    class: _none
+                  padding_left:
+                    class: _none
+                  padding_top:
+                    class: pt-6
+                  padding_right:
+                    class: _none
+                  padding_bottom:
+                    class: pb-6
+                  margin:
+                    class: _none
+                  margin_left:
+                    class: _none
+                  margin_top:
+                    class: _none
+                  margin_right:
+                    class: _none
+                  margin_bottom:
+                    class: _none
+                  scroll_effects:
+                    class: null
+              target_uuid: 358b3a1f-f0e2-4c95-9fbb-c0a8140257a7
+          aa6a50ad-46f2-4089-b37c-e34926e1cadb:
+            uuid: aa6a50ad-46f2-4089-b37c-e34926e1cadb
+            region: main
+            configuration:
+              id: 'inline_block:cklb_hero'
+              label: 'Inline block'
+              label_display: false
+              provider: layout_builder
+              view_mode: full
+              block_id: '7'
+              block_revision_id: '18'
+              block_serialized: null
+              context_mapping: {  }
+            weight: 2
+            additional:
+              bootstrap_styles:
+                block_style:
+                  background:
+                    background_type: image
+                  background_color:
+                    class: null
+                  background_media:
+                    image:
+                      media_uuid: 84c384a8-d36f-4b34-885d-2ca70bc28353
+                    video:
+                      media_uuid: null
+                    background_options:
+                      background_position: center
+                      background_repeat: no-repeat
+                      background_attachment: not_fixed
+                      background_size: cover
+                  text_color:
+                    class: null
+                  text_alignment:
+                    class: null
+                  padding:
+                    class: _none
+                  padding_left:
+                    class: _none
+                  padding_top:
+                    class: pt-6
+                  padding_right:
+                    class: _none
+                  padding_bottom:
+                    class: pb-6
+                  margin:
+                    class: _none
+                  margin_left:
+                    class: _none
+                  margin_top:
+                    class: _none
+                  margin_right:
+                    class: _none
+                  margin_bottom:
+                    class: _none
+                  scroll_effects:
+                    class: null
+              target_uuid: c73dd627-8087-40f2-a0a3-1a08d1a8ab70
+        third_party_settings:
+          layout_builder_lock:
+            lock: {  }
+    -
+      section:
+        layout_id: cklb_slideshow
+        layout_settings:
+          label: 'Product slideshow'
+          container_wrapper_classes: ''
+          container_wrapper_attributes: null
+          container_wrapper:
+            bootstrap_styles:
+              background:
+                background_type: color
+              background_color:
+                class: null
+              background_media:
+                image:
+                  media_id: null
+                video:
+                  media_id: null
+                background_options:
+                  background_position: center
+                  background_repeat: no-repeat
+                  background_attachment: not_fixed
+                  background_size: cover
+              padding:
+                class: _none
+              padding_left:
+                class: _none
+              padding_top:
+                class: _none
+              padding_right:
+                class: _none
+              padding_bottom:
+                class: _none
+              margin:
+                class: _none
+              margin_left:
+                class: _none
+              margin_top:
+                class: _none
+              margin_right:
+                class: _none
+              margin_bottom:
+                class: _none
+          container_wrapper_bg_color_class: ''
+          container_wrapper_bg_media: null
+          container: w-100
+          section_classes: ''
+          section_attributes: null
+          regions_classes:
+            main: ''
+          regions_attributes:
+            main: {  }
+          breakpoints: {  }
+          layout_regions_classes: {  }
+          remove_gutters: '1'
+          context_mapping: {  }
+        components:
+          6e58b6f6-9787-4eb7-939a-5d97220405ea:
+            uuid: 6e58b6f6-9787-4eb7-939a-5d97220405ea
+            region: main
+            configuration:
+              id: 'inline_block:cklb_products'
+              label: 'Inline block'
+              label_display: false
+              provider: layout_builder
+              view_mode: full
+              block_id: null
+              block_revision_id: '9'
+              block_serialized: null
+              context_mapping: {  }
+            weight: 1
+            additional:
+              bootstrap_styles:
+                block_style:
+                  background:
+                    background_type: color
+                  background_color:
+                    class: bg-primary
+                  background_media:
+                    image:
+                      media_id: null
+                    video:
+                      media_id: null
+                    background_options:
+                      background_position: center
+                      background_repeat: no-repeat
+                      background_attachment: not_fixed
+                      background_size: cover
+                  text_color:
+                    class: text-white
+                  text_alignment:
+                    class: null
+                  padding:
+                    class: _none
+                  padding_left:
+                    class: _none
+                  padding_top:
+                    class: pt-6
+                  padding_right:
+                    class: _none
+                  padding_bottom:
+                    class: pb-6
+                  margin:
+                    class: _none
+                  margin_left:
+                    class: _none
+                  margin_top:
+                    class: _none
+                  margin_right:
+                    class: _none
+                  margin_bottom:
+                    class: _none
+                  scroll_effects:
+                    class: null
+              target_uuid: 1af657c9-711b-408e-b5d0-bbd66eb26d85
+          cecedd7f-fbf2-4120-bc45-9feab6734562:
+            uuid: cecedd7f-fbf2-4120-bc45-9feab6734562
+            region: main
+            configuration:
+              id: 'inline_block:cklb_products'
+              label: 'Inline block'
+              label_display: false
+              provider: layout_builder
+              view_mode: full
+              block_id: null
+              block_revision_id: '3'
+              block_serialized: null
+              context_mapping: {  }
+            weight: 0
+            additional:
+              bootstrap_styles:
+                block_style:
+                  background:
+                    background_type: color
+                  background_color:
+                    class: null
+                  background_media:
+                    image:
+                      media_id: null
+                    video:
+                      media_id: null
+                    background_options:
+                      background_position: center
+                      background_repeat: no-repeat
+                      background_attachment: not_fixed
+                      background_size: cover
+                  text_color:
+                    class: null
+                  text_alignment:
+                    class: null
+                  padding:
+                    class: _none
+                  padding_left:
+                    class: _none
+                  padding_top:
+                    class: pt-6
+                  padding_right:
+                    class: _none
+                  padding_bottom:
+                    class: pb-6
+                  margin:
+                    class: _none
+                  margin_left:
+                    class: _none
+                  margin_top:
+                    class: _none
+                  margin_right:
+                    class: _none
+                  margin_bottom:
+                    class: _none
+                  scroll_effects:
+                    class: null
+              target_uuid: 1bb1f883-5d6d-4216-a3f3-5f3a30ea6961
+          53d569e2-c372-46ef-a0c8-a3e1409e4778:
+            uuid: 53d569e2-c372-46ef-a0c8-a3e1409e4778
+            region: main
+            configuration:
+              id: 'inline_block:cklb_products'
+              label: 'Inline block'
+              label_display: false
+              provider: layout_builder
+              view_mode: full
+              block_id: null
+              block_revision_id: '5'
+              block_serialized: null
+              context_mapping: {  }
+            weight: 2
+            additional:
+              bootstrap_styles:
+                block_style:
+                  background:
+                    background_type: color
+                  background_color:
+                    class: bg-primary
+                  background_media:
+                    image:
+                      media_id: null
+                    video:
+                      media_id: null
+                    background_options:
+                      background_position: center
+                      background_repeat: no-repeat
+                      background_attachment: not_fixed
+                      background_size: cover
+                  text_color:
+                    class: text-white
+                  text_alignment:
+                    class: null
+                  padding:
+                    class: _none
+                  padding_left:
+                    class: _none
+                  padding_top:
+                    class: pt-6
+                  padding_right:
+                    class: _none
+                  padding_bottom:
+                    class: pb-6
+                  margin:
+                    class: _none
+                  margin_left:
+                    class: _none
+                  margin_top:
+                    class: _none
+                  margin_right:
+                    class: _none
+                  margin_bottom:
+                    class: _none
+                  scroll_effects:
+                    class: null
+              target_uuid: 66037587-872c-4704-864e-a8c0195f613b
+        third_party_settings:
+          layout_builder_lock:
+            lock: {  }
+    -
+      section:
+        layout_id: 'bootstrap_layout_builder:blb_col_1'
+        layout_settings:
+          label: Testimonial
+          container_wrapper_classes: ''
+          container_wrapper_attributes: null
+          container_wrapper:
+            bootstrap_styles:
+              background:
+                background_type: image
+              background_color:
+                class: null
+              background_media:
+                image:
+                  media_uuid: b5737357-25fb-4062-b8bc-b6d70eceb2bc
+                video:
+                  media_id: null
+                background_options:
+                  background_position: center
+                  background_repeat: no-repeat
+                  background_attachment: not_fixed
+                  background_size: cover
+              padding:
+                class: _none
+              padding_left:
+                class: _none
+              padding_top:
+                class: _none
+              padding_right:
+                class: _none
+              padding_bottom:
+                class: _none
+              margin:
+                class: _none
+              margin_left:
+                class: _none
+              margin_top:
+                class: _none
+              margin_right:
+                class: _none
+              margin_bottom:
+                class: _none
+          container_wrapper_bg_color_class: ''
+          container_wrapper_bg_media: null
+          container: container
+          section_classes: ''
+          section_attributes: null
+          regions_classes:
+            blb_region_col_1: ''
+          regions_attributes:
+            blb_region_col_1: {  }
+          breakpoints: {  }
+          layout_regions_classes: {  }
+          remove_gutters: '0'
+          context_mapping: {  }
+        components:
+          abbcaa15-6aa3-4e7b-bc7c-730c25a9a08b:
+            uuid: abbcaa15-6aa3-4e7b-bc7c-730c25a9a08b
+            region: blb_region_col_1
+            configuration:
+              id: 'inline_block:cklb_text'
+              label: 'Inline block'
+              label_display: false
+              provider: layout_builder
+              view_mode: full
+              block_id: null
+              block_revision_id: '6'
+              block_serialized: null
+              context_mapping: {  }
+            weight: 0
+            additional:
+              bootstrap_styles:
+                block_style:
+                  background:
+                    background_type: color
+                  background_color:
+                    class: null
+                  background_media:
+                    image:
+                      media_id: null
+                    video:
+                      media_id: null
+                    background_options:
+                      background_position: center
+                      background_repeat: no-repeat
+                      background_attachment: not_fixed
+                      background_size: cover
+                  text_color:
+                    class: text-white
+                  text_alignment:
+                    class: text-center
+                  padding:
+                    class: _none
+                  padding_left:
+                    class: _none
+                  padding_top:
+                    class: pt-6
+                  padding_right:
+                    class: _none
+                  padding_bottom:
+                    class: pb-6
+                  margin:
+                    class: _none
+                  margin_left:
+                    class: _none
+                  margin_top:
+                    class: mt-2
+                  margin_right:
+                    class: _none
+                  margin_bottom:
+                    class: _none
+                  scroll_effects:
+                    class: null
+              target_uuid: f5aca97a-35e5-4588-8109-f4e0ca09dc15
+        third_party_settings:
+          layout_builder_lock:
+            lock: {  }
+    -
+      section:
+        layout_id: 'bootstrap_layout_builder:blb_col_2'
+        layout_settings:
+          label: Content
+          container_wrapper_classes: ''
+          container_wrapper_attributes: null
+          container_wrapper:
+            bootstrap_styles:
+              background:
+                background_type: color
+              background_color:
+                class: null
+              background_media:
+                image:
+                  media_id: null
+                video:
+                  media_id: null
+                background_options:
+                  background_position: center
+                  background_repeat: no-repeat
+                  background_attachment: not_fixed
+                  background_size: cover
+              padding:
+                class: _none
+              padding_left:
+                class: _none
+              padding_top:
+                class: _none
+              padding_right:
+                class: _none
+              padding_bottom:
+                class: _none
+              margin:
+                class: _none
+              margin_left:
+                class: _none
+              margin_top:
+                class: _none
+              margin_right:
+                class: _none
+              margin_bottom:
+                class: _none
+          container_wrapper_bg_color_class: ''
+          container_wrapper_bg_media: null
+          container: container
+          section_classes: ''
+          section_attributes: null
+          regions_classes:
+            blb_region_col_1: ''
+            blb_region_col_2: ''
+          regions_attributes:
+            blb_region_col_1: null
+            blb_region_col_2: null
+          breakpoints:
+            desktop: blb_col_3_9
+            tablet: blb_col_3_9
+            mobile: blb_col_12
+          layout_regions_classes:
+            blb_region_col_1:
+              - col-lg-3
+              - col-md-3
+              - col-12
+            blb_region_col_2:
+              - col-lg-9
+              - col-md-9
+              - col-12
+          remove_gutters: '0'
+          context_mapping: {  }
+        components:
+          79a53fbe-7e2d-4715-b75d-de0d58aa7417:
+            uuid: 79a53fbe-7e2d-4715-b75d-de0d58aa7417
+            region: blb_region_col_2
+            configuration:
+              id: 'inline_block:cklb_title'
+              label: 'Inline block'
+              label_display: false
+              provider: layout_builder
+              view_mode: cklb_h1
+              block_id: null
+              block_revision_id: '14'
+              block_serialized: null
+              context_mapping: {  }
+            weight: 0
+            additional:
+              bootstrap_styles:
+                block_style:
+                  background:
+                    background_type: color
+                  background_color:
+                    class: bg-light
+                  background_media:
+                    image:
+                      media_id: null
+                    video:
+                      media_id: null
+                    background_options:
+                      background_position: center
+                      background_repeat: no-repeat
+                      background_attachment: not_fixed
+                      background_size: cover
+                  text_color:
+                    class: null
+                  text_alignment:
+                    class: text-center
+                  padding:
+                    class: _none
+                  padding_left:
+                    class: _none
+                  padding_top:
+                    class: pt-5
+                  padding_right:
+                    class: _none
+                  padding_bottom:
+                    class: pb-1
+                  margin:
+                    class: _none
+                  margin_left:
+                    class: _none
+                  margin_top:
+                    class: mt-5
+                  margin_right:
+                    class: _none
+                  margin_bottom:
+                    class: _none
+                  scroll_effects:
+                    class: _none
+              target_uuid: a26d6acd-2cc9-456d-90b3-fefd7e22c91f
+          381065f1-a1c0-4dec-ab7c-95140a6be229:
+            uuid: 381065f1-a1c0-4dec-ab7c-95140a6be229
+            region: blb_region_col_2
+            configuration:
+              id: 'inline_block:cklb_text'
+              label: 'Inline block'
+              label_display: false
+              provider: layout_builder
+              view_mode: full
+              block_id: null
+              block_revision_id: '4'
+              block_serialized: null
+              context_mapping: {  }
+            weight: 1
+            additional:
+              bootstrap_styles:
+                block_style:
+                  background:
+                    background_type: color
+                  background_color:
+                    class: bg-light
+                  background_media:
+                    image:
+                      media_id: null
+                    video:
+                      media_id: null
+                    background_options:
+                      background_position: center
+                      background_repeat: no-repeat
+                      background_attachment: not_fixed
+                      background_size: cover
+                  text_color:
+                    class: null
+                  text_alignment:
+                    class: text-center
+                  padding:
+                    class: _none
+                  padding_left:
+                    class: ps-1
+                  padding_top:
+                    class: pt-3
+                  padding_right:
+                    class: pe-1
+                  padding_bottom:
+                    class: pb-3
+                  margin:
+                    class: _none
+                  margin_left:
+                    class: _none
+                  margin_top:
+                    class: _none
+                  margin_right:
+                    class: _none
+                  margin_bottom:
+                    class: _none
+                  scroll_effects:
+                    class: _none
+              target_uuid: 26a35724-2435-476e-a8a1-5c92fcd7d18e
+          f6536e3e-d5cf-4d40-b80a-f286e9b6a8fb:
+            uuid: f6536e3e-d5cf-4d40-b80a-f286e9b6a8fb
+            region: blb_region_col_2
+            configuration:
+              id: 'inline_block:cklb_button'
+              label: 'Inline block'
+              label_display: false
+              provider: layout_builder
+              view_mode: full
+              block_id: null
+              block_revision_id: '15'
+              block_serialized: null
+              context_mapping: {  }
+            weight: 2
+            additional:
+              bootstrap_styles:
+                block_style:
+                  background:
+                    background_type: color
+                  background_color:
+                    class: bg-light
+                  background_media:
+                    image:
+                      media_id: null
+                    video:
+                      media_id: null
+                    background_options:
+                      background_position: center
+                      background_repeat: no-repeat
+                      background_attachment: not_fixed
+                      background_size: cover
+                  text_color:
+                    class: null
+                  text_alignment:
+                    class: text-center
+                  padding:
+                    class: _none
+                  padding_left:
+                    class: _none
+                  padding_top:
+                    class: pt-1
+                  padding_right:
+                    class: _none
+                  padding_bottom:
+                    class: pb-5
+                  margin:
+                    class: _none
+                  margin_left:
+                    class: _none
+                  margin_top:
+                    class: _none
+                  margin_right:
+                    class: _none
+                  margin_bottom:
+                    class: mb-5
+                  scroll_effects:
+                    class: _none
+              target_uuid: 81db4212-3e15-4e98-9751-7a2ec1f7c366
+          7f92d866-4e44-434f-8108-a2d16a54e375:
+            uuid: 7f92d866-4e44-434f-8108-a2d16a54e375
+            region: blb_region_col_1
+            configuration:
+              id: 'inline_block:cklb_image'
+              label: 'Inline block'
+              label_display: false
+              provider: layout_builder
+              view_mode: cklb_small
+              block_id: null
+              block_revision_id: '13'
+              block_serialized: null
+              context_mapping: {  }
+            weight: 0
+            additional:
+              bootstrap_styles:
+                block_style:
+                  background:
+                    background_type: color
+                  background_color:
+                    class: null
+                  background_media:
+                    image:
+                      media_id: null
+                    video:
+                      media_id: null
+                    background_options:
+                      background_position: center
+                      background_repeat: no-repeat
+                      background_attachment: not_fixed
+                      background_size: cover
+                  text_color:
+                    class: null
+                  text_alignment:
+                    class: null
+                  padding:
+                    class: p-5
+                  padding_left:
+                    class: _none
+                  padding_top:
+                    class: pt-6
+                  padding_right:
+                    class: _none
+                  padding_bottom:
+                    class: _none
+                  margin:
+                    class: _none
+                  margin_left:
+                    class: _none
+                  margin_top:
+                    class: _none
+                  margin_right:
+                    class: _none
+                  margin_bottom:
+                    class: _none
+                  scroll_effects:
+                    class: _none
+              target_uuid: 50e5704f-fc8d-486b-a7f8-3d085ad0b579
+        third_party_settings:
+          layout_builder_lock:
+            lock: {  }
+    -
+      section:
+        layout_id: 'bootstrap_layout_builder:blb_col_1'
+        layout_settings:
+          label: ''
+          container_wrapper_classes: ''
+          container_wrapper_attributes: null
+          container_wrapper:
+            bootstrap_styles:
+              background:
+                background_type: null
+              background_color:
+                class: null
+              background_media:
+                image:
+                  media_id: null
+                video:
+                  media_id: null
+                background_options:
+                  background_position: center
+                  background_repeat: no-repeat
+                  background_attachment: not_fixed
+                  background_size: cover
+              padding:
+                class: _none
+              padding_left:
+                class: _none
+              padding_top:
+                class: _none
+              padding_right:
+                class: _none
+              padding_bottom:
+                class: _none
+              margin:
+                class: _none
+              margin_left:
+                class: _none
+              margin_top:
+                class: _none
+              margin_right:
+                class: _none
+              margin_bottom:
+                class: _none
+          container_wrapper_bg_color_class: ''
+          container_wrapper_bg_media: null
+          container: container
+          section_classes: ''
+          section_attributes: null
+          regions_classes:
+            blb_region_col_1: ''
+          regions_attributes:
+            blb_region_col_1: null
+          breakpoints: {  }
+          layout_regions_classes: {  }
+          remove_gutters: '0'
+          context_mapping: {  }
+        components:
+          cb169b2a-39f2-417b-b288-137927f60b4d:
+            uuid: cb169b2a-39f2-417b-b288-137927f60b4d
+            region: blb_region_col_1
+            configuration:
+              id: 'views_block:blog-latest_blog_block'
+              label: ''
+              label_display: visible
+              provider: views
+              views_label: ''
+              items_per_page: null
+              context_mapping: {  }
+            weight: 0
+            additional:
+              bootstrap_styles:
+                block_style:
+                  background:
+                    background_type: null
+                  background_color:
+                    class: null
+                  background_media:
+                    image:
+                      media_id: null
+                    video:
+                      media_id: null
+                    background_options:
+                      background_position: center
+                      background_repeat: no-repeat
+                      background_attachment: not_fixed
+                      background_size: cover
+                  text_color:
+                    class: null
+                  text_alignment:
+                    class: null
+                  padding:
+                    class: _none
+                  padding_left:
+                    class: _none
+                  padding_top:
+                    class: _none
+                  padding_right:
+                    class: _none
+                  padding_bottom:
+                    class: _none
+                  margin:
+                    class: _none
+                  margin_left:
+                    class: _none
+                  margin_top:
+                    class: _none
+                  margin_right:
+                    class: _none
+                  margin_bottom:
+                    class: _none
+                  scroll_effects:
+                    class: null
+        third_party_settings:
+          layout_builder_lock:
+            lock: {  }
+            regions: {  }
+    -
+      section:
+        layout_id: 'bootstrap_layout_builder:blb_col_4'
+        layout_settings:
+          label: Gallery
+          container_wrapper_classes: ''
+          container_wrapper_attributes: null
+          container_wrapper:
+            bootstrap_styles:
+              background:
+                background_type: color
+              background_color:
+                class: null
+              background_media:
+                image:
+                  media_id: null
+                video:
+                  media_id: null
+                background_options:
+                  background_position: center
+                  background_repeat: no-repeat
+                  background_attachment: not_fixed
+                  background_size: cover
+              padding:
+                class: _none
+              padding_left:
+                class: _none
+              padding_top:
+                class: _none
+              padding_right:
+                class: _none
+              padding_bottom:
+                class: _none
+              margin:
+                class: _none
+              margin_left:
+                class: _none
+              margin_top:
+                class: _none
+              margin_right:
+                class: _none
+              margin_bottom:
+                class: _none
+          container_wrapper_bg_color_class: ''
+          container_wrapper_bg_media: null
+          container: w-100
+          section_classes: ''
+          section_attributes: null
+          regions_classes:
+            blb_region_col_1: ''
+            blb_region_col_2: ''
+            blb_region_col_3: ''
+            blb_region_col_4: ''
+          regions_attributes:
+            blb_region_col_1: null
+            blb_region_col_2: null
+            blb_region_col_3: null
+            blb_region_col_4: null
+          breakpoints:
+            desktop: blb_col_3_3_3_3
+            tablet: blb_col_3_3_3_3
+            mobile: blb_col_12
+          layout_regions_classes:
+            blb_region_col_1:
+              - col-lg-3
+              - col-md-3
+              - col-12
+            blb_region_col_2:
+              - col-lg-3
+              - col-md-3
+              - col-12
+            blb_region_col_3:
+              - col-lg-3
+              - col-md-3
+              - col-12
+            blb_region_col_4:
+              - col-lg-3
+              - col-md-3
+              - col-12
+          remove_gutters: '1'
+          context_mapping: {  }
+        components:
+          f5eacfe5-df51-4d28-b96c-8035b1520985:
+            uuid: f5eacfe5-df51-4d28-b96c-8035b1520985
+            region: blb_region_col_1
+            configuration:
+              id: 'inline_block:cklb_image'
+              label: 'Inline block'
+              label_display: false
+              provider: layout_builder
+              view_mode: default
+              block_id: null
+              block_revision_id: '8'
+              block_serialized: null
+              context_mapping: {  }
+            weight: 0
+            additional:
+              bootstrap_styles:
+                block_style:
+                  background:
+                    background_type: color
+                  background_color:
+                    class: null
+                  background_media:
+                    image:
+                      media_id: null
+                    video:
+                      media_id: null
+                    background_options:
+                      background_position: center
+                      background_repeat: no-repeat
+                      background_attachment: not_fixed
+                      background_size: cover
+                  text_color:
+                    class: null
+                  text_alignment:
+                    class: null
+                  padding:
+                    class: _none
+                  padding_left:
+                    class: _none
+                  padding_top:
+                    class: _none
+                  padding_right:
+                    class: _none
+                  padding_bottom:
+                    class: _none
+                  margin:
+                    class: _none
+                  margin_left:
+                    class: _none
+                  margin_top:
+                    class: _none
+                  margin_right:
+                    class: _none
+                  margin_bottom:
+                    class: _none
+                  scroll_effects:
+                    class: _none
+              target_uuid: 66e5ddc9-ea53-49d7-b507-c93133a83480
+          9b39769b-de72-481e-a4a5-720f6fe39177:
+            uuid: 9b39769b-de72-481e-a4a5-720f6fe39177
+            region: blb_region_col_2
+            configuration:
+              id: 'inline_block:cklb_image'
+              label: 'Inline block'
+              label_display: false
+              provider: layout_builder
+              view_mode: default
+              block_id: null
+              block_revision_id: '10'
+              block_serialized: null
+              context_mapping: {  }
+            weight: 0
+            additional:
+              bootstrap_styles:
+                block_style:
+                  background:
+                    background_type: color
+                  background_color:
+                    class: null
+                  background_media:
+                    image:
+                      media_id: null
+                    video:
+                      media_id: null
+                    background_options:
+                      background_position: center
+                      background_repeat: no-repeat
+                      background_attachment: not_fixed
+                      background_size: cover
+                  text_color:
+                    class: null
+                  text_alignment:
+                    class: null
+                  padding:
+                    class: _none
+                  padding_left:
+                    class: _none
+                  padding_top:
+                    class: _none
+                  padding_right:
+                    class: _none
+                  padding_bottom:
+                    class: _none
+                  margin:
+                    class: _none
+                  margin_left:
+                    class: _none
+                  margin_top:
+                    class: _none
+                  margin_right:
+                    class: _none
+                  margin_bottom:
+                    class: _none
+                  scroll_effects:
+                    class: null
+              target_uuid: 6599d746-700f-434b-a557-242871fd7601
+          48bc1b29-bc6c-4a3a-9f45-cb149f441145:
+            uuid: 48bc1b29-bc6c-4a3a-9f45-cb149f441145
+            region: blb_region_col_4
+            configuration:
+              id: 'inline_block:cklb_image'
+              label: 'Inline block'
+              label_display: false
+              provider: layout_builder
+              view_mode: default
+              block_id: null
+              block_revision_id: '11'
+              block_serialized: null
+              context_mapping: {  }
+            weight: 0
+            additional:
+              bootstrap_styles:
+                block_style:
+                  background:
+                    background_type: color
+                  background_color:
+                    class: null
+                  background_media:
+                    image:
+                      media_id: null
+                    video:
+                      media_id: null
+                    background_options:
+                      background_position: center
+                      background_repeat: no-repeat
+                      background_attachment: not_fixed
+                      background_size: cover
+                  text_color:
+                    class: null
+                  text_alignment:
+                    class: null
+                  padding:
+                    class: _none
+                  padding_left:
+                    class: _none
+                  padding_top:
+                    class: _none
+                  padding_right:
+                    class: _none
+                  padding_bottom:
+                    class: _none
+                  margin:
+                    class: _none
+                  margin_left:
+                    class: _none
+                  margin_top:
+                    class: _none
+                  margin_right:
+                    class: _none
+                  margin_bottom:
+                    class: _none
+                  scroll_effects:
+                    class: null
+              target_uuid: 515d3f69-23f3-47aa-8e6c-90eaa29bbda9
+          1e2fd8de-0462-4f48-95c0-2a6d8befcb83:
+            uuid: 1e2fd8de-0462-4f48-95c0-2a6d8befcb83
+            region: blb_region_col_3
+            configuration:
+              id: 'inline_block:cklb_image'
+              label: 'Inline block'
+              label_display: false
+              provider: layout_builder
+              view_mode: default
+              block_id: null
+              block_revision_id: '12'
+              block_serialized: null
+              context_mapping: {  }
+            weight: 0
+            additional:
+              bootstrap_styles:
+                block_style:
+                  background:
+                    background_type: color
+                  background_color:
+                    class: null
+                  background_media:
+                    image:
+                      media_id: null
+                    video:
+                      media_id: null
+                    background_options:
+                      background_position: center
+                      background_repeat: no-repeat
+                      background_attachment: not_fixed
+                      background_size: cover
+                  text_color:
+                    class: null
+                  text_alignment:
+                    class: null
+                  padding:
+                    class: _none
+                  padding_left:
+                    class: _none
+                  padding_top:
+                    class: _none
+                  padding_right:
+                    class: _none
+                  padding_bottom:
+                    class: _none
+                  margin:
+                    class: _none
+                  margin_left:
+                    class: _none
+                  margin_top:
+                    class: _none
+                  margin_right:
+                    class: _none
+                  margin_bottom:
+                    class: _none
+                  scroll_effects:
+                    class: null
+              target_uuid: 0267d67f-d60b-4882-be45-875e8e51ca7e
+        third_party_settings:
+          layout_builder_lock:
+            lock: {  }

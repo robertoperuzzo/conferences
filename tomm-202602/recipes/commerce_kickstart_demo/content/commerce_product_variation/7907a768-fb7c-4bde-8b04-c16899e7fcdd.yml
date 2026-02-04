@@ -1,0 +1,31 @@
+_meta:
+  version: '1.0'
+  entity_type: commerce_product_variation
+  uuid: 7907a768-fb7c-4bde-8b04-c16899e7fcdd
+  bundle: physical
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  sku:
+    -
+      value: Chloe-EDP-50
+  title:
+    -
+      value: 'Eau De Parfum, 50 mL'
+  price:
+    -
+      number: '150.000000'
+      currency_code: USD
+      formatted: $150.00
+  created:
+    -
+      value: 1647865226
+  weight:
+    -
+      number: '1.000000'
+      unit: kg

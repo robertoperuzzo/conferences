@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 3f2c1600-1752-4ea8-a1b6-62c8f93178d3
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: pexels-andrea-piacquadio-3768724.jpg
+  uri:
+    -
+      value: 'public://2022-04/pexels-andrea-piacquadio-3768724.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 2073261
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1650277900

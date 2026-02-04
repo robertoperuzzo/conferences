@@ -1,0 +1,31 @@
+_meta:
+  version: '1.0'
+  entity_type: commerce_product_variation
+  uuid: 4061ca42-433a-4a9f-ba69-165c1458e367
+  bundle: physical
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  sku:
+    -
+      value: '000003'
+  title:
+    -
+      value: 'Side Table'
+  price:
+    -
+      number: '125.000000'
+      currency_code: USD
+      formatted: $125.00
+  weight:
+    -
+      number: '5.000000'
+      unit: kg
+  created:
+    -
+      value: 1631898160

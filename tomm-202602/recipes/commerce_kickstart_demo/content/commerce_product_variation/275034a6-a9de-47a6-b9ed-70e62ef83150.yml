@@ -1,0 +1,43 @@
+_meta:
+  version: '1.0'
+  entity_type: commerce_product_variation
+  uuid: 275034a6-a9de-47a6-b9ed-70e62ef83150
+  bundle: media_license_download
+  default_langcode: en
+  depends:
+    2eaaed63-23f9-4a72-9a24-48977a9e532b: file
+default:
+  uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  sku:
+    -
+      value: book-mysteries-udolpho-digital-download
+  title:
+    -
+      value: 'The Mysteries of Udolpho by Ann Ward Radcliffe - Digital download'
+  price:
+    -
+      number: '10.000000'
+      currency_code: USD
+      formatted: $10.00
+  created:
+    -
+      value: 1648465818
+  commerce_file:
+    -
+      entity: 2eaaed63-23f9-4a72-9a24-48977a9e532b
+      display: true
+      description: 'The Mysteries of Udolpho by Ann Ward Radcliffe - Digital download'
+  license_expiration:
+    -
+      target_plugin_id: unlimited
+      target_plugin_configuration: {  }
+  license_type:
+    -
+      target_plugin_id: commerce_file
+      target_plugin_configuration:
+        file_download_limit: '5'

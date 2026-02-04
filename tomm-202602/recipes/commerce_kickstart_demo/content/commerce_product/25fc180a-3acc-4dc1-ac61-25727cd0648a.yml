@@ -1,0 +1,60 @@
+_meta:
+  version: '1.0'
+  entity_type: commerce_product
+  uuid: 25fc180a-3acc-4dc1-ac61-25727cd0648a
+  bundle: physical
+  default_langcode: en
+  depends:
+    f812b134-42ef-4fc9-9270-66ba5183e278: commerce_store
+    e3c907a6-2df5-4b87-a366-6e84727889c6: commerce_product_variation
+    99ce9178-5207-4445-8a48-355b29ed6125: file
+    7884f022-54f6-4c5a-bdf5-7a76c78a5a15: taxonomy_term
+    0a3e84ac-163b-4276-8e85-090aec9c3cdc: taxonomy_term
+    342c5bea-8914-43e2-8f89-74e37edac45c: taxonomy_term
+default:
+  uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  stores:
+    -
+      entity: f812b134-42ef-4fc9-9270-66ba5183e278
+  title:
+    -
+      value: '24" x 30" Hiding Goat Print'
+  variations:
+    -
+      entity: e3c907a6-2df5-4b87-a366-6e84727889c6
+  default_variation:
+    -
+      entity: e3c907a6-2df5-4b87-a366-6e84727889c6
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 1
+  created:
+    -
+      value: 1647878212
+  body:
+    -
+      value: "<p>Goats are usually quite visible and audible, but every once in a while you'll find a goat that takes you by surprise. Hang this print in a darkened room to scare the living daylights out of your guests when they finally discover the print is staring <em>back</em> at them.</p>\r\n\r\n<p>Glossy finish with a 1\" matte; no frame included.</p>\r\n"
+      format: basic_html
+      summary: ''
+  images:
+    -
+      entity: 99ce9178-5207-4445-8a48-355b29ed6125
+      alt: 'Hiding Goat Print'
+      title: ''
+      width: 670
+      height: 630
+  product_brand:
+    -
+      entity: 7884f022-54f6-4c5a-bdf5-7a76c78a5a15
+  product_collections:
+    -
+      entity: 0a3e84ac-163b-4276-8e85-090aec9c3cdc
+    -
+      entity: 342c5bea-8914-43e2-8f89-74e37edac45c

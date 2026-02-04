@@ -1,0 +1,36 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 59f78bc4-51df-4d15-925c-68349aaa531f
+  bundle: image
+  default_langcode: en
+  depends:
+    6b595dad-6175-4b2c-9798-13e0c6428287: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: slide-1.jpg
+  created:
+    -
+      value: 1650277526
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  field_media_image:
+    -
+      entity: 6b595dad-6175-4b2c-9798-13e0c6428287
+      alt: 'Girl with cake'
+      title: ''
+      width: 1600
+      height: 740

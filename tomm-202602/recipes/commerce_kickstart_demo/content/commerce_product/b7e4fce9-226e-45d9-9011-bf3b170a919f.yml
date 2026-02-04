@@ -1,0 +1,77 @@
+_meta:
+  version: '1.0'
+  entity_type: commerce_product
+  uuid: b7e4fce9-226e-45d9-9011-bf3b170a919f
+  bundle: physical
+  default_langcode: en
+  depends:
+    f812b134-42ef-4fc9-9270-66ba5183e278: commerce_store
+    7907a768-fb7c-4bde-8b04-c16899e7fcdd: commerce_product_variation
+    2ea5fab4-ce2d-4842-911d-fe8513395c12: file
+    47371921-3378-41f2-93b0-a8e58adeb252: file
+    87dbc541-755b-4c7d-a422-9819e1a434ec: file
+    d6d21052-9e2c-4f0a-9bb3-c9742c616618: taxonomy_term
+    077bc143-7067-4b4e-aa0b-adec28b9d26f: taxonomy_term
+    3919bf43-38a0-44f8-8302-0d7ffc685679: taxonomy_term
+    a875c177-13be-4634-959c-cfee50241a28: taxonomy_term
+default:
+  uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  stores:
+    -
+      entity: f812b134-42ef-4fc9-9270-66ba5183e278
+  title:
+    -
+      value: 'Eau De Parfum, 50 mL'
+  variations:
+    -
+      entity: 7907a768-fb7c-4bde-8b04-c16899e7fcdd
+  default_variation:
+    -
+      entity: 7907a768-fb7c-4bde-8b04-c16899e7fcdd
+  path:
+    -
+      alias: /products/eau-de-parfum-50-ml
+      langcode: en
+      pathauto: 1
+  created:
+    -
+      value: 1647864939
+  body:
+    -
+      value: "<p>Our signature fragrance helps you make an impression when you enter a room that remains long after you're gone. Sweet and floral, this EdP evokes memories of a light spring rain falling on a garden's first blossoms. It's sure to brighten the countenance of those around you.</p>\r\n\r\n<p>Application notes: spray one pump onto pressure points; do not rub into skin.</p>\r\n"
+      format: basic_html
+      summary: ''
+  images:
+    -
+      entity: 2ea5fab4-ce2d-4842-911d-fe8513395c12
+      alt: 'Eau De Parfum, 50 mL'
+      title: ''
+      width: 670
+      height: 630
+    -
+      entity: 47371921-3378-41f2-93b0-a8e58adeb252
+      alt: 'Eau De Parfum, 50 mL'
+      title: ''
+      width: 4016
+      height: 6016
+    -
+      entity: 87dbc541-755b-4c7d-a422-9819e1a434ec
+      alt: 'Eau De Parfum, 50 mL'
+      title: ''
+      width: 1920
+      height: 1280
+  product_brand:
+    -
+      entity: d6d21052-9e2c-4f0a-9bb3-c9742c616618
+  product_collections:
+    -
+      entity: 077bc143-7067-4b4e-aa0b-adec28b9d26f
+    -
+      entity: 3919bf43-38a0-44f8-8302-0d7ffc685679
+    -
+      entity: a875c177-13be-4634-959c-cfee50241a28

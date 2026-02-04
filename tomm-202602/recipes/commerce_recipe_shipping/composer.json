@@ -1,0 +1,10 @@
+{
+    "name": "drupal/commerce_recipe_shipping",
+    "description": "Commerce Shipping integration for Drupal Commerce",
+    "type": "drupal-recipe",
+    "license": ["GPL-2.0-or-later"],
+    "require": {
+        "drupal/commerce_shipping": "^2",
+        "drupal/commerce_recipe_core": "^1"
+    }
+}

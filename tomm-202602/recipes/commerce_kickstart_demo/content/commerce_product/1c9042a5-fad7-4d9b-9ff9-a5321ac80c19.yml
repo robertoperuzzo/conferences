@@ -1,0 +1,57 @@
+_meta:
+  version: '1.0'
+  entity_type: commerce_product
+  uuid: 1c9042a5-fad7-4d9b-9ff9-a5321ac80c19
+  bundle: physical
+  default_langcode: en
+  depends:
+    f812b134-42ef-4fc9-9270-66ba5183e278: commerce_store
+    796cd410-9c2c-4e60-b11c-697aebbd8db5: commerce_product_variation
+    d2b18ea5-d439-4852-9dee-84d0307d753e: file
+    aeb7a7aa-60d0-4a45-80df-aa9ca4111333: taxonomy_term
+    077bc143-7067-4b4e-aa0b-adec28b9d26f: taxonomy_term
+default:
+  uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  stores:
+    -
+      entity: f812b134-42ef-4fc9-9270-66ba5183e278
+  title:
+    -
+      value: 'Knit Hat in Midnight Plum'
+  variations:
+    -
+      entity: 796cd410-9c2c-4e60-b11c-697aebbd8db5
+  default_variation:
+    -
+      entity: 796cd410-9c2c-4e60-b11c-697aebbd8db5
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 1
+  created:
+    -
+      value: 1647871484
+  body:
+    -
+      value: "<p>We've partnered with local artisans The Knit Picks to feature these signature hats in various colors. Primarily knitted during school sporting events, these hats feature yarn spun from the wool of local sheep raised in ethical conditions with free access to Netflix, a drink fridge, and group therapy sessions. The result is the softest, warmest hat your head never knew ... until you buy yours today!</p>\r\n\r\n<p>Hat stretches, one size fits all.</p>\r\n"
+      format: basic_html
+      summary: ''
+  images:
+    -
+      entity: d2b18ea5-d439-4852-9dee-84d0307d753e
+      alt: 'Knit Hat in Midnight Plum'
+      title: ''
+      width: 670
+      height: 630
+  product_brand:
+    -
+      entity: aeb7a7aa-60d0-4a45-80df-aa9ca4111333
+  product_collections:
+    -
+      entity: 077bc143-7067-4b4e-aa0b-adec28b9d26f

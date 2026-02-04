@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 2c22b673-1a17-43ab-84a1-0dc88072eaac
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: eugenia-pan-kiv-1JJJIHh7-Mk-unsplash.jpg
+  uri:
+    -
+      value: 'public://2025-10/eugenia-pan-kiv-1JJJIHh7-Mk-unsplash.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 527148
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1759834859

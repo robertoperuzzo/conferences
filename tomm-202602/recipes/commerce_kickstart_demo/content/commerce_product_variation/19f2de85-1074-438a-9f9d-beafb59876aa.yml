@@ -1,0 +1,31 @@
+_meta:
+  version: '1.0'
+  entity_type: commerce_product_variation
+  uuid: 19f2de85-1074-438a-9f9d-beafb59876aa
+  bundle: media_physical
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  sku:
+    -
+      value: '10002'
+  title:
+    -
+      value: 'Centarro The Book (Print)'
+  price:
+    -
+      number: '14.990000'
+      currency_code: USD
+      formatted: $14.99
+  created:
+    -
+      value: 1644322773
+  weight:
+    -
+      number: '120.000000'
+      unit: g

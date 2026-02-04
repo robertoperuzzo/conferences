@@ -1,0 +1,60 @@
+_meta:
+  version: '1.0'
+  entity_type: commerce_product
+  uuid: ed514b1c-bc07-4db3-85ad-577836e05ca1
+  bundle: physical
+  default_langcode: en
+  depends:
+    f812b134-42ef-4fc9-9270-66ba5183e278: commerce_store
+    d5997717-7cd1-459d-b261-ec5a632feff7: commerce_product_variation
+    5fd20e0b-e70a-4628-830c-ed269da7df09: file
+    7884f022-54f6-4c5a-bdf5-7a76c78a5a15: taxonomy_term
+    0a3e84ac-163b-4276-8e85-090aec9c3cdc: taxonomy_term
+    342c5bea-8914-43e2-8f89-74e37edac45c: taxonomy_term
+default:
+  uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  stores:
+    -
+      entity: f812b134-42ef-4fc9-9270-66ba5183e278
+  title:
+    -
+      value: '24" x 36" Flowers Print'
+  variations:
+    -
+      entity: d5997717-7cd1-459d-b261-ec5a632feff7
+  default_variation:
+    -
+      entity: d5997717-7cd1-459d-b261-ec5a632feff7
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 1
+  created:
+    -
+      value: 1647878333
+  body:
+    -
+      value: "<p>This dynamic print features a variety of flowers arranged to capture dynamic light on the most colorful with basic stems remaining behind in the shadows. This arresting image will stop any guest in their tracks as they take a moment to marvel at nature's beauty.</p>\r\n\r\n<p>Glossy finish with a 1\" matte; no frame included.</p>\r\n"
+      format: basic_html
+      summary: ''
+  images:
+    -
+      entity: 5fd20e0b-e70a-4628-830c-ed269da7df09
+      alt: 'Flowers Print'
+      title: ''
+      width: 670
+      height: 630
+  product_brand:
+    -
+      entity: 7884f022-54f6-4c5a-bdf5-7a76c78a5a15
+  product_collections:
+    -
+      entity: 0a3e84ac-163b-4276-8e85-090aec9c3cdc
+    -
+      entity: 342c5bea-8914-43e2-8f89-74e37edac45c

@@ -1,0 +1,43 @@
+_meta:
+  version: '1.0'
+  entity_type: commerce_product_variation
+  uuid: 3e687463-ff5e-428f-801a-e61c034d40e6
+  bundle: media_license_download
+  default_langcode: en
+  depends:
+    3e1ed878-e59e-4e4f-a7d3-e08fb7b19812: file
+default:
+  uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  sku:
+    -
+      value: '10001'
+  title:
+    -
+      value: 'Centarro The Book (PDF Download)'
+  price:
+    -
+      number: '9.990000'
+      currency_code: USD
+      formatted: $9.99
+  created:
+    -
+      value: 1644322730
+  commerce_file:
+    -
+      entity: 3e1ed878-e59e-4e4f-a7d3-e08fb7b19812
+      display: true
+      description: ''
+  license_expiration:
+    -
+      target_plugin_id: unlimited
+      target_plugin_configuration: {  }
+  license_type:
+    -
+      target_plugin_id: commerce_file
+      target_plugin_configuration:
+        file_download_limit: '5'

@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 72e98a5f-2aca-4595-afef-3b0c3553db01
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: pexels-nietjuhart-796620.jpg
+  uri:
+    -
+      value: 'public://2025-10/pexels-nietjuhart-796620.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 34957
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1759837726

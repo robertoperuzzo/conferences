@@ -1,0 +1,31 @@
+_meta:
+  version: '1.0'
+  entity_type: commerce_product_variation
+  uuid: 796cd410-9c2c-4e60-b11c-697aebbd8db5
+  bundle: physical
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  sku:
+    -
+      value: UT-KnitHat-MNPlum
+  title:
+    -
+      value: 'Knit Hat in Midnight Plum'
+  price:
+    -
+      number: '25.000000'
+      currency_code: USD
+      formatted: $25.00
+  created:
+    -
+      value: 1647871606
+  weight:
+    -
+      number: '90.000000'
+      unit: g

@@ -1,0 +1,62 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 010102ae-b732-4ac2-b2d4-a7bc94ce20a3
+  bundle: article
+  default_langcode: en
+  depends:
+    b923346b-c7c4-4bae-af93-df311ac3b6e1: file
+    9cc0234d-b8cc-48bd-806e-275d538e8496: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'How to Choose the Perfect Armchair for Your Space'
+  created:
+    -
+      value: 1756986477
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /blog/lifestyle/how-choose-perfect-armchair-your-space
+      langcode: en
+      pathauto: 1
+  body:
+    -
+      value: '<p>Choosing an armchair may seem simple, but there’s more to it than just picking a pretty cushion. First, consider <strong>scale and proportion</strong> — a bulky chair in a small room overwhelms, while a tiny one in a large room gets lost. Measure your space first, including clearance for walking around.</p><p>Next up: <strong>style and personality</strong>. A pink dining armchair (like the one in the demo) adds a touch of color and flair to neutral décor. If your surroundings are minimal and calm, the armchair can be a focal accent. On the other hand, if your décor is already bold, a more subdued chair may serve better as balance.</p><p>Materials and textures matter too. Upholstery should feel pleasant to the touch, be durable, and match your lifestyle (e.g. easy to clean if you have pets or kids). Legs and arms should harmonize with other furniture — mixing metals, woods, or finishes can create dynamic contrast.</p><p>Finally, test comfort. Sit in it, recline if possible, check the back height and cushioning. The best armchairs invite you to linger, read, or relax. With thoughtful choices, your armchair becomes more than just functional — it becomes one of your favorite spots in the home.</p>'
+      format: basic_html
+      summary: 'An armchair is more than a seat — it’s a statement in your room. Picking the right one shapes your comfort and style.'
+  comment:
+    -
+      status: 2
+      cid: 0
+      last_comment_timestamp: 1759492490
+      last_comment_name: ''
+      last_comment_uid: 1
+      comment_count: 0
+  field_image:
+    -
+      entity: b923346b-c7c4-4bae-af93-df311ac3b6e1
+      alt: 'How to Choose the Perfect Armchair for Your Space'
+      title: ''
+      width: 1920
+      height: 1280
+  field_tags:
+    -
+      entity: 9cc0234d-b8cc-48bd-806e-275d538e8496

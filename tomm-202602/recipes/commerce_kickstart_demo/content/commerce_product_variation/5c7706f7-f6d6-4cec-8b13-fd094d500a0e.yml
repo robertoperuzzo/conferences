@@ -1,0 +1,43 @@
+_meta:
+  version: '1.0'
+  entity_type: commerce_product_variation
+  uuid: 5c7706f7-f6d6-4cec-8b13-fd094d500a0e
+  bundle: media_license_download
+  default_langcode: en
+  depends:
+    4026e177-8101-4266-93f5-997c0013dc06: file
+default:
+  uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  sku:
+    -
+      value: book-frankenstein-digital-download
+  title:
+    -
+      value: 'Frankenstein by Mary Wollstonecraft Shelley - Digital download'
+  price:
+    -
+      number: '8.000000'
+      currency_code: USD
+      formatted: $8.00
+  created:
+    -
+      value: 1648463161
+  commerce_file:
+    -
+      entity: 4026e177-8101-4266-93f5-997c0013dc06
+      display: true
+      description: 'Frankenstein by Mary Wollstonecraft Shelley - Digital download'
+  license_expiration:
+    -
+      target_plugin_id: unlimited
+      target_plugin_configuration: {  }
+  license_type:
+    -
+      target_plugin_id: commerce_file
+      target_plugin_configuration:
+        file_download_limit: '1'

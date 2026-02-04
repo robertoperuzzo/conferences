@@ -1,0 +1,66 @@
+_meta:
+  version: '1.0'
+  entity_type: commerce_product
+  uuid: c6d6d308-7414-4cc8-b73a-a5722ce57d6b
+  bundle: media
+  default_langcode: en
+  depends:
+    f812b134-42ef-4fc9-9270-66ba5183e278: commerce_store
+    080815af-a8d5-4519-bc8c-38b89842297b: commerce_product_variation
+    450b2298-f0eb-46a3-861d-f7ae80222ca5: commerce_product_variation
+    fc3fd09a-c621-45c9-b045-849c62c5dc14: file
+    4d5d9879-ab5d-45e8-b278-240f479845b1: taxonomy_term
+    5581e5e6-6145-44e4-8da6-51d5f22497a8: taxonomy_term
+    0dbaec23-00d5-4327-9ec0-6a2e13e45c70: taxonomy_term
+    3736d1af-67ec-478e-a5d8-e25b28c7a033: taxonomy_term
+default:
+  uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  stores:
+    -
+      entity: f812b134-42ef-4fc9-9270-66ba5183e278
+  title:
+    -
+      value: 'Poirot Investigates by Agatha Christie'
+  variations:
+    -
+      entity: 080815af-a8d5-4519-bc8c-38b89842297b
+    -
+      entity: 450b2298-f0eb-46a3-861d-f7ae80222ca5
+  default_variation:
+    -
+      entity: 080815af-a8d5-4519-bc8c-38b89842297b
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 1
+  created:
+    -
+      value: 1648466175
+  body:
+    -
+      value: "<p>Author:&nbsp;Christie, Agatha, 1890-1976</p>\r\n\r\n<p>Title: Poirot Investigates</p>\r\n\r\n<p>Contents: The adventure of \"The Western Star\" -- The tragedy at Marsdon Manor -- The adventure of the cheap flat -- The mystery of Hunter's Lodge -- A million dollar bond robbery -- The adventure of the Egyptian tomb -- The jewel robbery at the Grand Metropolitan -- The kidnapped Prime Minister -- The disappearance of Mr. Davenheim -- The adventure of the Italian nobleman -- The case of the missing will.</p>\r\n\r\n<p>Original release date:&nbsp;March 1924</p>\r\n\r\n<p>This book is available in hard copy and as digital download.</p>\r\n"
+      format: basic_html
+      summary: ''
+  images:
+    -
+      entity: fc3fd09a-c621-45c9-b045-849c62c5dc14
+      alt: 'Poirot Investigates by Agatha Christie'
+      title: ''
+      width: 2718
+      height: 2480
+  product_brand:
+    -
+      entity: 4d5d9879-ab5d-45e8-b278-240f479845b1
+  product_collections:
+    -
+      entity: 5581e5e6-6145-44e4-8da6-51d5f22497a8
+    -
+      entity: 0dbaec23-00d5-4327-9ec0-6a2e13e45c70
+    -
+      entity: 3736d1af-67ec-478e-a5d8-e25b28c7a033

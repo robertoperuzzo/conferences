@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: f5bc3d87-8c2a-4090-b115-9eafb655bf72
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: 'Hot Air Balloon Print - 2.jpg'
+  uri:
+    -
+      value: 'public://2022-03/Hot Air Balloon Print - 2.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 94156
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1647878910

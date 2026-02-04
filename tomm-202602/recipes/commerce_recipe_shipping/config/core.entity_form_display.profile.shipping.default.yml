@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.profile.shipping.address
+    - profile.type.shipping
+  module:
+    - address
+id: profile.shipping.default
+targetEntityType: profile
+bundle: shipping
+mode: default
+content:
+  address:
+    type: address_default
+    weight: 0
+    region: content
+    settings:
+      wrapper_type: fieldset
+    third_party_settings: {  }
+hidden:
+  is_default: true

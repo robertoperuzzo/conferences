@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 01049eeb-d786-4e8e-8e76-e18eebfc5dad
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: pexels-furknsaglam-1596977-7101246.jpg
+  uri:
+    -
+      value: 'public://2025-10/pexels-furknsaglam-1596977-7101246.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 383890
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1759842985

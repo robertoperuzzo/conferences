@@ -1,0 +1,63 @@
+_meta:
+  version: '1.0'
+  entity_type: commerce_product
+  uuid: 8c0549b0-9faa-4ae9-8d4d-2e8a54eaa4e5
+  bundle: physical
+  default_langcode: en
+  depends:
+    f812b134-42ef-4fc9-9270-66ba5183e278: commerce_store
+    d5a0b5a9-c2b5-4d76-a51f-be6eeb246298: commerce_product_variation
+    6c1772d5-858c-4cce-baac-e20108284e93: file
+    2c22b673-1a17-43ab-84a1-0dc88072eaac: file
+    0a3e84ac-163b-4276-8e85-090aec9c3cdc: taxonomy_term
+    5f5b51cf-4d21-47d0-a5d9-620088db53f2: taxonomy_term
+default:
+  uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  stores:
+    -
+      entity: f812b134-42ef-4fc9-9270-66ba5183e278
+  title:
+    -
+      value: 'Dining Armchair in Pink'
+  variations:
+    -
+      entity: d5a0b5a9-c2b5-4d76-a51f-be6eeb246298
+  default_variation:
+    -
+      entity: d5a0b5a9-c2b5-4d76-a51f-be6eeb246298
+  path:
+    -
+      alias: /products/dining-armchair-pink
+      langcode: en
+      pathauto: 1
+  created:
+    -
+      value: 1631897690
+  body:
+    -
+      value: "<p>Designed for comfort, these dining chairs are upholstered in a soft fabric and foam-filled for extra cushioning.</p>\r\n\r\n<p>The supportive backrest and integrated armrests encourage a better posture and the splayed legs honour recognisable Scandi-inspired shapes. We've made them from sturdy red oak in an espresso brown lacquer for a durable finish and sleek design contrast.</p>\r\n"
+      format: basic_html
+      summary: ''
+  images:
+    -
+      entity: 6c1772d5-858c-4cce-baac-e20108284e93
+      alt: 'Dining Armchair in Pink'
+      title: ''
+      width: 1920
+      height: 1920
+    -
+      entity: 2c22b673-1a17-43ab-84a1-0dc88072eaac
+      alt: 'Dining Armchair in Pink'
+      title: ''
+      width: 1920
+      height: 2880
+  product_collections:
+    -
+      entity: 0a3e84ac-163b-4276-8e85-090aec9c3cdc
+    -
+      entity: 5f5b51cf-4d21-47d0-a5d9-620088db53f2

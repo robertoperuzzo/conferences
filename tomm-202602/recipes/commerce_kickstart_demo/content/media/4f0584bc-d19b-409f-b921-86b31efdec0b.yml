@@ -1,0 +1,36 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 4f0584bc-d19b-409f-b921-86b31efdec0b
+  bundle: image
+  default_langcode: en
+  depends:
+    273547ea-b761-42d2-949b-bdfd34fa1066: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: slide-3.jpg
+  created:
+    -
+      value: 1650279357
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  field_media_image:
+    -
+      entity: 273547ea-b761-42d2-949b-bdfd34fa1066
+      alt: Dog
+      title: ''
+      width: 1600
+      height: 1067

@@ -1,0 +1,31 @@
+_meta:
+  version: '1.0'
+  entity_type: commerce_product_variation
+  uuid: 6c85c61d-15c5-4e93-b612-80a203ef8935
+  bundle: media_physical
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  sku:
+    -
+      value: book-mysteries-udolpho-hard-copy
+  title:
+    -
+      value: 'The Mysteries of Udolpho by Ann Ward Radcliffe - Hard copy'
+  price:
+    -
+      number: '12.000000'
+      currency_code: USD
+      formatted: $12.00
+  created:
+    -
+      value: 1648465950
+  weight:
+    -
+      number: '800.000000'
+      unit: g

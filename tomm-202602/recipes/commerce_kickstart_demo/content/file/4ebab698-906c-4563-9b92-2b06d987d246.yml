@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 4ebab698-906c-4563-9b92-2b06d987d246
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: pexels-nappy-936044.jpg
+  uri:
+    -
+      value: 'public://2025-10/pexels-nappy-936044.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 61863
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1759835113

@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: 5f5b51cf-4d21-47d0-a5d9-620088db53f2
+  bundle: product_collections
+  default_langcode: en
+  depends:
+    0a3e84ac-163b-4276-8e85-090aec9c3cdc: taxonomy_term
+default:
+  status:
+    -
+      value: true
+  name:
+    -
+      value: 'Furniture & Lights'
+  weight:
+    -
+      value: 2
+  parent:
+    -
+      entity: 0a3e84ac-163b-4276-8e85-090aec9c3cdc
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0

@@ -1,0 +1,42 @@
+_meta:
+  version: '1.0'
+  entity_type: commerce_product_variation
+  uuid: 17784fa1-4078-4e56-be2f-278ef5d4d5f5
+  bundle: media_license_download
+  default_langcode: en
+  depends:
+    6df0e79d-be86-4384-a549-f9917c51b82b: file
+default:
+  uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  sku:
+    -
+      value: book-notre-dame-de-paris-digital-download
+  title:
+    -
+      value: 'Notre-Dame de Paris - Digital download'
+  price:
+    -
+      number: '11.000000'
+      currency_code: USD
+      formatted: $11.00
+  created:
+    -
+      value: 1648467568
+  commerce_file:
+    -
+      entity: 6df0e79d-be86-4384-a549-f9917c51b82b
+      display: true
+      description: 'Notre-Dame de Paris - Digital download'
+  license_expiration:
+    -
+      target_plugin_id: unlimited
+      target_plugin_configuration: {  }
+  license_type:
+    -
+      target_plugin_id: commerce_file
+      target_plugin_configuration: {  }

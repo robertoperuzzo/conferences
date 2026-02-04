@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 47371921-3378-41f2-93b0-a8e58adeb252
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: pixnio-4016x6016.jpeg
+  uri:
+    -
+      value: 'public://2025-10/pixnio-4016x6016.jpeg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 668143
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1759834655

@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 33198f14-bc4f-4029-8cfb-76b8b57a946b
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: pexels-ifreestock-566031.jpg
+  uri:
+    -
+      value: 'public://2025-10/pexels-ifreestock-566031.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 260982
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1759834496

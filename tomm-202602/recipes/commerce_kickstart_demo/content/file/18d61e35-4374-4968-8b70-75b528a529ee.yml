@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 18d61e35-4374-4968-8b70-75b528a529ee
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: centarro_logo.png
+  uri:
+    -
+      value: 'public://2022-02/centarro_logo.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 4028
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1644322646

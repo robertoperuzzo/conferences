@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: f1608b09-b05f-43cb-b988-167c895fc1cb
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: pexels-fadime-demirtas-42037863-9467962.jpg
+  uri:
+    -
+      value: 'public://2025-10/pexels-fadime-demirtas-42037863-9467962.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 183519
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1759842993

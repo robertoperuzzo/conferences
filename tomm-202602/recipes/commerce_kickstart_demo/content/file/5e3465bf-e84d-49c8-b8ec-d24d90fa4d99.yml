@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 5e3465bf-e84d-49c8-b8ec-d24d90fa4d99
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: slide-2.jpg
+  uri:
+    -
+      value: 'public://2022-04/slide-2.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 511271
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1650277598

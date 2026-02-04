@@ -1,0 +1,63 @@
+_meta:
+  version: '1.0'
+  entity_type: commerce_product
+  uuid: 864776a2-4349-474e-abec-a2e3ade8a542
+  bundle: media
+  default_langcode: en
+  depends:
+    f812b134-42ef-4fc9-9270-66ba5183e278: commerce_store
+    7c9c7c6f-b8bd-4bb9-be7b-7dcd9b631f42: commerce_product_variation
+    17784fa1-4078-4e56-be2f-278ef5d4d5f5: commerce_product_variation
+    4bd1a67a-dad0-4b70-b848-681da0125fc6: file
+    4d5d9879-ab5d-45e8-b278-240f479845b1: taxonomy_term
+    5581e5e6-6145-44e4-8da6-51d5f22497a8: taxonomy_term
+    c6e79678-8cd0-4afc-acf9-4792f6010449: taxonomy_term
+default:
+  uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  stores:
+    -
+      entity: f812b134-42ef-4fc9-9270-66ba5183e278
+  title:
+    -
+      value: 'Notre-Dame de Paris by Victor Hugo'
+  variations:
+    -
+      entity: 7c9c7c6f-b8bd-4bb9-be7b-7dcd9b631f42
+    -
+      entity: 17784fa1-4078-4e56-be2f-278ef5d4d5f5
+  default_variation:
+    -
+      entity: 7c9c7c6f-b8bd-4bb9-be7b-7dcd9b631f42
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 1
+  created:
+    -
+      value: 1648467360
+  body:
+    -
+      value: "<p>Author:&nbsp;Hugo, Victor, 1802-1885</p>\r\n\r\n<p>Translator:&nbsp;Hapgood, Isabel Florence, 1850-1928</p>\r\n\r\n<p>Title: Notre-Dame de Paris</p>\r\n\r\n<p>Original release date:&nbsp;March 16, 1831</p>\r\n\r\n<p>This book is available in hard copy and as digital download.</p>\r\n"
+      format: basic_html
+      summary: ''
+  images:
+    -
+      entity: 4bd1a67a-dad0-4b70-b848-681da0125fc6
+      alt: 'Notre-Dame de Paris by Victor Hugo'
+      title: ''
+      width: 2718
+      height: 2480
+  product_brand:
+    -
+      entity: 4d5d9879-ab5d-45e8-b278-240f479845b1
+  product_collections:
+    -
+      entity: 5581e5e6-6145-44e4-8da6-51d5f22497a8
+    -
+      entity: c6e79678-8cd0-4afc-acf9-4792f6010449

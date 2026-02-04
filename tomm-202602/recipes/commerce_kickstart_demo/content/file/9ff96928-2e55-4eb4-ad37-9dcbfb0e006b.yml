@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 9ff96928-2e55-4eb4-ad37-9dcbfb0e006b
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: pexels-anna-nekrashevich-6603647.jpg
+  uri:
+    -
+      value: 'public://2025-10/pexels-anna-nekrashevich-6603647.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 69440
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1759834287

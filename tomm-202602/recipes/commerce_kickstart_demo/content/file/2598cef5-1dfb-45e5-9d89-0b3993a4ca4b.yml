@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 2598cef5-1dfb-45e5-9d89-0b3993a4ca4b
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: sergey-sokolov-fKyrrNb8Yj0-unsplash.jpg
+  uri:
+    -
+      value: 'public://2025-10/sergey-sokolov-fKyrrNb8Yj0-unsplash.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 427873
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1759834924

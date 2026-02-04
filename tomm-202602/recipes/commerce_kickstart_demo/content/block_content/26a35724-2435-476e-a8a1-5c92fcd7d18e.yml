@@ -1,0 +1,23 @@
+_meta:
+  version: '1.0'
+  entity_type: block_content
+  uuid: 26a35724-2435-476e-a8a1-5c92fcd7d18e
+  bundle: cklb_text
+  default_langcode: en
+default:
+  status:
+    -
+      value: true
+  info:
+    -
+      value: 'Inline block'
+  reusable:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  cklb_text:
+    -
+      value: "<h5><em>Choose an eCommerce platform that powers innovation through every stage of growth</em></h5>\r\n"
+      format: basic_html

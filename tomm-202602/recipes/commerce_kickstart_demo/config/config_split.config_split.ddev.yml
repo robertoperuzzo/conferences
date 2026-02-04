@@ -1,0 +1,16 @@
+langcode: en
+status: false
+dependencies: {  }
+id: ddev
+label: DDEV
+description: 'Configuration for DDEV environments.'
+weight: 0
+stackable: false
+storage: folder
+folder: ../config/splits/ddev
+module: {  }
+theme: {  }
+complete_list: {  }
+partial_list:
+  - symfony_mailer.settings
+no_patching: false

@@ -1,0 +1,45 @@
+_meta:
+  version: '1.0'
+  entity_type: commerce_product_variation
+  uuid: 5b934891-c2fd-4814-87b3-9682b902f06f
+  bundle: media_license_download
+  default_langcode: en
+  depends:
+    b295f162-0967-461a-bd2b-c2e86c8ec2b6: file
+default:
+  uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  sku:
+    -
+      value: book-tale-two-cities-digital-download
+  title:
+    -
+      value: 'A Tale of Two Cities by Charles Dickens - Digital download'
+  price:
+    -
+      number: '10.000000'
+      currency_code: USD
+      formatted: $10.00
+  created:
+    -
+      value: 1648464803
+  commerce_file:
+    -
+      entity: b295f162-0967-461a-bd2b-c2e86c8ec2b6
+      display: true
+      description: 'A Tale of Two Cities by Charles Dickens - Digital download'
+  license_expiration:
+    -
+      target_plugin_id: rolling_interval
+      target_plugin_configuration:
+        interval:
+          interval: '3'
+          period: month
+  license_type:
+    -
+      target_plugin_id: commerce_file
+      target_plugin_configuration: {  }

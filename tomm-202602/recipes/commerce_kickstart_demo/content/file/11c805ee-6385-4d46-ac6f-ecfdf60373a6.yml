@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 11c805ee-6385-4d46-ac6f-ecfdf60373a6
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: bruno-cervera--MUoHL1XULM-unsplash.jpg
+  uri:
+    -
+      value: 'public://2025-10/bruno-cervera--MUoHL1XULM-unsplash.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 165294
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1759834955

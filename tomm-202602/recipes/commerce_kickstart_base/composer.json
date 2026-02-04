@@ -1,0 +1,15 @@
+{
+    "name": "drupal/commerce_kickstart_base",
+    "description": "Commerce Kickstart is the fastest way to start building on Drupal Commerce.",
+    "type": "drupal-recipe",
+    "license": ["GPL-2.0-or-later"],
+    "require": {
+        "drupal/belgrade": "^3",
+        "drupal/core": "^11",
+        "drupal/commerce_recipe_core": "^1",
+        "drupal/commerce_kickstart_admin_ui": "^1",
+        "drupal/config_split": "^2.0",
+        "drupal/facets_pretty_paths": "^2",
+        "drupal/symfony_mailer": "^1.2"
+    }
+}

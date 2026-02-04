@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: d60b9a15-37c0-4572-8882-374e88d19c0e
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: pexels-ozgurbesli-11170600.jpg
+  uri:
+    -
+      value: 'public://2025-10/pexels-ozgurbesli-11170600.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 323804
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1759835480

@@ -1,0 +1,31 @@
+_meta:
+  version: '1.0'
+  entity_type: commerce_product_variation
+  uuid: ac2f5333-cc40-4a71-afcf-8ecbb9ee36f4
+  bundle: media_physical
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  sku:
+    -
+      value: book-tale-two-cities-hard-copy
+  title:
+    -
+      value: 'A Tale of Two Cities by Charles Dickens - Hard copy'
+  price:
+    -
+      number: '11.000000'
+      currency_code: USD
+      formatted: $11.00
+  created:
+    -
+      value: 1648464759
+  weight:
+    -
+      number: '1200.000000'
+      unit: g

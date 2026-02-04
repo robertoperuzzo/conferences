@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: e3beb761-721d-4bbd-8407-0cc6fa0cbd2c
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: hanna-balan-YasQvzPbGOQ-unsplash.jpg
+  uri:
+    -
+      value: 'public://2025-10/hanna-balan-YasQvzPbGOQ-unsplash.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 515392
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1759840403

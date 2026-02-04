@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 4c8068cc-af94-413f-8742-3da6e6dbb74f
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: bymatter-made-better-aFV_se7CAqI-unsplash.jpg
+  uri:
+    -
+      value: 'public://2025-10/bymatter-made-better-aFV_se7CAqI-unsplash.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 750855
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1759834274

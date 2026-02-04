@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: da6ba596-d31d-47c9-936e-9de31ba0d29f
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: pexels-freestockpro-2705879.jpg
+  uri:
+    -
+      value: 'public://2025-10/pexels-freestockpro-2705879.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 128924
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1759834514

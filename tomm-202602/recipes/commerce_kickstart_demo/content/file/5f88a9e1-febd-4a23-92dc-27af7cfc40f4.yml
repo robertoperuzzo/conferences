@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 5f88a9e1-febd-4a23-92dc-27af7cfc40f4
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: bart-zimny-W5XTTLpk1-I-unsplash.jpg
+  uri:
+    -
+      value: 'public://2025-10/bart-zimny-W5XTTLpk1-I-unsplash.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 973355
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1759421716

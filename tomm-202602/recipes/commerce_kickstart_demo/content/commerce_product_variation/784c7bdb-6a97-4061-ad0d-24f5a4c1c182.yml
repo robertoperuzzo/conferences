@@ -1,0 +1,31 @@
+_meta:
+  version: '1.0'
+  entity_type: commerce_product_variation
+  uuid: 784c7bdb-6a97-4061-ad0d-24f5a4c1c182
+  bundle: physical
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  sku:
+    -
+      value: PT-Classic36-001
+  title:
+    -
+      value: '36" Classic Beach Ball'
+  price:
+    -
+      number: '12.990000'
+      currency_code: USD
+      formatted: $12.99
+  created:
+    -
+      value: 1647874120
+  weight:
+    -
+      number: '10.000000'
+      unit: g

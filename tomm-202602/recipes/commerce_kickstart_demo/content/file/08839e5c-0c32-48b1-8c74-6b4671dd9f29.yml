@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 08839e5c-0c32-48b1-8c74-6b4671dd9f29
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: testimonial.png
+  uri:
+    -
+      value: 'public://2022-04/testimonial.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 589943
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1650282077

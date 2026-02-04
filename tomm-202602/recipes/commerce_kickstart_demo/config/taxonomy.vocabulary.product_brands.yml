@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+name: 'Product Brands'
+vid: product_brands
+description: null
+weight: 0
+new_revision: false

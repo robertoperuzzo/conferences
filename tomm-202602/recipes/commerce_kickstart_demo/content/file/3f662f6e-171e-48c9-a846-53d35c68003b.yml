@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 3f662f6e-171e-48c9-a846-53d35c68003b
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: pexels-kaderdygnn-9303519.jpg
+  uri:
+    -
+      value: 'public://2025-10/pexels-kaderdygnn-9303519.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 221297
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1759835096

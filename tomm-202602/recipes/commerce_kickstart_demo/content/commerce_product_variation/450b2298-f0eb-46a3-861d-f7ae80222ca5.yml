@@ -1,0 +1,42 @@
+_meta:
+  version: '1.0'
+  entity_type: commerce_product_variation
+  uuid: 450b2298-f0eb-46a3-861d-f7ae80222ca5
+  bundle: media_license_download
+  default_langcode: en
+  depends:
+    41a8ba08-9e16-4cb6-b345-2223ec5334d4: file
+default:
+  uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  sku:
+    -
+      value: book-poirot-investigates-digital-download
+  title:
+    -
+      value: 'Poirot Investigates by Agatha Christie - Digital download'
+  price:
+    -
+      number: '8.000000'
+      currency_code: USD
+      formatted: $8.00
+  created:
+    -
+      value: 1648466366
+  commerce_file:
+    -
+      entity: 41a8ba08-9e16-4cb6-b345-2223ec5334d4
+      display: true
+      description: 'Poirot Investigates by Agatha Christie - Digital download'
+  license_expiration:
+    -
+      target_plugin_id: unlimited
+      target_plugin_configuration: {  }
+  license_type:
+    -
+      target_plugin_id: commerce_file
+      target_plugin_configuration: {  }

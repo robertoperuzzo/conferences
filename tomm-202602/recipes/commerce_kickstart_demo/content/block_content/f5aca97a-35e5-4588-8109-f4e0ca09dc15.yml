@@ -1,0 +1,20 @@
+_meta:
+  version: '1.0'
+  entity_type: block_content
+  uuid: f5aca97a-35e5-4588-8109-f4e0ca09dc15
+  bundle: cklb_text
+  default_langcode: en
+default:
+  status:
+    -
+      value: true
+  info:
+    -
+      value: 'Inline block'
+  reusable:
+    -
+      value: false
+  cklb_text:
+    -
+      value: "<h4>\"This is unbelievable. After using Commerce Kickstart my business skyrocketed!\"</h4>\r\n\r\n<p>★★★★★</p>\r\n\r\n<p>Bojan Živanović, customer</p>\r\n"
+      format: basic_html

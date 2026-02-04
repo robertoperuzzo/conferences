@@ -1,0 +1,88 @@
+_meta:
+  version: '1.0'
+  entity_type: commerce_product
+  uuid: 3ab8b1b5-f18d-4149-afaf-198e62188a61
+  bundle: physical
+  default_langcode: en
+  depends:
+    f812b134-42ef-4fc9-9270-66ba5183e278: commerce_store
+    ad520abc-3581-4adb-a74f-d346fed0b18e: commerce_product_variation
+    59b83b38-2e25-4c30-a964-36137b036792: file
+    eff217a7-08b8-4062-878a-878314e3cb69: file
+    11c805ee-6385-4d46-ac6f-ecfdf60373a6: file
+    e2c413ac-57bf-4b6d-9e08-ddf08ff95860: file
+    3afd82e1-9c0b-49ff-a599-90198a7a7c6b: file
+    dd15e8ce-a070-41b1-b24e-cbbcddf3f362: taxonomy_term
+    0a3e84ac-163b-4276-8e85-090aec9c3cdc: taxonomy_term
+    5f5b51cf-4d21-47d0-a5d9-620088db53f2: taxonomy_term
+default:
+  uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  stores:
+    -
+      entity: f812b134-42ef-4fc9-9270-66ba5183e278
+  title:
+    -
+      value: 'White & Wood Chair'
+  variations:
+    -
+      entity: ad520abc-3581-4adb-a74f-d346fed0b18e
+  default_variation:
+    -
+      entity: ad520abc-3581-4adb-a74f-d346fed0b18e
+  path:
+    -
+      alias: /products/white-wood-chair
+      langcode: en
+      pathauto: 1
+  created:
+    -
+      value: 1647877720
+  body:
+    -
+      value: "<p>This chair features a modern design with a white plastic bucket seat on four natural finished wooden legs. Geometric steel support bars ensure the chair can support even the heftiest of bums. Round plastic feet tip each leg to protect your floors. Optional soft fabric pads included for extra protection.</p>\r\n"
+      format: basic_html
+      summary: ''
+  images:
+    -
+      entity: 59b83b38-2e25-4c30-a964-36137b036792
+      alt: 'White & Wood Chair'
+      title: ''
+      width: 670
+      height: 630
+    -
+      entity: eff217a7-08b8-4062-878a-878314e3cb69
+      alt: 'White & Wood Chair close up '
+      title: ''
+      width: 670
+      height: 630
+    -
+      entity: 11c805ee-6385-4d46-ac6f-ecfdf60373a6
+      alt: 'White & Wood Chair'
+      title: ''
+      width: 1920
+      height: 2476
+    -
+      entity: e2c413ac-57bf-4b6d-9e08-ddf08ff95860
+      alt: 'White & Wood Chair in a room'
+      title: ''
+      width: 1920
+      height: 2880
+    -
+      entity: 3afd82e1-9c0b-49ff-a599-90198a7a7c6b
+      alt: 'White & Wood Chair next to dinning table'
+      title: ''
+      width: 1920
+      height: 2879
+  product_brand:
+    -
+      entity: dd15e8ce-a070-41b1-b24e-cbbcddf3f362
+  product_collections:
+    -
+      entity: 0a3e84ac-163b-4276-8e85-090aec9c3cdc
+    -
+      entity: 5f5b51cf-4d21-47d0-a5d9-620088db53f2

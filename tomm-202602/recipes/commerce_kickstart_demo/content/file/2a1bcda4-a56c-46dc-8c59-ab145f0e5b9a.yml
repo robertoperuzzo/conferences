@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 2a1bcda4-a56c-46dc-8c59-ab145f0e5b9a
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: jamie-street-UnKbcMUjlIw-unsplash.jpg
+  uri:
+    -
+      value: 'public://2025-10/jamie-street-UnKbcMUjlIw-unsplash.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 402435
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1759834524

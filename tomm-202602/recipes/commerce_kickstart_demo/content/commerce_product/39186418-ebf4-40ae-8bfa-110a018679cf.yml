@@ -1,0 +1,60 @@
+_meta:
+  version: '1.0'
+  entity_type: commerce_product
+  uuid: 39186418-ebf4-40ae-8bfa-110a018679cf
+  bundle: physical
+  default_langcode: en
+  depends:
+    f812b134-42ef-4fc9-9270-66ba5183e278: commerce_store
+    12bc5c9a-160c-4d97-a682-74ad31f21f3d: commerce_product_variation
+    f5bc3d87-8c2a-4090-b115-9eafb655bf72: file
+    7884f022-54f6-4c5a-bdf5-7a76c78a5a15: taxonomy_term
+    0a3e84ac-163b-4276-8e85-090aec9c3cdc: taxonomy_term
+    342c5bea-8914-43e2-8f89-74e37edac45c: taxonomy_term
+default:
+  uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  stores:
+    -
+      entity: f812b134-42ef-4fc9-9270-66ba5183e278
+  title:
+    -
+      value: '24" x 36" Hot Air Balloons'
+  variations:
+    -
+      entity: 12bc5c9a-160c-4d97-a682-74ad31f21f3d
+  default_variation:
+    -
+      entity: 12bc5c9a-160c-4d97-a682-74ad31f21f3d
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 1
+  created:
+    -
+      value: 1647878850
+  body:
+    -
+      value: "<p>Ever wish you could just float away? You're not alone. Countless enthusiasts around the world have taken to the skies with nothing but a small wicker basket beneath their feet and a flame over their heads. This print will remind you of your first flight all over again and help your refocus your life right when you feel least grounded.</p>\r\n\r\n<p>Glossy finish with a 1\" matte; no frame included.</p>\r\n"
+      format: basic_html
+      summary: ''
+  images:
+    -
+      entity: f5bc3d87-8c2a-4090-b115-9eafb655bf72
+      alt: 'Hot Air Balloons'
+      title: ''
+      width: 670
+      height: 630
+  product_brand:
+    -
+      entity: 7884f022-54f6-4c5a-bdf5-7a76c78a5a15
+  product_collections:
+    -
+      entity: 0a3e84ac-163b-4276-8e85-090aec9c3cdc
+    -
+      entity: 342c5bea-8914-43e2-8f89-74e37edac45c

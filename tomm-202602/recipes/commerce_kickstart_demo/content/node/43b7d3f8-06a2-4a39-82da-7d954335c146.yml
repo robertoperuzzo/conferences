@@ -1,0 +1,62 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 43b7d3f8-06a2-4a39-82da-7d954335c146
+  bundle: article
+  default_langcode: en
+  depends:
+    d08a1f95-053a-4020-aa2b-65757efbf6cb: file
+    934aa2bb-d962-4ef7-9e2f-031b607d7260: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Five Classic Reads to Add to Your List'
+  created:
+    -
+      value: 1759508950
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /blog/books/five-classic-reads-add-your-list
+      langcode: en
+      pathauto: 1
+  body:
+    -
+      value: '<p>When it comes to building a reading list that will never go out of style, classics are always a safe choice. They’ve been read and reread for generations, each time offering something new to the reader. Consider <a href="/products/tale-two-cities-charles-dickens"><em>A Tale of Two Cities</em></a> by Charles Dickens, a novel that captures love, sacrifice, and redemption against the backdrop of the French Revolution. Then there’s <a href="/products/alices-adventures-wonderland-lewis-carroll"><em>Alice’s Adventures in Wonderland</em></a> by Lewis Carroll, an imaginative journey that still sparks wonder for both children and adults.</p><p>For those who enjoy exploring themes of creation and responsibility, <a href="/products/frankenstein-mary-wollstonecraft-shelley"><em>Frankenstein</em></a> by Mary Shelley is a groundbreaking story that mixes gothic horror with questions about humanity. Victor Hugo’s <a href="/products/notre-dame-de-paris-victor-hugo"><em>Notre-Dame de Paris</em></a> brings to life the majesty of medieval Paris while telling a story of tragedy and resilience. Finally, <a href="/products/adventures-sherlock-holmes-arthur-conan-doyle"><em>The Adventures of Sherlock Holmes</em></a> by Arthur Conan Doyle invites readers into a world of clever deductions, mysteries, and unforgettable characters.</p><p>Each of these works has endured because they continue to speak to readers across time. They’re not just important historically — they’re deeply enjoyable stories that remind us of the power of literature to connect, challenge, and inspire.</p>'
+      format: basic_html
+      summary: 'Some books never lose their power. These five titles have inspired readers for generations. Each one offers a story that still feels alive today.'
+  comment:
+    -
+      status: 2
+      cid: 0
+      last_comment_timestamp: 1759422674
+      last_comment_name: ''
+      last_comment_uid: 1
+      comment_count: 0
+  field_image:
+    -
+      entity: d08a1f95-053a-4020-aa2b-65757efbf6cb
+      alt: 'Five Classic Reads to Add to Your List'
+      title: ''
+      width: 1920
+      height: 1280
+  field_tags:
+    -
+      entity: 934aa2bb-d962-4ef7-9e2f-031b607d7260

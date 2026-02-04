@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 3afd82e1-9c0b-49ff-a599-90198a7a7c6b
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: ron-mcclenny-SOTWYAgjhlE-unsplash.jpg
+  uri:
+    -
+      value: 'public://2025-10/ron-mcclenny-SOTWYAgjhlE-unsplash.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 403403
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1759834980

@@ -1,0 +1,63 @@
+_meta:
+  version: '1.0'
+  entity_type: commerce_product
+  uuid: 936c05e0-0102-4cd2-a0dd-6da55e21d12b
+  bundle: media
+  default_langcode: en
+  depends:
+    f812b134-42ef-4fc9-9270-66ba5183e278: commerce_store
+    b3d9811a-3bad-4ab0-9f94-2e2a37001ca4: commerce_product_variation
+    5c7706f7-f6d6-4cec-8b13-fd094d500a0e: commerce_product_variation
+    cbed76ad-b537-4ea1-8aba-a52865b8b556: file
+    4d5d9879-ab5d-45e8-b278-240f479845b1: taxonomy_term
+    5581e5e6-6145-44e4-8da6-51d5f22497a8: taxonomy_term
+    08e5c462-8ed8-4c6a-b1dc-13e9b52f1aa4: taxonomy_term
+default:
+  uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  stores:
+    -
+      entity: f812b134-42ef-4fc9-9270-66ba5183e278
+  title:
+    -
+      value: 'Frankenstein by Mary Wollstonecraft Shelley'
+  variations:
+    -
+      entity: b3d9811a-3bad-4ab0-9f94-2e2a37001ca4
+    -
+      entity: 5c7706f7-f6d6-4cec-8b13-fd094d500a0e
+  default_variation:
+    -
+      entity: b3d9811a-3bad-4ab0-9f94-2e2a37001ca4
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 1
+  created:
+    -
+      value: 1648462847
+  body:
+    -
+      value: "<p>Author:&nbsp;Shelley, Mary Wollstonecraft, 1797-1851</p>\r\n\r\n<p>Title: Frankenstein</p>\r\n\r\n<p>Language: English</p>\r\n\r\n<p>Original release date:&nbsp;January 1, 1818</p>\r\n\r\n<p>This book is available in hard copy and as digital download.</p>\r\n"
+      format: basic_html
+      summary: ''
+  images:
+    -
+      entity: cbed76ad-b537-4ea1-8aba-a52865b8b556
+      alt: 'Frankenstein by Mary Wollstonecraft Shelley'
+      title: ''
+      width: 2718
+      height: 2480
+  product_brand:
+    -
+      entity: 4d5d9879-ab5d-45e8-b278-240f479845b1
+  product_collections:
+    -
+      entity: 5581e5e6-6145-44e4-8da6-51d5f22497a8
+    -
+      entity: 08e5c462-8ed8-4c6a-b1dc-13e9b52f1aa4

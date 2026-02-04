@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: adb9a461-2a5a-4449-ab39-3ec102661dc4
+  bundle: product_collections
+  default_langcode: en
+  depends:
+    0a3e84ac-163b-4276-8e85-090aec9c3cdc: taxonomy_term
+default:
+  status:
+    -
+      value: true
+  name:
+    -
+      value: Decor
+  weight:
+    -
+      value: 0
+  parent:
+    -
+      entity: 0a3e84ac-163b-4276-8e85-090aec9c3cdc
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0

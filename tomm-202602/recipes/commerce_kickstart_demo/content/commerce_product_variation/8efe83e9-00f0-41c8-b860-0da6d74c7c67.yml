@@ -1,0 +1,45 @@
+_meta:
+  version: '1.0'
+  entity_type: commerce_product_variation
+  uuid: 8efe83e9-00f0-41c8-b860-0da6d74c7c67
+  bundle: media_license_download
+  default_langcode: en
+  depends:
+    0c05e948-66bd-4690-98c1-0c4e6f5ba26e: file
+default:
+  uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  sku:
+    -
+      value: book-sherlock-holmes-digital-download
+  title:
+    -
+      value: 'The Adventures of Sherlock Holmes by Arthur Conan Doyle - Digital download'
+  price:
+    -
+      number: '10.000000'
+      currency_code: USD
+      formatted: $10.00
+  created:
+    -
+      value: 1648463989
+  commerce_file:
+    -
+      entity: 0c05e948-66bd-4690-98c1-0c4e6f5ba26e
+      display: true
+      description: 'The Adventures of Sherlock Holmes by Arthur Conan Doyle - Digital download'
+  license_expiration:
+    -
+      target_plugin_id: rolling_interval
+      target_plugin_configuration:
+        interval:
+          interval: '30'
+          period: day
+  license_type:
+    -
+      target_plugin_id: commerce_file
+      target_plugin_configuration: {  }

@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 716becbe-2bcf-41ae-a57b-800e137e5f20
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: '(Urban Threads) Cocoa Fedora.jpg'
+  uri:
+    -
+      value: 'public://2022-03/(Urban Threads) Cocoa Fedora.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 164793
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1647871831

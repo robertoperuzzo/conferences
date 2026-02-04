@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: 3919bf43-38a0-44f8-8302-0d7ffc685679
+  bundle: product_collections
+  default_langcode: en
+  depends:
+    077bc143-7067-4b4e-aa0b-adec28b9d26f: taxonomy_term
+default:
+  status:
+    -
+      value: true
+  name:
+    -
+      value: Beauty
+  weight:
+    -
+      value: 0
+  parent:
+    -
+      entity: 077bc143-7067-4b4e-aa0b-adec28b9d26f
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0

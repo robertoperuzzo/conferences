@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 1db5db72-e636-4ef2-905b-99271aed2292
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: junko-nakase-Q-72wa9-7Dg-unsplash.jpg
+  uri:
+    -
+      value: 'public://2025-10/junko-nakase-Q-72wa9-7Dg-unsplash.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 1371156
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1759418661

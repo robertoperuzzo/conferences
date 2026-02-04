@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: b923346b-c7c4-4bae-af93-df311ac3b6e1
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: christopher-machicoane-hurtaud-j7g73KSHeZo-unsplash.jpg
+  uri:
+    -
+      value: 'public://2025-10/christopher-machicoane-hurtaud-j7g73KSHeZo-unsplash.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 227667
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1759492574

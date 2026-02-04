@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 5fd20e0b-e70a-4628-830c-ed269da7df09
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: 'Flowers Print - 2.jpg'
+  uri:
+    -
+      value: 'public://2022-03/Flowers Print - 2.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 106317
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1647878371

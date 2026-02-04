@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 959633e3-7418-493c-bb6b-1d1922bc756a
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: florencia-viadana-1J8k0qqUfYY-unsplash.jpg
+  uri:
+    -
+      value: 'public://2025-10/florencia-viadana-1J8k0qqUfYY-unsplash.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 482919
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1759423274

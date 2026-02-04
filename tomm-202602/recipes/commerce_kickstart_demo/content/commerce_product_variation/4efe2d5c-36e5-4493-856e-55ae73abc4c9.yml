@@ -1,0 +1,31 @@
+_meta:
+  version: '1.0'
+  entity_type: commerce_product_variation
+  uuid: 4efe2d5c-36e5-4493-856e-55ae73abc4c9
+  bundle: physical
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  sku:
+    -
+      value: blkchr
+  title:
+    -
+      value: 'Elegant Mesh Lounge Chair'
+  price:
+    -
+      number: '300.000000'
+      currency_code: USD
+      formatted: $300.00
+  created:
+    -
+      value: 1759843057
+  weight:
+    -
+      number: '8.000000'
+      unit: kg
