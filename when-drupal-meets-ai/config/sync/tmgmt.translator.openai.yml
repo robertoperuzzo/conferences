@@ -1,0 +1,29 @@
+uuid: 0eb147be-26a9-4981-b41a-8b8b00b22066
+langcode: en
+status: true
+dependencies:
+  module:
+    - tmgmt_openai
+name: openai
+label: OpenAI
+description: 'OpenAI Translator service.'
+auto_accept: false
+weight: null
+plugin: openai
+settings:
+  openai_api_service: openai
+  openai_api_key: 'Overwritten in settings.php'
+  openai_api_org: 'Overwritten in settings.php'
+  openai_api_base_url: ''
+  openai_api_version: ''
+  openai:
+    prompt: 'Translate from %source% into %target% language'
+    model: gpt-3.5-turbo
+    temperature: '0.7'
+    max_tokens: '4096'
+    top_p: '1'
+    frequency_penalty: '0'
+    presence_penalty: '1'
+remote_languages_mappings:
+  en: en
+  it: it

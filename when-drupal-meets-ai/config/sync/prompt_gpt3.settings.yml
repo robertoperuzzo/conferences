@@ -1,0 +1,8 @@
+secret_key: 'Overwritten in settings.php'
+model: text-davinci-003
+temperature: '0.7'
+max_tokens: '256'
+top_p: '1'
+frequency_penalty: '0'
+presence_penalty: '0'
+best_of: '1'

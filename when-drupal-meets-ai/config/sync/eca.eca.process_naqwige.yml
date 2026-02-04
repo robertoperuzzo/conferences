@@ -1,0 +1,52 @@
+uuid: ddca7a9b-c92e-4bcc-8ba0-4cbb38d677e6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.article.body
+    - field.field.node.page.body
+    - field.storage.node.body
+  module:
+    - eca_content
+    - prompt
+id: process_naqwige
+modeller: bpmn_io
+label: noname
+version: ''
+weight: null
+events:
+  Event_1p7agex:
+    plugin: 'content_entity:presave'
+    label: 'Content pre-save'
+    configuration:
+      type: 'node _all'
+    successors:
+      -
+        id: Activity_1v9v025
+        condition: ''
+      -
+        id: Activity_08v2jbp
+        condition: ''
+conditions: {  }
+gateways: {  }
+actions:
+  Activity_1v9v025:
+    plugin: prompt_set_field_value
+    label: 'Summarize the body'
+    configuration:
+      prompt_id: article_summarize
+      field_name: body.summary
+      field_value: null
+      method: 'set:clear'
+      strip_tags: false
+      trim: false
+      save_entity: false
+      object: ''
+    successors: {  }
+  Activity_08v2jbp:
+    plugin: action_message_action
+    label: 'Debug message'
+    configuration:
+      replace_tokens: false
+      message: 'Current node [node:nid]'
+    successors: {  }

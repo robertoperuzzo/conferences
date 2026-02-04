@@ -1,0 +1,49 @@
+display:
+  default:
+    display_title: Predefinito
+    display_options:
+      title: Log
+      fields:
+        name:
+          label: Utente
+          separator: ', '
+        timestamp:
+          label: 'Data e ora'
+        message:
+          label: Messaggio
+        variables:
+          label: Token
+      pager:
+        options:
+          tags:
+            next: ››
+            previous: ‹‹
+            first: '« Prima'
+            last: 'Ultima »'
+          expose:
+            items_per_page_label: 'Voci per pagina'
+            items_per_page_options_all_label: '- Tutto -'
+            offset_label: Scostamento
+      exposed_form:
+        options:
+          submit_button: Applica
+          reset_button_label: Ripristina
+          exposed_sorts_label: 'Ordina per'
+          sort_asc_label: Asc
+          sort_desc_label: Disc
+      filters:
+        timestamp:
+          expose:
+            label: Da
+        timestamp_1:
+          expose:
+            label: A
+  page_1:
+    display_title: Pagina
+    display_options:
+      menu:
+        title: Log
+  page_2:
+    display_options:
+      menu:
+        title: Log

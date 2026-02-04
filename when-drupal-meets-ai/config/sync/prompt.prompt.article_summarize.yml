@@ -1,0 +1,17 @@
+uuid: cb19f82a-3cab-4126-b91c-36e411b33833
+langcode: en
+status: true
+dependencies: {  }
+id: article_summarize
+label: 'Article summarize'
+description: 'Summarize the article body.'
+weight: 0
+prompt_text: 'Could you summarize the text [node:body] in 300 chars?'
+field_values_text: ''
+join_chunks_prompt_text: ''
+max_lenght: 1000
+max_number_times: 0
+type: gpt3
+generate_chunks: false
+join_chunks: false
+override_config: '0'

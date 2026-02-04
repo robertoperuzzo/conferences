@@ -1,0 +1,103 @@
+uuid: e6e40039-7303-42e3-ba40-beeb53328252
+langcode: en
+status: true
+dependencies:
+  config:
+    - eca.eca.eca_with_ai
+id: eca_with_ai
+label: 'When AI meets Drupal'
+tags:
+  - untagged
+documentation: ''
+filename: ''
+modeldata: |
+  <?xml version="1.0" encoding="UTF-8"?>
+  <bpmn2:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:camunda="http://camunda.org/schema/1.0/bpmn" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:qa="http://some-company/schema/bpmn/qa" id="sample-diagram" targetNamespace="http://bpmn.io/schema/bpmn" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd">
+    <bpmn2:process id="eca_with_ai" name="When AI meets Drupal" isExecutable="true" camunda:versionTag="v1">
+      <bpmn2:startEvent id="Event_1p7agex" name="Content pre-save" camunda:modelerTemplate="org.drupal.event.content_entity:presave">
+        <bpmn2:extensionElements>
+          <camunda:properties>
+            <camunda:property name="pluginid" value="content_entity:presave" />
+          </camunda:properties>
+          <camunda:field name="type">
+            <camunda:string>node _all</camunda:string>
+          </camunda:field>
+        </bpmn2:extensionElements>
+        <bpmn2:outgoing>Flow_1k6bz4v</bpmn2:outgoing>
+        <bpmn2:outgoing>Flow_1bl55jg</bpmn2:outgoing>
+      </bpmn2:startEvent>
+      <bpmn2:task id="Activity_1v9v025" name="Summarize the body" camunda:modelerTemplate="org.drupal.action.prompt_set_field_value">
+        <bpmn2:extensionElements>
+          <camunda:properties>
+            <camunda:property name="pluginid" value="prompt_set_field_value" />
+          </camunda:properties>
+          <camunda:field name="method">
+            <camunda:string>set:clear</camunda:string>
+          </camunda:field>
+          <camunda:field name="strip_tags">
+            <camunda:string>no</camunda:string>
+          </camunda:field>
+          <camunda:field name="trim">
+            <camunda:string>no</camunda:string>
+          </camunda:field>
+          <camunda:field name="field_name">
+            <camunda:string>body.summary</camunda:string>
+          </camunda:field>
+          <camunda:field name="save_entity">
+            <camunda:string>no</camunda:string>
+          </camunda:field>
+          <camunda:field name="prompt_id">
+            <camunda:string>article_summarize</camunda:string>
+          </camunda:field>
+          <camunda:field name="object">
+            <camunda:string></camunda:string>
+          </camunda:field>
+        </bpmn2:extensionElements>
+        <bpmn2:incoming>Flow_1k6bz4v</bpmn2:incoming>
+      </bpmn2:task>
+      <bpmn2:sequenceFlow id="Flow_1k6bz4v" sourceRef="Event_1p7agex" targetRef="Activity_1v9v025" />
+      <bpmn2:task id="Activity_08v2jbp" name="Debug message" camunda:modelerTemplate="org.drupal.action.action_message_action">
+        <bpmn2:extensionElements>
+          <camunda:properties>
+            <camunda:property name="pluginid" value="action_message_action" />
+          </camunda:properties>
+          <camunda:field name="message">
+            <camunda:string>Current node [node:nid]</camunda:string>
+          </camunda:field>
+          <camunda:field name="replace_tokens">
+            <camunda:string>no</camunda:string>
+          </camunda:field>
+        </bpmn2:extensionElements>
+        <bpmn2:incoming>Flow_1bl55jg</bpmn2:incoming>
+      </bpmn2:task>
+      <bpmn2:sequenceFlow id="Flow_1bl55jg" sourceRef="Event_1p7agex" targetRef="Activity_08v2jbp" />
+    </bpmn2:process>
+    <bpmndi:BPMNDiagram id="sid-e7d5f494-4f17-41c9-b525-9905c74b8baf">
+      <bpmndi:BPMNPlane id="sid-ab6fbe5c-dcc5-4756-9329-9f15a1a79a4a" bpmnElement="eca_with_ai">
+        <bpmndi:BPMNShape id="Event_1p7agex_di" bpmnElement="Event_1p7agex">
+          <dc:Bounds x="282" y="162" width="36" height="36" />
+          <bpmndi:BPMNLabel>
+            <dc:Bounds x="258" y="205" width="85" height="14" />
+          </bpmndi:BPMNLabel>
+        </bpmndi:BPMNShape>
+        <bpmndi:BPMNShape id="Activity_1v9v025_di" bpmnElement="Activity_1v9v025">
+          <dc:Bounds x="370" y="140" width="100" height="80" />
+          <bpmndi:BPMNLabel />
+        </bpmndi:BPMNShape>
+        <bpmndi:BPMNShape id="Activity_08v2jbp_di" bpmnElement="Activity_08v2jbp">
+          <dc:Bounds x="370" y="250" width="100" height="80" />
+          <bpmndi:BPMNLabel />
+        </bpmndi:BPMNShape>
+        <bpmndi:BPMNEdge id="Flow_1k6bz4v_di" bpmnElement="Flow_1k6bz4v">
+          <di:waypoint x="318" y="180" />
+          <di:waypoint x="370" y="180" />
+        </bpmndi:BPMNEdge>
+        <bpmndi:BPMNEdge id="Flow_1bl55jg_di" bpmnElement="Flow_1bl55jg">
+          <di:waypoint x="318" y="180" />
+          <di:waypoint x="340" y="180" />
+          <di:waypoint x="340" y="290" />
+          <di:waypoint x="370" y="290" />
+        </bpmndi:BPMNEdge>
+      </bpmndi:BPMNPlane>
+    </bpmndi:BPMNDiagram>
+  </bpmn2:definitions>
