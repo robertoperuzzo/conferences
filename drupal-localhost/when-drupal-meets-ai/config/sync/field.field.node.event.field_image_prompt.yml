@@ -1,0 +1,35 @@
+uuid: 67059e8b-f605-4f9f-8f44-6eb784df4648
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image_prompt
+    - node.type.event
+  module:
+    - ai_interpolator
+third_party_settings:
+  ai_interpolator:
+    interpolator_enabled: 1
+    interpolator_rule: ai_interpolator_openai_string_long
+    interpolator_mode: base
+    interpolator_base_field: field_description
+    interpolator_prompt: "Create a descriptive and vivid image description of an event connected to the context. Describe what is happening and the scene in detail. Keep it on 200 characters.\r\n\r\nContext:\r\n{{ context }}"
+    interpolator_token: ''
+    interpolator_edit_mode: 0
+    interpolator_weight: '100'
+    interpolator_worker_type: batch
+    interpolator_openai_model: gpt-3.5-turbo
+    interpolator_openai_role: ''
+    interpolator_openai_moderation: 1
+id: node.event.field_image_prompt
+field_name: field_image_prompt
+entity_type: node
+bundle: event
+label: 'Image prompt'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

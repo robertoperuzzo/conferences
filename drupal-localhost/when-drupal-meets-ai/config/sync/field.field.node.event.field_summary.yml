@@ -1,0 +1,39 @@
+uuid: 4e2a0f4a-61bc-4025-a0fd-bd98f9007b07
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_summary
+    - filter.format.basic_html
+    - node.type.event
+  module:
+    - ai_interpolator
+    - text
+third_party_settings:
+  ai_interpolator:
+    interpolator_enabled: 1
+    interpolator_rule: ai_interpolator_openai_text_long
+    interpolator_mode: base
+    interpolator_base_field: field_description
+    interpolator_prompt: "Based on the context text create a summary of 200-300 characters.\r\n\r\nContext:\r\n{{ context }} "
+    interpolator_token: ''
+    interpolator_edit_mode: 0
+    interpolator_weight: '100'
+    interpolator_worker_type: batch
+    interpolator_openai_model: gpt-3.5-turbo
+    interpolator_openai_role: ''
+    interpolator_openai_moderation: 1
+id: node.event.field_summary
+field_name: field_summary
+entity_type: node
+bundle: event
+label: Summary
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+field_type: text_long

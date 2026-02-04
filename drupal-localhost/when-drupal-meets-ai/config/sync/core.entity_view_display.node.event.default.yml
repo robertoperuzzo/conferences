@@ -1,0 +1,62 @@
+uuid: 4b7e4c7d-c8f8-4739-8198-a3d9acd57cb2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.event.ai_interpolator_status
+    - field.field.node.event.field_description
+    - field.field.node.event.field_image
+    - field.field.node.event.field_image_prompt
+    - field.field.node.event.field_summary
+    - image.style.wide
+    - node.type.event
+  module:
+    - image
+    - text
+    - user
+id: node.event.default
+targetEntityType: node
+bundle: event
+mode: default
+content:
+  field_description:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: wide
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: -1
+    region: content
+  field_image_prompt:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_summary:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  ai_interpolator_status: true
+  langcode: true
+  search_api_excerpt: true

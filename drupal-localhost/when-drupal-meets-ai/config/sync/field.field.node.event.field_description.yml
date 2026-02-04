@@ -1,0 +1,28 @@
+uuid: 8f7e0891-2c50-476d-8b60-87bec166c12e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_description
+    - filter.format.basic_html
+    - node.type.event
+  module:
+    - ai_interpolator
+    - text
+third_party_settings:
+  ai_interpolator:
+    interpolator_enabled: false
+id: node.event.field_description
+field_name: field_description
+entity_type: node
+bundle: event
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+field_type: text_long

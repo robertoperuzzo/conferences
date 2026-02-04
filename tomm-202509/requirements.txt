@@ -1,0 +1,54 @@
+# Core framework dependencies
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+pydantic>=2.5.0
+python-multipart>=0.0.6
+
+# Data processing and chunking
+unstructured[pdf]
+langchain
+langchain-community
+langchain-experimental
+langchain-huggingface
+langchain-text-splitters
+sentence-transformers>=2.2.2
+tiktoken>=0.5.1
+
+# Search and indexing
+typesense>=1.1.1
+
+# PDF processing
+pypdf>=6.0.0
+pymupdf>=1.23.8
+pdfplumber>=0.10.3
+
+# Advanced PDF processing with AI/ML capabilities
+marker-pdf>=1.8.0
+torch>=2.0.0
+
+# Multi-format document processing with LLM-optimized output
+markitdown[all]>=0.1.3
+
+# Data manipulation
+requests>=2.31.0
+aiohttp>=3.9.1
+
+# Development and testing
+pytest>=7.4.3
+pytest-asyncio>=0.21.1
+black>=23.11.0
+flake8>=6.1.0
+pylint>=3.0.3
+
+# Environment and configuration
+numpy>=2.3.0
+python-dotenv>=1.0.0
+pyyaml>=6.0.1
+
+# Progress bars and utilities
+tqdm>=4.66.1
+rich>=13.7.0
+
+# Async processing
+asyncio>=3.4.3
+aiofiles>=23.2.1

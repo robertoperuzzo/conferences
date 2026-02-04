@@ -1,0 +1,78 @@
+services:
+  # Development container
+  dev:
+    build:
+      context: .
+      dockerfile: .devcontainer/Dockerfile
+    volumes:
+      - .:/workspace:cached
+      - /var/run/docker.sock:/var/run/docker.sock
+    command: sleep infinity
+    networks:
+      - chunker-demo
+    environment:
+      - TYPESENSE_HOST=typesense
+      - TYPESENSE_PORT=8108
+      - TYPESENSE_PROTOCOL=http
+      - TYPESENSE_API_KEY=xyz
+
+  # Typesense search engine
+  typesense:
+    image: typesense/typesense:29.0
+    restart: on-failure
+    ports:
+      - "8108:8108"
+    volumes:
+      - typesense-data:/data
+    command: "--data-dir /data --api-key=xyz --listen-port 8108 --enable-cors"
+    networks:
+      - chunker-demo
+
+  # Typesense Dashboard
+  typesensedashboard:
+    image: ghcr.io/bfritscher/typesense-dashboard:latest
+    restart: on-failure
+    ports:
+      - "8110:80"
+    depends_on:
+      - typesense
+    networks:
+      - chunker-demo
+
+  # Backend API (will be used later)
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    depends_on:
+      - typesense
+    environment:
+      - TYPESENSE_HOST=typesense
+      - TYPESENSE_PORT=8108
+      - TYPESENSE_PROTOCOL=http
+      - TYPESENSE_API_KEY=xyz
+    networks:
+      - chunker-demo
+    profiles:
+      - production
+
+  # Frontend - Vanilla JS with nginx
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "3000:80"
+    depends_on:
+      - typesense
+    networks:
+      - chunker-demo
+
+volumes:
+  typesense-data:
+
+networks:
+  chunker-demo:
+    driver: bridge

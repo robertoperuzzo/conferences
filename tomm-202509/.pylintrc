@@ -1,0 +1,12 @@
+[MASTER]
+# Ensure pylint can resolve the project's src package layout during static analysis
+init-hook='import sys, os; sys.path.insert(0, os.path.abspath("src"))'
+
+[FORMAT]
+max-line-length=100
+
+[MESSAGES CONTROL]
+disable=
+    C0114,  # missing-module-docstring
+    C0115,  # missing-class-docstring
+    C0116   # missing-function-docstring

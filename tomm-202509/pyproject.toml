@@ -1,0 +1,18 @@
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+markers = [
+    "slow: marks tests as slow (deselect with '-m \"not slow\"')"
+]
+addopts = [
+    "-v",
+    "--tb=short",
+    "-m", "not slow"
+]
+filterwarnings = [
+    "ignore::pydantic.warnings.PydanticDeprecatedSince20",
+    "ignore:Support for class-based `config` is deprecated:DeprecationWarning",
+    "ignore:.*PydanticDeprecatedSince20.*:DeprecationWarning"
+]

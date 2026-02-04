@@ -1,0 +1,52 @@
+uuid: c2f85231-a80c-4f7a-8996-2913eafb698f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image
+    - node.type.event
+  module:
+    - ai_interpolator
+    - image
+third_party_settings:
+  ai_interpolator:
+    interpolator_enabled: 1
+    interpolator_rule: ai_interpolator_dreamstudio_image
+    interpolator_image_dreamstudio_amount: '1'
+    interpolator_mode: base
+    interpolator_base_field: field_image_prompt
+    interpolator_prompt: '{{ context }}, realistic, Canon EOS, shallow field of depth'
+    interpolator_token: ''
+    interpolator_edit_mode: 0
+    interpolator_weight: '101'
+    interpolator_worker_type: batch
+    interpolator_dreamstudio_engine: stable-diffusion-512-v2-0
+id: node.event.field_image
+field_name: field_image
+entity_type: node
+bundle: event
+label: Image
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: false
+  alt_field_required: false
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+field_type: image

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Search - Chunking Strategy Comparison</title>
+    
+    <!-- Simple favicon to avoid 404 -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔍</text></svg>">
+    
+    <!-- Algolia InstantSearch Base Styles -->
+    <link 
+        rel="stylesheet" 
+        href="https://cdn.jsdelivr.net/npm/instantsearch.css@8.5.1/themes/reset-min.css"
+    />
+    <link 
+        rel="stylesheet" 
+        href="https://cdn.jsdelivr.net/npm/instantsearch.css@8.5.1/themes/satellite-min.css"
+    />
+    
+    <!-- InstantSearch.js -->
+    <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@4.63.0/dist/instantsearch.production.min.js"></script>
+    
+    <!-- Typesense InstantSearch Adapter -->
+    <script src="https://cdn.jsdelivr.net/npm/typesense-instantsearch-adapter@2.8.0/dist/typesense-instantsearch-adapter.min.js"></script>
+    
+    <!-- Custom Grid and Layout Styles -->
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <h1>Document Comparison by Chunking Strategy</h1>
+            <p>Find relevant documents and compare how different chunking strategies process them</p>
+        </header>
+
+        <div id="searchbox-container">
+            <div id="searchbox"></div>
+        </div>
+
+        <div id="search-results-container">
+            <div class="facets-container">
+                <div id="stats"></div>
+            </div>
+
+            <div class="search-results-list">
+                <div class="results-grid">
+                    <div class="column">
+                        <h3>Fixed Size</h3>
+                        <div id="hits-fixed"></div>
+                    </div>
+                    <div class="column">
+                        <h3>Semantic</h3>
+                        <div id="hits-semantic"></div>
+                    </div>
+                    <div class="column">
+                        <h3>Sliding (LangChain)</h3>
+                        <div id="hits-sliding-lc"></div>
+                    </div>
+                    <div class="column">
+                        <h3>Sliding (Unstructured)</h3>
+                        <div id="hits-sliding-un"></div>
+                    </div>
+                </div>
+
+                <div id="pagination"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Load the JavaScript application -->
+    <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+uuid: 8b60c3a1-7758-4b8d-a074-6d60cd42f4cc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tags
+    - node.type.article
+    - taxonomy.vocabulary.tags
+  module:
+    - ai_interpolator
+third_party_settings:
+  ai_interpolator:
+    interpolator_enabled: 1
+    interpolator_rule: ai_interpolator_openai_taxonomy
+    interpolator_mode: base
+    interpolator_base_field: title
+    interpolator_prompt: "Based on the context text choose up the {{ max_amount }} categories from the category context that fits the text.\r\n\r\nCategory options:\r\n{{ value_options_comma }}\r\n\r\nContext:\r\n{{ context }}"
+    interpolator_token: ''
+    interpolator_edit_mode: 0
+    interpolator_weight: '100'
+    interpolator_worker_type: direct
+    interpolator_openai_model: gpt-3.5-turbo
+    interpolator_openai_role: ''
+    interpolator_openai_moderation: 1
+_core:
+  default_config_hash: QdUgf_beeoaPiyKorFv0q1fcJpWH_uZTqe_xoVJacrw
+id: node.article.field_tags
+field_name: field_tags
+entity_type: node
+bundle: article
+label: Tags
+description: 'Enter a comma-separated list. For example: Amsterdam, Mexico City, "Cleveland, Ohio"'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tags: tags
+    sort:
+      field: _none
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

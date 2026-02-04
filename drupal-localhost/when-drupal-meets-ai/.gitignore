@@ -1,0 +1,36 @@
+# Drupal
+/vendor/
+.editorconfig
+.gitattributes
+/web/.csslintrc
+/web/.eslintignore
+/web/.eslintrc.json
+/web/.ht.router.php
+/web/robots.txt
+/web/.htaccess
+/web/core
+/web/autoload.php
+/web/example.gitignore
+/web/index.php
+/web/sites/*/files
+/web/sites/*/private
+/web/sites/default/default.settings.php
+/web/sites/default/default.services.yml
+/web/sites/default/settings.local.php
+/web/sites/development.services.yml
+/web/sites/example*
+/web/update.php
+/web/web.config
+/web/*/contrib
+/web/INSTALL.txt
+/web/README.txt
+/web/README.md
+/web/modules/README.txt
+/web/profiles/README.txt
+/web/sites/README.txt
+/web/themes/README.txt
+/web/sites/simpletest
+
+# IDE
+/.idea
+

@@ -1,0 +1,44 @@
+uuid: 31068c87-e1c4-497b-a977-f30b0395c572
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.event.ai_interpolator_status
+    - field.field.node.event.field_description
+    - field.field.node.event.field_image
+    - field.field.node.event.field_image_prompt
+    - field.field.node.event.field_summary
+    - image.style.medium
+    - node.type.event
+  module:
+    - image
+    - user
+id: node.event.teaser
+targetEntityType: node
+bundle: event
+mode: teaser
+content:
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: content
+      image_style: medium
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: -1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  ai_interpolator_status: true
+  field_description: true
+  field_image_prompt: true
+  field_summary: true
+  langcode: true
+  search_api_excerpt: true

@@ -1,0 +1,12 @@
+uuid: b4da267c-1fcd-4e0f-99a6-5214148b7edf
+langcode: en
+status: true
+dependencies:
+  module:
+    - search_api_pinecone
+id: pinecone
+name: Pinecone
+description: 'The Pinecone test server.'
+backend: search_api_pinecone
+backend_config:
+  namespace: ''

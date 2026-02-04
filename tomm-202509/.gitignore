@@ -1,0 +1,103 @@
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+*.egg
+MANIFEST
+.installed.cfg
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.python-version
+
+# IDE
+.vscode/settings.json
+.vscode/launch.json
+.vscode/extensions.json
+.vscode/
+.idea/
+*.iml
+*.swp
+*.swo
+*~
+.history/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Data files (exclude large datasets but keep structure)
+data/raw/*.pdf
+data/raw/*.zip
+data/processed/*.json
+data/chunks/*.json
+pdfs/
+typesense-data/
+static/
+plugins/
+/data/
+chunk_experiment_results.json
+
+# Logs
+logs/*.log
+*.log
+
+# Node.js (for frontend)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+.yarn-integrity
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+
+# Testing and coverage
+.pytest_cache/
+.mypy_cache/
+.tox/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+nosetests.xml
+*.cover
+*.py,cover
+.hypothesis/
+
+# Environment variables
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local

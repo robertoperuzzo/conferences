@@ -1,0 +1,22 @@
+uuid: 94b82866-f349-4730-94a7-0bf0e2741d6b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.ai_interpolator_status
+    - node.type.event
+  module:
+    - options
+id: node.event.ai_interpolator_status
+field_name: ai_interpolator_status
+entity_type: node
+bundle: event
+label: 'AI Interpolator Status'
+description: ''
+required: true
+translatable: true
+default_value:
+  - pending
+default_value_callback: ''
+settings: {  }
+field_type: list_string
