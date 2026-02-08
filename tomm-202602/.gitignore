@@ -27,3 +27,6 @@
 # Ignore .env files as they are personal
 /.env
 
+# Ignore Visual Studio Code settings
+/.vscode
+

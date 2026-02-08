@@ -85,9 +85,11 @@
         "drupal/layout_builder_restrictions": "^3.0",
         "drupal/recipe_tracker": "^1",
         "drupal/search_api": "^1.38",
+        "drupal/search_api_typesense": "1.0.x-dev",
         "drupal/section_library": "^1",
         "drupal/symfony_mailer": "^1.2",
         "drupal/token": "^1.15",
+        "drupal/tool": "^1.0@alpha",
         "drush/drush": "^13",
         "furf/jquery-ui-touch-punch": "0.2.3",
         "oomphinc/composer-installers-extender": "^2.0",
@@ -127,6 +129,9 @@
     "extra": {
         "composer-exit-on-patch-failure": true,
         "patches": {
+            "drupal/search_api_typesense": {
+                "Implement RAG Tools for AI Agents": "https://git.drupalcode.org/project/search_api_typesense/-/merge_requests/58.diff"
+            }
         },
         "patchLevel": {
             "drupal/core": "-p2",
