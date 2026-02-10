@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\drupalcamp_rome\Plugin\AiFunctionCall;
+namespace Drupal\chatbot_demo\Plugin\AiFunctionCall;
 
 use Drupal\ai\Attribute\FunctionCall;
 use Drupal\ai\Base\FunctionCallBase;
@@ -20,11 +20,11 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
  * Plugin to add a product to the shopping cart.
  */
 #[FunctionCall(
-  id: 'drupalcamp_rome:add_to_cart',
+  id: 'chatbot_demo:add_to_cart',
   function_name: 'add_to_cart',
   name: 'Add Product to Cart',
   description: 'Adds a product to the shopping cart by product variation SKU or UUID.',
-  group: 'drupalcamp_rome',
+  group: 'sparkfabrik',
   context_definitions: [
     'sku' => new ContextDefinition(
       data_type: 'string',

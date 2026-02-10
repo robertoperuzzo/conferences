@@ -1,0 +1,157 @@
+uuid: 10dfc84c-a0b2-4ddb-93a5-b05a929160d9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.commerce_product.body
+    - field.storage.commerce_product.product_brand
+    - field.storage.commerce_product.product_collections
+    - field.storage.commerce_product.product_tags
+    - search_api.server.typesense
+  module:
+    - commerce_product
+    - search_api_typesense
+    - taxonomy
+id: products_typesense
+name: 'Products (typesense)'
+description: ''
+read_only: false
+field_settings:
+  body:
+    label: 'Body » Processed text'
+    datasource_id: 'entity:commerce_product'
+    property_path: 'body:processed'
+    type: typesense_string
+    dependencies:
+      config:
+        - field.storage.commerce_product.body
+  langcode:
+    label: Language
+    datasource_id: 'entity:commerce_product'
+    property_path: langcode
+    type: typesense_string
+    dependencies:
+      module:
+        - commerce_product
+  product_brand_description:
+    label: 'Product Brand » Taxonomy term » Description » Processed text'
+    datasource_id: 'entity:commerce_product'
+    property_path: 'product_brand:entity:description:processed'
+    type: typesense_string
+    dependencies:
+      config:
+        - field.storage.commerce_product.product_brand
+      module:
+        - taxonomy
+  product_brand_name:
+    label: 'Product Brand » Taxonomy term » Name'
+    datasource_id: 'entity:commerce_product'
+    property_path: 'product_brand:entity:name'
+    type: typesense_string
+    dependencies:
+      config:
+        - field.storage.commerce_product.product_brand
+      module:
+        - taxonomy
+  product_collections_description:
+    label: 'Product Collections » Taxonomy term » Description » Processed text'
+    datasource_id: 'entity:commerce_product'
+    property_path: 'product_collections:entity:description:processed'
+    type: typesense_string
+    dependencies:
+      config:
+        - field.storage.commerce_product.product_collections
+      module:
+        - taxonomy
+  product_collections_name:
+    label: 'Product Collections » Taxonomy term » Name'
+    datasource_id: 'entity:commerce_product'
+    property_path: 'product_collections:entity:name'
+    type: 'typesense_string[]'
+    dependencies:
+      config:
+        - field.storage.commerce_product.product_collections
+      module:
+        - taxonomy
+  product_tags_description:
+    label: 'Product Tags » Taxonomy term » Description » Processed text'
+    datasource_id: 'entity:commerce_product'
+    property_path: 'product_tags:entity:description:processed'
+    type: 'typesense_string[]'
+    dependencies:
+      config:
+        - field.storage.commerce_product.product_tags
+      module:
+        - taxonomy
+  product_tags_name:
+    label: 'Product Tags » Taxonomy term » Name'
+    datasource_id: 'entity:commerce_product'
+    property_path: 'product_tags:entity:name'
+    type: 'typesense_string[]'
+    dependencies:
+      config:
+        - field.storage.commerce_product.product_tags
+      module:
+        - taxonomy
+  sku:
+    label: 'Variations » Product variation » SKU'
+    datasource_id: 'entity:commerce_product'
+    property_path: 'variations:entity:sku'
+    type: 'typesense_string[]'
+    dependencies:
+      module:
+        - commerce_product
+  title:
+    label: 'Variations » Product variation » Title'
+    datasource_id: 'entity:commerce_product'
+    property_path: 'variations:entity:title'
+    type: 'typesense_string[]'
+    dependencies:
+      module:
+        - commerce_product
+  type:
+    label: 'Product type'
+    datasource_id: 'entity:commerce_product'
+    property_path: type
+    type: typesense_string
+    dependencies:
+      module:
+        - commerce_product
+  url:
+    label: URI
+    property_path: search_api_url
+    type: typesense_string
+    configuration:
+      absolute: true
+  uuid:
+    label: 'Variations » Product variation » UUID'
+    datasource_id: 'entity:commerce_product'
+    property_path: 'variations:entity:uuid'
+    type: 'typesense_string[]'
+    dependencies:
+      module:
+        - commerce_product
+datasource_settings:
+  'entity:commerce_product':
+    bundles:
+      default: true
+      selected: {  }
+    languages:
+      default: true
+      selected: {  }
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  custom_value: {  }
+  entity_type: {  }
+  language_with_fallback: {  }
+  rendered_item: {  }
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  cron_limit: 50
+  delete_on_fail: true
+  index_directly: true
+  track_changes_in_references: true
+server: typesense

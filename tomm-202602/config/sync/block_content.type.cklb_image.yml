@@ -1,0 +1,10 @@
+uuid: c1d00a63-e3b2-46d4-9b11-7b5e37ea5e32
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: uTZxl1JyzUpPM84ghoVhYy3ozsJ2CgmktEsSuzkPWBI
+id: cklb_image
+label: Image
+revision: 0
+description: 'Simple image block'

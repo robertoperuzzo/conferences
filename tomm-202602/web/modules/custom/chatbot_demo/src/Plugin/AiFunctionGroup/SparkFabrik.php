@@ -9,13 +9,13 @@ use Drupal\ai\Attribute\FunctionGroup;
 use Drupal\ai\Service\FunctionCalling\FunctionGroupInterface;
 
 /**
- * The Drupal agents.
+ * The SparkFabrik agents.
  */
 #[FunctionGroup(
-  id: 'chatbot_demo',
-  group_name: new TranslatableMarkup('Chatbot Demo Tools'),
-  description: new TranslatableMarkup('These exposes tools from the Chatbot Demo.'),
+  id: 'sparkfabrik',
+  group_name: new TranslatableMarkup('SparkFabrik'),
+  description: new TranslatableMarkup('These exposes tools from SparkFabrik.'),
   weight: -10,
 )]
-final class ChatbotDemo implements FunctionGroupInterface {
+final class SparkFabrik implements FunctionGroupInterface {
 }

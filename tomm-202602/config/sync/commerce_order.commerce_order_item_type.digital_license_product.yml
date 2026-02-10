@@ -1,0 +1,18 @@
+uuid: 1370dc2e-cc8e-4d8a-805e-45506ac30433
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_tax
+third_party_settings:
+  commerce_tax:
+    taxable_type: digital_goods
+_core:
+  default_config_hash: du3Rv5HkwICiU9KFPc5V-oqlOb2LVC4-vyprolFqiW0
+label: 'Digital License (Product variation)'
+id: digital_license_product
+purchasableEntityType: commerce_product_variation
+orderType: default
+traits:
+  - commerce_license_order_item_type
+locked: false

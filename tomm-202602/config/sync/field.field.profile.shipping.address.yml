@@ -1,0 +1,29 @@
+uuid: 02e5d4fc-6d82-4624-93ed-f5196863cb42
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.address
+    - profile.type.shipping
+  module:
+    - address
+_core:
+  default_config_hash: MNBUgzIPJsp1SabIoz1Uy2iVvYSOzdBh3nQEUgnxMhk
+id: profile.shipping.address
+field_name: address
+entity_type: profile
+bundle: shipping
+label: Address
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  available_countries: {  }
+  langcode_override: ''
+  field_overrides:
+    addressLine3:
+      override: hidden
+  fields: {  }
+field_type: address

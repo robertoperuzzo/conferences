@@ -1,0 +1,22 @@
+_core:
+  default_config_hash: 5x-xt_KaIaNeVH6nemOyevx1VowQCbkY6fZ2PSYN5RY
+ts_embedding_models:
+  - ts/all-MiniLM-L12-v2
+  - ts/audio_query
+  - ts/clip-vit-b-p32
+  - ts/distilbert-base-uncased
+  - ts/distiluse-base-multilingual-cased-v2
+  - ts/e5-large-v2
+  - ts/e5-large
+  - ts/e5-small-v2
+  - ts/e5-small
+  - ts/finbert
+  - ts/gte-large
+  - ts/gte-small
+  - ts/jina-embeddings-v2-base-en
+  - ts/multilingual-e5-base
+  - ts/multilingual-e5-large
+  - ts/multilingual-e5-small
+  - ts/paraphrase-MiniLM-L6-v2
+  - ts/paraphrase-multilingual-mpnet-base-v2
+  - ts/snowflake-arctic-embed-m

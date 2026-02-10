@@ -1,0 +1,26 @@
+uuid: 70dd35e8-1781-47ab-a8ad-c1ea1567f08b
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.cklb_button
+    - field.field.block_content.cklb_button.cklb_cta
+  module:
+    - link
+_core:
+  default_config_hash: sY-c0UI3YVShbmaWPYtc6lMy14-4fv2JiRjdOL9TKRQ
+id: block_content.cklb_button.default
+targetEntityType: block_content
+bundle: cklb_button
+mode: default
+content:
+  cklb_cta:
+    type: link_default
+    weight: 0
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+hidden:
+  info: true

@@ -1,0 +1,27 @@
+uuid: d27e15e4-4c0e-4710-a4f4-579d5f382dc9
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.social
+  module:
+    - system
+  theme:
+    - stark
+_core:
+  default_config_hash: UReBPHxHy4zKoBBa2ZttpWOjp5Jp9sxNEw23e1muAc8
+id: stark_social
+theme: stark
+region: footer
+weight: -4
+provider: null
+plugin: 'system_menu_block:social'
+settings:
+  id: 'system_menu_block:social'
+  label: "Let's get social"
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

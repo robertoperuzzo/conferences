@@ -1,0 +1,23 @@
+uuid: c887855c-3a64-490c-aa8c-2cae8e44b096
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.media_license_download
+    - field.storage.commerce_product_variation.license_expiration
+  module:
+    - commerce
+_core:
+  default_config_hash: 4rcOFqz8wybXcUiKGIY0RHhnf-sywFb6DO8NcwQLUEc
+id: commerce_product_variation.media_license_download.license_expiration
+field_name: license_expiration
+entity_type: commerce_product_variation
+bundle: media_license_download
+label: 'License Expiration'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: null
+settings: {  }
+field_type: 'commerce_plugin_item:commerce_license_period'

@@ -1,0 +1,21 @@
+uuid: 0d729e05-a47f-480e-bd39-98c5976f11d4
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - link
+_core:
+  default_config_hash: zwM9XMqf8q5nyoptKTg31lgayzq19kDus8cHTTwHwd8
+id: block_content.cklb_cta
+field_name: cklb_cta
+entity_type: block_content
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

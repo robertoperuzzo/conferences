@@ -1,0 +1,29 @@
+uuid: c75beed1-dcaf-451a-85fb-ca8ef6c8dd08
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - belgrade
+_core:
+  default_config_hash: jlNynnT3F4MWZUZ35Y_EWNptM-n-kiUmqgwm1D3zVtA
+id: belgrade_user_local_tasks
+theme: belgrade
+region: sidebar_first
+weight: -9
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility:
+  request_path:
+    id: request_path
+    pages: "/user/*\r\n"
+    negate: false
+    context_mapping: {  }

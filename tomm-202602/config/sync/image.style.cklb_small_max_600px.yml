@@ -1,0 +1,17 @@
+uuid: b25cddbe-b346-4c2c-bc29-24ec05b8bbaf
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: o_iB_JDSq3q531LTvCWG0G7_-GPGTsyLg_auvPKlRd0
+name: cklb_small_max_600px
+label: 'Small (max 600px)'
+effects:
+  9b1bd098-bd42-4521-8d80-719a8cb298fc:
+    uuid: 9b1bd098-bd42-4521-8d80-719a8cb298fc
+    id: image_scale
+    weight: 1
+    data:
+      width: 600
+      height: null
+      upscale: true

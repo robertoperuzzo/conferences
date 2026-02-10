@@ -1,0 +1,9 @@
+uuid: 30d77206-0b0f-40ea-a39a-db9a9faf9b8e
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: LmHrixtd-awJRP8qo0N9N8FImRupjvMgkYub9p7PzIg
+name: cklb_full_width
+label: 'Full width'
+effects: {  }

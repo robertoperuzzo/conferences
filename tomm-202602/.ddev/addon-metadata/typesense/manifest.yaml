@@ -1,0 +1,8 @@
+name: typesense
+repository: lussoluca/ddev-typesense
+version: v0.0.2
+install_date: "2026-02-10T15:11:02+01:00"
+project_files:
+    - docker-compose.typesense.yaml
+global_files: []
+removal_actions: []

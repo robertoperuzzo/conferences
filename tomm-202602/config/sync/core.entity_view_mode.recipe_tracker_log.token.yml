@@ -1,0 +1,11 @@
+uuid: 2595c4c0-fd28-41cc-b9ef-2e862cd57473
+langcode: en
+status: true
+dependencies:
+  module:
+    - recipe_tracker
+id: recipe_tracker_log.token
+label: Token
+description: null
+targetEntityType: recipe_tracker_log
+cache: true

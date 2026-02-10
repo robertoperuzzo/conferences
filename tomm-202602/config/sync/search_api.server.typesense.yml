@@ -1,0 +1,24 @@
+uuid: 493acc48-76b0-4eb8-bb21-00bfae88bbea
+langcode: en
+status: true
+dependencies:
+  module:
+    - search_api_typesense
+id: typesense
+name: Typesense
+description: ''
+backend: search_api_typesense
+backend_config:
+  nodes:
+    -
+      host: tomm-202602.ddev.site
+      port: '8109'
+      protocol: https
+  admin_api_key: ddev
+  nearest_node_enable: 0
+  nearest_node: null
+  public_endpoint:
+    host: ''
+    port: ''
+    protocol: https
+  retry_interval_seconds: '2'

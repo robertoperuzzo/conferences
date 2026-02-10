@@ -1,0 +1,24 @@
+uuid: 0baf1728-2651-4a9f-95ba-413ed24e28c9
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+_core:
+  default_config_hash: s6BmgPLSbohLZ2CBBILx-8joYbrlcx8AUfjQZFE4ZXQ
+id: tags
+label: Tags
+type: 'canonical_entities:taxonomy_term'
+pattern: '/blog/[term:name]'
+selection_criteria:
+  371b25ef-813a-4bed-bab8-2cda830f7ae9:
+    id: 'entity_bundle:taxonomy_term'
+    negate: false
+    uuid: 371b25ef-813a-4bed-bab8-2cda830f7ae9
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    bundles:
+      tags: tags
+selection_logic: and
+weight: -5
+relationships: {  }

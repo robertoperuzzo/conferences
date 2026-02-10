@@ -1,0 +1,29 @@
+uuid: cf41ef90-5f1b-4361-b5f6-306a9c7cfb7c
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - stark
+_core:
+  default_config_hash: jlNynnT3F4MWZUZ35Y_EWNptM-n-kiUmqgwm1D3zVtA
+id: stark_user_local_tasks
+theme: stark
+region: sidebar_first
+weight: -9
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/user/*\r\n"

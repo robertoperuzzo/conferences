@@ -1,0 +1,26 @@
+uuid: acf35394-3ade-43e1-afcd-061bb7fd5ef6
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.media
+    - field.storage.commerce_product.body
+  module:
+    - text
+_core:
+  default_config_hash: _AebGNc_VTCG9hS7HUmv_VEutRFJ2XxeKABsnoynSyI
+id: commerce_product.media.body
+field_name: body
+entity_type: commerce_product
+bundle: media
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: null
+settings:
+  display_summary: false
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary

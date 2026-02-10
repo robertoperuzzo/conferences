@@ -1,0 +1,22 @@
+uuid: b00ca69f-286d-4ea6-8a3b-b02cef27e540
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - media
+_core:
+  default_config_hash: k8YfdFQnh2BXapLwuBFa2pzqJ_X2IdAMLNu4WNGwqWI
+id: block_content.cklb_image
+field_name: cklb_image
+entity_type: block_content
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

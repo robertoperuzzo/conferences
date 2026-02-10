@@ -1,0 +1,33 @@
+uuid: 064a5665-ddf3-4e71-9830-53c016f306f9
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_visibility_conditions_node
+    - system
+  theme:
+    - stark
+_core:
+  default_config_hash: 4sQo3UuHbrbLZzZUf13YP_N6Fij0jcdoy89cFXkpJCU
+id: stark_page_title
+theme: stark
+region: content
+weight: -10
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    context_mapping: {  }
+    pages: "<front>\r\n/product/*\r\n/products*\r\n"
+  not_node_type:
+    id: not_node_type
+    bundles:
+      landing_page: cklb_landing_page
+    negate: null

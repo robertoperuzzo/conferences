@@ -1,0 +1,16 @@
+uuid: ca44c960-ec93-4bab-baf3-ce42290b1eb7
+langcode: en
+status: true
+dependencies:
+  module:
+    - search_api_db
+_core:
+  default_config_hash: g7cOjqnCzDTZTPB8QXrkXstM4aXojfFxpxMPyehVOxI
+id: database
+name: Database
+description: ''
+backend: search_api_db
+backend_config:
+  database: 'default:default'
+  min_chars: 1
+  matching: words

@@ -1,0 +1,24 @@
+uuid: 878c0624-d666-4ab1-92d9-f25301576d71
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_product
+_core:
+  default_config_hash: 0bUdjzYbIfy4bPAk8S4idOMIhDltI081RTaA3njyuGI
+id: media_product
+label: 'Media product'
+type: 'canonical_entities:commerce_product'
+pattern: 'products/[commerce_product:title]'
+selection_criteria:
+  df69ed06-dcc2-4ed6-8d86-7a7b915efb8b:
+    id: 'entity_bundle:commerce_product'
+    negate: false
+    uuid: df69ed06-dcc2-4ed6-8d86-7a7b915efb8b
+    context_mapping:
+      commerce_product: commerce_product
+    bundles:
+      media: media
+selection_logic: and
+weight: -5
+relationships: {  }

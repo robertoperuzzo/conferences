@@ -1,0 +1,10 @@
+uuid: 7a1cb8aa-cbee-45b0-b700-57dfa172a90c
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: AkxfIX8ea87Cc8VjgUXVVMyIkBxjQ2DuAr8pt2qFOMU
+id: cklb_products
+label: Products
+revision: 0
+description: 'Simple block for creating a list of products'

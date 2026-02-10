@@ -1,0 +1,16 @@
+uuid: f8ff2ee1-9578-4f7f-be59-a1a1d0b88aad
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: NubSi6AW4Snf1xcp-c3MXgMuHVnOXBcQMK97tZV8150
+id: commerce_license_notify
+label: 'Commerce License Notifications'
+backend: database
+backend_configuration:
+  lease_time: 300
+processor: cron
+processing_time: 180
+threshold: {  }
+locked: true
+stop_when_empty: true
