@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ddadec3151f5ce25f215510820811a5a",
+    "content-hash": "5452289b2457c31683c8fbf973c99e16",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1872,17 +1872,17 @@
         },
         {
             "name": "drupal/ai",
-            "version": "1.2.8",
+            "version": "1.3.0-beta1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/ai.git",
-                "reference": "1.2.8"
+                "reference": "1.3.0-beta1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/ai-1.2.8.zip",
-                "reference": "1.2.8",
-                "shasum": "61edad986e872ad7255c11cd8e10e38ce1b4a492"
+                "url": "https://ftp.drupal.org/files/projects/ai-1.3.0-beta1.zip",
+                "reference": "1.3.0-beta1",
+                "shasum": "10859c7977b0abd6294d34fed49522ea1dc5f0fc"
             },
             "require": {
                 "drupal/core": "^10.4 || ^11",
@@ -1909,11 +1909,11 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "1.2.8",
-                    "datestamp": "1770217606",
+                    "version": "1.3.0-beta1",
+                    "datestamp": "1768495473",
                     "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
+                        "status": "not-covered",
+                        "message": "Beta releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -1961,6 +1961,10 @@
                 {
                     "name": "marcus_johansson",
                     "homepage": "https://www.drupal.org/user/385947"
+                },
+                {
+                    "name": "michaellander",
+                    "homepage": "https://www.drupal.org/user/636494"
                 },
                 {
                     "name": "murz",
@@ -20118,6 +20122,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "drupal/ai": 10,
         "drupal/ai_agents_debugger": 20,
         "drupal/block_visibility_conditions": 20,
         "drupal/mcp_client": 20,
