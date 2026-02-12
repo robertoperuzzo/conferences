@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: block_content
+  uuid: 1e6906a3-e144-4b20-986a-4e670b59625c
+  bundle: cklb_hero
+  default_langcode: en
+default:
+  status:
+    -
+      value: true
+  info:
+    -
+      value: 'Inline block'
+  reusable:
+    -
+      value: false
+  cklb_cta:
+    -
+      uri: 'internal:/products'
+      title: 'Visit catalog'
+      options: {  }
+  cklb_subtitle:
+    -
+      value: 'Brought to you by Centarro'
+  cklb_title:
+    -
+      value: 'Explore the Commerce Kickstart demo.'

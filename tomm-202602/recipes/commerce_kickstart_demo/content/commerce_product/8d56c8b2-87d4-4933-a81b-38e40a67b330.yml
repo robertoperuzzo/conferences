@@ -1,0 +1,84 @@
+_meta:
+  version: '1.0'
+  entity_type: commerce_product
+  uuid: 8d56c8b2-87d4-4933-a81b-38e40a67b330
+  bundle: physical
+  default_langcode: en
+  depends:
+    f812b134-42ef-4fc9-9270-66ba5183e278: commerce_store
+    784c7bdb-6a97-4061-ad0d-24f5a4c1c182: commerce_product_variation
+    152ab214-ced9-4ca0-935a-a741e8ac8df4: file
+    a7051810-3f8f-42eb-923d-e3236a281110: file
+    dde2f882-4fe4-4251-a325-2d51ceb544e6: file
+    049d560d-66f5-4017-ad6e-baebd208022a: file
+    34942599-d694-48da-907d-05847899e545: taxonomy_term
+    da804d6b-b9b0-47d2-9c75-cc1dfdf42ef1: taxonomy_term
+    ee76c0d2-5c5e-40ed-9239-f8c6b8acaec9: taxonomy_term
+    441c378a-39e4-47a8-8b4d-ea60f4490288: taxonomy_term
+default:
+  uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  stores:
+    -
+      entity: f812b134-42ef-4fc9-9270-66ba5183e278
+  title:
+    -
+      value: '36" Classic Beach Ball'
+  variations:
+    -
+      entity: 784c7bdb-6a97-4061-ad0d-24f5a4c1c182
+  default_variation:
+    -
+      entity: 784c7bdb-6a97-4061-ad0d-24f5a4c1c182
+  path:
+    -
+      alias: /products/36-classic-beach-ball
+      langcode: en
+      pathauto: 1
+  created:
+    -
+      value: 1647873994
+  body:
+    -
+      value: "<p>This inflatable, multicolored beach ball is perfect for your next pool party or trip to the beach. Great for bouncing around, jumping on, or keeping away from the kids. Inflates in one minute or less (of vigorous breaths) or your money back!</p>\r\n"
+      format: basic_html
+      summary: ''
+  images:
+    -
+      entity: 152ab214-ced9-4ca0-935a-a741e8ac8df4
+      alt: '36" Classic Beach Ball'
+      title: ''
+      width: 670
+      height: 630
+    -
+      entity: a7051810-3f8f-42eb-923d-e3236a281110
+      alt: '36" Classic Beach Ball'
+      title: ''
+      width: 1280
+      height: 1920
+    -
+      entity: dde2f882-4fe4-4251-a325-2d51ceb544e6
+      alt: '36" Classic Beach Ball'
+      title: ''
+      width: 1920
+      height: 1280
+    -
+      entity: 049d560d-66f5-4017-ad6e-baebd208022a
+      alt: '36" Classic Beach Ball'
+      title: ''
+      width: 1920
+      height: 1280
+  product_brand:
+    -
+      entity: 34942599-d694-48da-907d-05847899e545
+  product_collections:
+    -
+      entity: da804d6b-b9b0-47d2-9c75-cc1dfdf42ef1
+    -
+      entity: ee76c0d2-5c5e-40ed-9239-f8c6b8acaec9
+    -
+      entity: 441c378a-39e4-47a8-8b4d-ea60f4490288

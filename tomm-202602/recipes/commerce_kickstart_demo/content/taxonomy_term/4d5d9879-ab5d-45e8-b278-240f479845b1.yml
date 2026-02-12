@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: 4d5d9879-ab5d-45e8-b278-240f479845b1
+  bundle: product_brands
+  default_langcode: en
+default:
+  status:
+    -
+      value: true
+  name:
+    -
+      value: Gutenberg
+  weight:
+    -
+      value: 0
+  parent:
+    -
+      target_id: 0
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0

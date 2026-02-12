@@ -1,0 +1,62 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 6e47d02b-7c53-4027-a96f-5f16c4bc2854
+  bundle: article
+  default_langcode: en
+  depends:
+    5f88a9e1-febd-4a23-92dc-27af7cfc40f4: file
+    9cc0234d-b8cc-48bd-806e-275d538e8496: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Finding Calm in a Noisy World'
+  created:
+    -
+      value: 1755703930
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /blog/lifestyle/finding-calm-noisy-world
+      langcode: en
+      pathauto: 1
+  body:
+    -
+      value: '<p>Modern life is filled with noise — not just literal noise, but mental clutter too. Phones buzz with notifications, inboxes overflow, and schedules are packed. Amidst all this, finding calm can feel like a challenge, yet it is more essential than ever. Learning to carve out silence and space allows us to recharge and focus on what truly matters.</p><p>The first step toward calm is setting boundaries with technology. This doesn’t mean abandoning devices altogether but being intentional with their use. Turning off non-essential notifications or creating phone-free zones in your home can give your mind a much-needed break. These small steps free you from constant distraction.</p><p>Another effective approach is building rituals that encourage stillness. This could be morning stretches, five minutes of mindful breathing, or journaling before bed. These practices don’t require a lot of time, but they create a rhythm that anchors you throughout the day.</p><p>Spending time outdoors is another powerful tool. A short walk in a park or simply sitting on a balcony can reset your state of mind. Nature has a quieting effect that modern environments often lack. The more we connect with natural surroundings, the easier it becomes to slow down.</p><p>Ultimately, calm doesn’t arrive by chance — it’s a choice. By taking small, deliberate steps, you can transform even the busiest day into something more balanced. In a noisy world, calm is a superpower worth cultivating.</p>'
+      format: basic_html
+      summary: 'Distractions are everywhere. From constant notifications to endless demands, here’s how to find moments of quiet and create calm in daily life.'
+  comment:
+    -
+      status: 2
+      cid: 0
+      last_comment_timestamp: 1759422290
+      last_comment_name: ''
+      last_comment_uid: 1
+      comment_count: 0
+  field_image:
+    -
+      entity: 5f88a9e1-febd-4a23-92dc-27af7cfc40f4
+      alt: 'Finding Calm in a Noisy World'
+      title: ''
+      width: 1920
+      height: 1080
+  field_tags:
+    -
+      entity: 9cc0234d-b8cc-48bd-806e-275d538e8496

@@ -1,0 +1,30 @@
+_meta:
+  version: '1.0'
+  entity_type: block_content
+  uuid: 66037587-872c-4704-864e-a8c0195f613b
+  bundle: cklb_products
+  default_langcode: en
+  depends:
+    33e129f8-cc4e-4080-bf66-06595f58520e: commerce_product
+    009c806f-870a-454c-b0be-68e83a2c0bb0: commerce_product
+    0e0a7d89-28cf-45e7-a020-fd0ca8cb8510: commerce_product
+default:
+  status:
+    -
+      value: true
+  info:
+    -
+      value: 'Inline block'
+  reusable:
+    -
+      value: false
+  cklb_products:
+    -
+      entity: 33e129f8-cc4e-4080-bf66-06595f58520e
+    -
+      entity: 009c806f-870a-454c-b0be-68e83a2c0bb0
+    -
+      entity: 0e0a7d89-28cf-45e7-a020-fd0ca8cb8510
+  cklb_title:
+    -
+      value: Books

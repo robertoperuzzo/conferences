@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: f4b7a0e9-f4ff-4b60-a2eb-bdf699d7c7fa
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: susan-q-yin-2JIvboGLeho-unsplash.jpg
+  uri:
+    -
+      value: 'public://2025-10/susan-q-yin-2JIvboGLeho-unsplash.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 441723
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1759422777

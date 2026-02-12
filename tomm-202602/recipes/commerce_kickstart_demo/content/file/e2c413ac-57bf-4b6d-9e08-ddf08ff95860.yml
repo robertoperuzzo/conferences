@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: e2c413ac-57bf-4b6d-9e08-ddf08ff95860
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: rafly-alfaridzy-9dbSMiwTLoo-unsplash.jpg
+  uri:
+    -
+      value: 'public://2025-10/rafly-alfaridzy-9dbSMiwTLoo-unsplash.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 549271
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1759834964

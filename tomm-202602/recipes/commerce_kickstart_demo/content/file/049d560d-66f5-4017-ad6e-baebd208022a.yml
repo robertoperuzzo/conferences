@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 049d560d-66f5-4017-ad6e-baebd208022a
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: rodion-kutsaiev-AbbadZGfZWE-unsplash.jpg
+  uri:
+    -
+      value: 'public://2025-10/rodion-kutsaiev-AbbadZGfZWE-unsplash.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 72791
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1759829893

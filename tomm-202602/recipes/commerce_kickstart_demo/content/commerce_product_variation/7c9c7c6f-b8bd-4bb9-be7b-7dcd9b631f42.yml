@@ -1,0 +1,31 @@
+_meta:
+  version: '1.0'
+  entity_type: commerce_product_variation
+  uuid: 7c9c7c6f-b8bd-4bb9-be7b-7dcd9b631f42
+  bundle: media_physical
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  sku:
+    -
+      value: book-notre-dame-de-paris-hard-copy
+  title:
+    -
+      value: 'Notre-Dame de Paris by Victor Hugo - Hard copy'
+  price:
+    -
+      number: '12.000000'
+      currency_code: USD
+      formatted: $12.00
+  created:
+    -
+      value: 1648467532
+  weight:
+    -
+      number: '700.000000'
+      unit: g

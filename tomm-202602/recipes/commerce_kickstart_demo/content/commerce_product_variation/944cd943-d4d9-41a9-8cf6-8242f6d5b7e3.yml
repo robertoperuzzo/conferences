@@ -1,0 +1,31 @@
+_meta:
+  version: '1.0'
+  entity_type: commerce_product_variation
+  uuid: 944cd943-d4d9-41a9-8cf6-8242f6d5b7e3
+  bundle: physical
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  sku:
+    -
+      value: UT-KnitHat-Green
+  title:
+    -
+      value: 'Knit Hat in Green'
+  price:
+    -
+      number: '25.000000'
+      currency_code: USD
+      formatted: $25.00
+  created:
+    -
+      value: 1647871248
+  weight:
+    -
+      number: '90.000000'
+      unit: g

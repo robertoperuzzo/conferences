@@ -1,0 +1,31 @@
+_meta:
+  version: '1.0'
+  entity_type: commerce_product_variation
+  uuid: 668950db-06f3-4e6a-9e31-a60e7fea7d61
+  bundle: physical
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  sku:
+    -
+      value: whttbl
+  title:
+    -
+      value: 'Nordic White Writing Desk'
+  price:
+    -
+      number: '250.000000'
+      currency_code: USD
+      formatted: $250.00
+  created:
+    -
+      value: 1759842272
+  weight:
+    -
+      number: '20.000000'
+      unit: kg

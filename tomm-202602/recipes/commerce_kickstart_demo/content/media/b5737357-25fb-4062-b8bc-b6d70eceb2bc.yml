@@ -1,0 +1,36 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: b5737357-25fb-4062-b8bc-b6d70eceb2bc
+  bundle: image
+  default_langcode: en
+  depends:
+    08839e5c-0c32-48b1-8c74-6b4671dd9f29: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: testimonial.png
+  created:
+    -
+      value: 1650282077
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  field_media_image:
+    -
+      entity: 08839e5c-0c32-48b1-8c74-6b4671dd9f29
+      alt: 'Group of people'
+      title: ''
+      width: 1600
+      height: 350

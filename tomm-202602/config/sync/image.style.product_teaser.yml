@@ -1,0 +1,17 @@
+uuid: 3cc83b3e-941c-4a8a-851f-dbe21d589be1
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: xoqFV49hWNz1HKn69KOzB3MFrkjOSopqru5h3r2frPY
+name: product_teaser
+label: 'Product teaser'
+effects:
+  c5938430-7c2d-4d4a-ba1f-57a85b1aeea1:
+    uuid: c5938430-7c2d-4d4a-ba1f-57a85b1aeea1
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 600
+      height: 600
+      anchor: center-center

@@ -1,0 +1,31 @@
+_meta:
+  version: '1.0'
+  entity_type: commerce_product_variation
+  uuid: e1aa841e-30c3-4b18-bb61-6e41f09d6fae
+  bundle: physical
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  sku:
+    -
+      value: candle4
+  title:
+    -
+      value: 'Artisan Ceramic Candle Set – 4 pcs'
+  price:
+    -
+      number: '22.000000'
+      currency_code: USD
+      formatted: $22.00
+  created:
+    -
+      value: 1759841032
+  weight:
+    -
+      number: '1.000000'
+      unit: kg

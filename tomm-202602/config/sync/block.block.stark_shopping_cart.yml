@@ -1,0 +1,30 @@
+uuid: 329c94a0-dd9d-49ac-8c1e-88b559cf62ce
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_cart
+    - system
+  theme:
+    - stark
+_core:
+  default_config_hash: PwsfSEm0cErm7FtmfF-BmjklpBemB2ID0k69y09XDms
+id: stark_shopping_cart
+theme: stark
+region: sidebar_first
+weight: -10
+provider: null
+plugin: commerce_cart
+settings:
+  id: commerce_cart
+  label: 'Shopping Cart'
+  label_display: '0'
+  provider: commerce_cart
+  dropdown: true
+  show_if_empty: true
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    context_mapping: {  }
+    pages: /cart

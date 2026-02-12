@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: cfb4fa35-ac69-470f-9b94-bf32a91e0267
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: Book_Cover_Mockup2.jpg
+  uri:
+    -
+      value: 'public://2022-09/Book_Cover_Mockup2.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 343110
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1663845350

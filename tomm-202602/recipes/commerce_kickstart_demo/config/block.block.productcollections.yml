@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.product_collections
+  module:
+    - facets
+    - system
+  theme:
+    - belgrade
+id: productcollections
+theme: belgrade
+region: sidebar_first
+weight: -9
+provider: null
+plugin: 'facet_block:product_collections'
+settings:
+  id: 'facet_block:product_collections'
+  label: Categories
+  label_display: visible
+  provider: facets
+  context_mapping: {  }
+  block_id: productcollections
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/products\r\n/products*"

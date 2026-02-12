@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: a4b5231d-6e37-40ba-be19-b97eb3f880b6
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: sincerely-media-ak4gJjFJLIU-unsplash.jpg
+  uri:
+    -
+      value: 'public://2025-10/sincerely-media-ak4gJjFJLIU-unsplash.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 605378
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1759834305

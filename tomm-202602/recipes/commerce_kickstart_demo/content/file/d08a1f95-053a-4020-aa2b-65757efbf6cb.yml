@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: d08a1f95-053a-4020-aa2b-65757efbf6cb
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: alexandra-fuller-4RNLzJzEMMs-unsplash.jpg
+  uri:
+    -
+      value: 'public://2025-10/alexandra-fuller-4RNLzJzEMMs-unsplash.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 273969
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1759422667

@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 3e1ed878-e59e-4e4f-a7d3-e08fb7b19812
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: 'Commerce Demo Digital Product.pdf'
+  uri:
+    -
+      value: 'private://2022-02/Commerce Demo Digital Product.pdf'
+  filemime:
+    -
+      value: application/pdf
+  filesize:
+    -
+      value: 14027
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1644322737

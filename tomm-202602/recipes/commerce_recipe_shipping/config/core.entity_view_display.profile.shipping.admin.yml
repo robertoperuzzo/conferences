@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.profile.admin
+    - field.field.profile.shipping.address
+    - profile.type.shipping
+  module:
+    - address
+id: profile.shipping.admin
+targetEntityType: profile
+bundle: shipping
+mode: admin
+content:
+  address:
+    type: address_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content

@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 1e590e30-c37b-48af-b6bb-ff5f3fa92372
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: synthetic-clusterfiber-standard-pillow.jpg
+  uri:
+    -
+      value: 'public://2021-09/synthetic-clusterfiber-standard-pillow.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 725362
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1631896535

@@ -1,0 +1,74 @@
+_meta:
+  version: '1.0'
+  entity_type: commerce_product
+  uuid: 8828d24c-3a9c-47c1-a7c0-88ce21bf1245
+  bundle: physical
+  default_langcode: en
+  depends:
+    f812b134-42ef-4fc9-9270-66ba5183e278: commerce_store
+    ed581106-4a7d-4b59-aefb-d08a92264dc9: commerce_product_variation
+    229b6a1e-d9cc-46b2-8298-77efa1378033: file
+    72e98a5f-2aca-4595-afef-3b0c3553db01: file
+    2af41454-b5d5-42ef-8dd4-1b61eece7434: file
+    d6d21052-9e2c-4f0a-9bb3-c9742c616618: taxonomy_term
+    0a3e84ac-163b-4276-8e85-090aec9c3cdc: taxonomy_term
+    adb9a461-2a5a-4449-ab39-3ec102661dc4: taxonomy_term
+default:
+  uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  stores:
+    -
+      entity: f812b134-42ef-4fc9-9270-66ba5183e278
+  title:
+    -
+      value: 'Set of 3 White Plant Pots'
+  variations:
+    -
+      entity: ed581106-4a7d-4b59-aefb-d08a92264dc9
+  default_variation:
+    -
+      entity: ed581106-4a7d-4b59-aefb-d08a92264dc9
+  path:
+    -
+      alias: /products/set-3-white-plant-pots
+      langcode: en
+      pathauto: 1
+  created:
+    -
+      value: 1759837500
+  body:
+    -
+      value: '<p>Bring effortless greenery into your home with this stylish set of three white ceramic plant pots. Each pot features soft, rounded lines and a clean matte finish that complements any interior style — from modern minimalism to cozy natural spaces.</p><p>Perfect for small succulents or herbs, these pots add a calming touch to desks, shelves, or windowsills. Their uniform design creates harmony, while the trio arrangement offers endless ways to display your plants together or apart. A simple way to make everyday spaces feel fresh and alive.</p>'
+      format: basic_html
+      summary: ''
+  images:
+    -
+      entity: 229b6a1e-d9cc-46b2-8298-77efa1378033
+      alt: 'Plant pot 3pcs'
+      title: ''
+      width: 5379
+      height: 3581
+    -
+      entity: 72e98a5f-2aca-4595-afef-3b0c3553db01
+      alt: 'Plant pot 3pcs'
+      title: ''
+      width: 1280
+      height: 852
+    -
+      entity: 2af41454-b5d5-42ef-8dd4-1b61eece7434
+      alt: 'Plant pot'
+      title: ''
+      width: 1280
+      height: 692
+  product_brand:
+    -
+      entity: d6d21052-9e2c-4f0a-9bb3-c9742c616618
+  product_collections:
+    -
+      entity: 0a3e84ac-163b-4276-8e85-090aec9c3cdc
+    -
+      entity: adb9a461-2a5a-4449-ab39-3ec102661dc4

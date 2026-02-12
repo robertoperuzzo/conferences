@@ -1,0 +1,21 @@
+_meta:
+  version: '1.0'
+  entity_type: block_content
+  uuid: 6599d746-700f-434b-a557-242871fd7601
+  bundle: cklb_image
+  default_langcode: en
+  depends:
+    84c384a8-d36f-4b34-885d-2ca70bc28353: media
+default:
+  status:
+    -
+      value: true
+  info:
+    -
+      value: 'Inline block'
+  reusable:
+    -
+      value: false
+  cklb_image:
+    -
+      entity: 84c384a8-d36f-4b34-885d-2ca70bc28353

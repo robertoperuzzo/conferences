@@ -1,0 +1,21 @@
+uuid: 52894451-6d77-47ef-9e75-f5d8761864b9
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.cklb_hero
+    - field.storage.block_content.cklb_subtitle
+_core:
+  default_config_hash: ZVsiPrycHA3iGqW2NWmH890KKmsPZAPv5uKz0kAjOzc
+id: block_content.cklb_hero.cklb_subtitle
+field_name: cklb_subtitle
+entity_type: block_content
+bundle: cklb_hero
+label: Subtitle
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

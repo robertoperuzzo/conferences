@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: 0dbaec23-00d5-4327-9ec0-6a2e13e45c70
+  bundle: product_collections
+  default_langcode: en
+  depends:
+    5581e5e6-6145-44e4-8da6-51d5f22497a8: taxonomy_term
+default:
+  status:
+    -
+      value: true
+  name:
+    -
+      value: 'Detective and mystery stories'
+  weight:
+    -
+      value: 2
+  parent:
+    -
+      entity: 5581e5e6-6145-44e4-8da6-51d5f22497a8
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0

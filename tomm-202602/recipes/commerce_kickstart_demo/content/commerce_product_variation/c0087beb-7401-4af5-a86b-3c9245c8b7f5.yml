@@ -1,0 +1,31 @@
+_meta:
+  version: '1.0'
+  entity_type: commerce_product_variation
+  uuid: c0087beb-7401-4af5-a86b-3c9245c8b7f5
+  bundle: media_physical
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  sku:
+    -
+      value: book-sherlock-holmes-hard-copy
+  title:
+    -
+      value: 'The Adventures of Sherlock Holmes by Arthur Conan Doyle - Hard copy'
+  price:
+    -
+      number: '11.000000'
+      currency_code: USD
+      formatted: $11.00
+  created:
+    -
+      value: 1648463922
+  weight:
+    -
+      number: '1.000000'
+      unit: kg

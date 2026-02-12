@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 9a612216-1db4-4e41-8cb6-014b3578496c
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: hanna-balan-XVzkhMwJFWs-unsplash.jpg
+  uri:
+    -
+      value: 'public://2025-10/hanna-balan-XVzkhMwJFWs-unsplash.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 809343
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1759840697

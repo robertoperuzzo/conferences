@@ -1,0 +1,31 @@
+_meta:
+  version: '1.0'
+  entity_type: commerce_product_variation
+  uuid: c2eab587-e359-4938-a12f-f9ca3a58be12
+  bundle: physical
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  sku:
+    -
+      value: FoggyForest-24x36
+  title:
+    -
+      value: '24" x 36" Foggy Forest Print'
+  price:
+    -
+      number: '45.000000'
+      currency_code: USD
+      formatted: $45.00
+  created:
+    -
+      value: 1647878647
+  weight:
+    -
+      number: '1.000000'
+      unit: kg

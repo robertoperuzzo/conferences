@@ -1,0 +1,43 @@
+_meta:
+  version: '1.0'
+  entity_type: commerce_product_variation
+  uuid: a3382268-c2ad-46b0-a1e3-e47d94d6010f
+  bundle: media_license_download
+  default_langcode: en
+  depends:
+    429ec250-beae-4c34-a2cc-229ca80e13dd: file
+default:
+  uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  sku:
+    -
+      value: book-alice-digital-download
+  title:
+    -
+      value: 'Alice''s Adventures in Wonderland by Lewis Carroll - Digital download'
+  price:
+    -
+      number: '8.000000'
+      currency_code: USD
+      formatted: $8.00
+  created:
+    -
+      value: 1648460748
+  commerce_file:
+    -
+      entity: 429ec250-beae-4c34-a2cc-229ca80e13dd
+      display: true
+      description: 'Alice''s Adventures in Wonderland by Lewis Carroll - Digital download'
+  license_expiration:
+    -
+      target_plugin_id: unlimited
+      target_plugin_configuration: {  }
+  license_type:
+    -
+      target_plugin_id: commerce_file
+      target_plugin_configuration:
+        file_download_limit: '1'

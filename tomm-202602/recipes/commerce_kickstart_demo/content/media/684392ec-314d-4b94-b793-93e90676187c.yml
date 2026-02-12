@@ -1,0 +1,36 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 684392ec-314d-4b94-b793-93e90676187c
+  bundle: image
+  default_langcode: en
+  depends:
+    9cf7eb36-c591-491e-9d56-0f3af5eaf089: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: bikce.png
+  created:
+    -
+      value: 1650357356
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  field_media_image:
+    -
+      entity: 9cf7eb36-c591-491e-9d56-0f3af5eaf089
+      alt: Centarro
+      title: ''
+      width: 759
+      height: 711

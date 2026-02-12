@@ -1,0 +1,21 @@
+uuid: 017bce0f-31aa-4fe7-adfd-26c57b1833a3
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: CLU14OD5pbrvCJzHJDsGyQk5CaKa1dhdfB3sCpd3eAA
+id: node.cklb_description
+field_name: cklb_description
+entity_type: node
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

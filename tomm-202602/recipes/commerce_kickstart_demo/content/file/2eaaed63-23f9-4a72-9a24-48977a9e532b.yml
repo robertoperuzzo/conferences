@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 2eaaed63-23f9-4a72-9a24-48977a9e532b
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: 3268-0.pdf
+  uri:
+    -
+      value: 'private://2022-03/3268-0.pdf'
+  filemime:
+    -
+      value: application/pdf
+  filesize:
+    -
+      value: 1409914
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1648465903

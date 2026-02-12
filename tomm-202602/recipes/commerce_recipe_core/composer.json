@@ -1,0 +1,10 @@
+{
+    "name": "drupal/commerce_recipe_core",
+    "description": "Recipe that installs selected Commerce Core modules and configuration.",
+    "type": "drupal-recipe",
+    "license": ["GPL-2.0-or-later"],
+    "require": {
+        "drupal/commerce": "^3",
+        "drupal/recipe_tracker": "^1"
+    }
+}

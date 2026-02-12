@@ -1,0 +1,62 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 0f1b711e-d7a5-4f93-8be4-8b60d2b0fef3
+  bundle: article
+  default_langcode: en
+  depends:
+    f4b7a0e9-f4ff-4b60-a2eb-bdf699d7c7fa: file
+    934aa2bb-d962-4ef7-9e2f-031b607d7260: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Mystery and Imagination: Two Genres to Escape Into'
+  created:
+    -
+      value: 1759422752
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /blog/books/mystery-and-imagination-two-genres-escape
+      langcode: en
+      pathauto: 1
+  body:
+    -
+      value: '<p>Reading can transport us instantly into worlds beyond our own, and two genres do this especially well: mystery and imagination. The mystery genre keeps us turning the pages with suspense, puzzles, and clever twists. Take <a href="/products/poirot-investigates-agatha-christie"><em>Poirot Investigates</em></a> by Agatha Christie — each case challenges us to think critically while admiring the brilliance of Hercule Poirot. Similarly, <a href="/products/adventures-sherlock-holmes-arthur-conan-doyle"><em>The Adventures of Sherlock Holmes</em></a> by Arthur Conan Doyle has shaped detective fiction for over a century, offering intricate plots and unforgettable deductions.</p><p>On the other side, fantasy and imaginative stories give us a chance to dream bigger. <a href="/products/alices-adventures-wonderland-lewis-carroll"><em>Alice’s Adventures in Wonderland</em></a> by Lewis Carroll remains a masterpiece of whimsy and nonsense that still captivates young and old readers alike.&nbsp;</p><p>What unites these genres is their ability to help us step outside our daily routines. Whether you’re solving a crime alongside Sherlock Holmes or tumbling down the rabbit hole with Alice, these books remind us that reading is not just informative but transformative. It’s about stepping into a story and returning with a refreshed perspective.</p>'
+      format: basic_html
+      summary: 'Reading is the easiest way to step outside everyday life. Mystery keeps us guessing, while imagination takes us somewhere new. Both genres remind us why stories matter.'
+  comment:
+    -
+      status: 2
+      cid: 0
+      last_comment_timestamp: 1759422816
+      last_comment_name: ''
+      last_comment_uid: 1
+      comment_count: 0
+  field_image:
+    -
+      entity: f4b7a0e9-f4ff-4b60-a2eb-bdf699d7c7fa
+      alt: 'Mystery and Imagination'
+      title: ''
+      width: 1920
+      height: 1281
+  field_tags:
+    -
+      entity: 934aa2bb-d962-4ef7-9e2f-031b607d7260

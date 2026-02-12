@@ -1,0 +1,70 @@
+_meta:
+  version: '1.0'
+  entity_type: commerce_product
+  uuid: 98b7b387-1aa5-4131-ad27-63c86548355b
+  bundle: physical
+  default_langcode: en
+  depends:
+    f812b134-42ef-4fc9-9270-66ba5183e278: commerce_store
+    f1f12b36-9349-4d3e-b526-db0a1f516aff: commerce_product_variation
+    fd52cd0e-cc54-4d79-b350-9c0ca83034ab: file
+    2598cef5-1dfb-45e5-9d89-0b3993a4ca4b: file
+    dd15e8ce-a070-41b1-b24e-cbbcddf3f362: taxonomy_term
+    0a3e84ac-163b-4276-8e85-090aec9c3cdc: taxonomy_term
+    5f5b51cf-4d21-47d0-a5d9-620088db53f2: taxonomy_term
+    3736d1af-67ec-478e-a5d8-e25b28c7a033: taxonomy_term
+default:
+  uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  stores:
+    -
+      entity: f812b134-42ef-4fc9-9270-66ba5183e278
+  title:
+    -
+      value: 'Basic Bar Stool'
+  variations:
+    -
+      entity: f1f12b36-9349-4d3e-b526-db0a1f516aff
+  default_variation:
+    -
+      entity: f1f12b36-9349-4d3e-b526-db0a1f516aff
+  path:
+    -
+      alias: /products/basic-bar-stool
+      langcode: en
+      pathauto: 1
+  created:
+    -
+      value: 1647875011
+  body:
+    -
+      value: "<p>You can't go wrong with a stool so full of right ... angles that is! Square on top, square on the sides, squares for support. Plump your tuchus on this conveniently vented seat and enjoy that morning coffee at your kitchen bar while you muse about your day. Finished with a light stain with steel reinforced foot rests for extra durability.</p>\r\n"
+      format: basic_html
+      summary: ''
+  images:
+    -
+      entity: fd52cd0e-cc54-4d79-b350-9c0ca83034ab
+      alt: 'Basic Bar Stool'
+      title: ''
+      width: 670
+      height: 630
+    -
+      entity: 2598cef5-1dfb-45e5-9d89-0b3993a4ca4b
+      alt: 'Basic Bar Stool'
+      title: ''
+      width: 1920
+      height: 2881
+  product_brand:
+    -
+      entity: dd15e8ce-a070-41b1-b24e-cbbcddf3f362
+  product_collections:
+    -
+      entity: 0a3e84ac-163b-4276-8e85-090aec9c3cdc
+    -
+      entity: 5f5b51cf-4d21-47d0-a5d9-620088db53f2
+    -
+      entity: 3736d1af-67ec-478e-a5d8-e25b28c7a033

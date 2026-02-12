@@ -1,0 +1,24 @@
+uuid: f94fce13-2748-4acf-aaca-d48c450d0d18
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.profile.shipping.address
+    - profile.type.shipping
+  module:
+    - address
+_core:
+  default_config_hash: OnRqkELNrWa-KnZqhNh03Dl6pORhENrJ7oXHmIvBQ_I
+id: profile.shipping.default
+targetEntityType: profile
+bundle: shipping
+mode: default
+content:
+  address:
+    type: address_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

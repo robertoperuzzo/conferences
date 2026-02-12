@@ -1,0 +1,60 @@
+_meta:
+  version: '1.0'
+  entity_type: commerce_product
+  uuid: 3a432302-d9b8-41c2-9eea-eccc74feabbd
+  bundle: physical
+  default_langcode: en
+  depends:
+    f812b134-42ef-4fc9-9270-66ba5183e278: commerce_store
+    c2eab587-e359-4938-a12f-f9ca3a58be12: commerce_product_variation
+    0689f898-2b5c-4dc4-a56b-9e3ef3f8724c: file
+    7884f022-54f6-4c5a-bdf5-7a76c78a5a15: taxonomy_term
+    0a3e84ac-163b-4276-8e85-090aec9c3cdc: taxonomy_term
+    342c5bea-8914-43e2-8f89-74e37edac45c: taxonomy_term
+default:
+  uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  stores:
+    -
+      entity: f812b134-42ef-4fc9-9270-66ba5183e278
+  title:
+    -
+      value: '24" x 36" Foggy Forest Print'
+  variations:
+    -
+      entity: c2eab587-e359-4938-a12f-f9ca3a58be12
+  default_variation:
+    -
+      entity: c2eab587-e359-4938-a12f-f9ca3a58be12
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 1
+  created:
+    -
+      value: 1647878526
+  body:
+    -
+      value: "<p>This mysterious print reminds us there are still unknown worlds out there to explore. If you're searching for adventure, you can still find it. The rich greens of this print will complement any white or blue painted room, reminding you that humans just aren't meant to live their entire lives indoors.</p>\r\n\r\n<p>Glossy finish with a 1\" matte; no frame included.</p>\r\n"
+      format: basic_html
+      summary: ''
+  images:
+    -
+      entity: 0689f898-2b5c-4dc4-a56b-9e3ef3f8724c
+      alt: 'Foggy Forest Print'
+      title: ''
+      width: 670
+      height: 630
+  product_brand:
+    -
+      entity: 7884f022-54f6-4c5a-bdf5-7a76c78a5a15
+  product_collections:
+    -
+      entity: 0a3e84ac-163b-4276-8e85-090aec9c3cdc
+    -
+      entity: 342c5bea-8914-43e2-8f89-74e37edac45c

@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 87dbc541-755b-4c7d-a422-9819e1a434ec
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: siora-photography-LkT5-JCePUY-unsplash.jpg
+  uri:
+    -
+      value: 'public://2025-10/siora-photography-LkT5-JCePUY-unsplash.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 263393
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1759834663

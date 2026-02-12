@@ -1,0 +1,31 @@
+uuid: 475e3794-2b6a-4b38-bc7e-08d6c8a18a65
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.physical
+    - field.storage.commerce_product.product_tags
+    - taxonomy.vocabulary.product_tags
+_core:
+  default_config_hash: 95Wtjrj6zRxH6txR7Aw8y1kLXP6wHFTrmmkWgLaZpLI
+id: commerce_product.physical.product_tags
+field_name: product_tags
+entity_type: commerce_product
+bundle: physical
+label: 'Product Tags'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      product_tags: product_tags
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

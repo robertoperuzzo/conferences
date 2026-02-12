@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 9cf7eb36-c591-491e-9d56-0f3af5eaf089
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: bikce.png
+  uri:
+    -
+      value: 'public://2022-04/bikce.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 12981
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1650357356

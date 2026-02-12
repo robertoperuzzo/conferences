@@ -1,0 +1,27 @@
+uuid: babc7476-5e3b-4a62-812f-7a0679380526
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - stark
+_core:
+  default_config_hash: AA8QZMYUufEoxWQtJSJUWpYh8KBN7SLCckigtlPAneI
+id: stark_main_menu_header
+theme: stark
+region: header
+weight: -8
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation header'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 1
+  expand_all_items: false
+visibility: {  }

@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: tags
+label: Tags
+type: 'canonical_entities:taxonomy_term'
+pattern: '/blog/[term:name]'
+selection_criteria:
+  371b25ef-813a-4bed-bab8-2cda830f7ae9:
+    id: 'entity_bundle:taxonomy_term'
+    negate: false
+    uuid: 371b25ef-813a-4bed-bab8-2cda830f7ae9
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    bundles:
+      tags: tags
+selection_logic: and
+weight: -5
+relationships: {  }

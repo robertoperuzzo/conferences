@@ -1,0 +1,13 @@
+{
+    "name": "drupal/commerce_kickstart_admin_ui",
+    "description": "Enables Admin Toolbar and sets the Gin as the default theme.",
+    "type": "drupal-recipe",
+    "license": ["GPL-2.0-or-later"],
+    "require": {
+        "drupal/coffee": "^2",
+        "drupal/core": "^11",
+        "drupal/gin": "^5",
+        "drupal/gin_toolbar": "^3",
+        "drupal/admin_toolbar": "^3"
+    }
+}

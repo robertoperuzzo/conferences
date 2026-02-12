@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: f43dd686-e26d-42aa-a7c1-af7e26b522a0
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: '(Pool Toys) Inflatable Flamingo.jpg'
+  uri:
+    -
+      value: 'public://2022-03/(Pool Toys) Inflatable Flamingo.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 97919
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1647873396

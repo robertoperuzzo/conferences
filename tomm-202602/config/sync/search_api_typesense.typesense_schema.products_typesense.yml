@@ -1,0 +1,237 @@
+uuid: a2b58152-c81f-450a-927e-c35a8eaccd52
+langcode: en
+status: true
+dependencies: {  }
+id: products_typesense
+default_sorting_field: '-none-'
+fields:
+  body:
+    type: string
+    facet: false
+    optional: false
+    index: true
+    store: true
+    sort: false
+    sort_type: desc
+    infix: false
+    locale: en
+    stem: false
+    weight: 0
+  currency_code:
+    type: 'string[]'
+    facet: false
+    optional: false
+    index: true
+    store: true
+    sort: false
+    sort_type: desc
+    infix: false
+    locale: en
+    stem: false
+    weight: 0
+  langcode:
+    type: string
+    facet: false
+    optional: false
+    index: true
+    store: true
+    sort: false
+    sort_type: desc
+    infix: false
+    locale: en
+    stem: false
+    weight: 0
+  number:
+    type: 'string[]'
+    facet: false
+    optional: false
+    index: true
+    store: true
+    sort: false
+    sort_type: desc
+    infix: false
+    locale: en
+    stem: false
+    weight: 0
+  product_brand_description:
+    type: string
+    facet: false
+    optional: true
+    index: true
+    store: true
+    sort: false
+    sort_type: desc
+    infix: false
+    locale: en
+    stem: false
+    weight: 0
+  product_brand_name:
+    type: string
+    facet: false
+    optional: true
+    index: true
+    store: true
+    sort: false
+    sort_type: desc
+    infix: false
+    locale: en
+    stem: false
+    weight: 0
+  product_collections_description:
+    type: string
+    facet: false
+    optional: true
+    index: true
+    store: true
+    sort: false
+    sort_type: desc
+    infix: false
+    locale: en
+    stem: false
+    weight: 0
+  product_collections_name:
+    type: 'string[]'
+    facet: false
+    optional: false
+    index: true
+    store: true
+    sort: false
+    sort_type: desc
+    infix: false
+    locale: en
+    stem: false
+    weight: 0
+  product_tags_description:
+    type: 'string[]'
+    facet: false
+    optional: true
+    index: true
+    store: true
+    sort: false
+    sort_type: desc
+    infix: false
+    locale: en
+    stem: false
+    weight: 0
+  product_tags_name:
+    type: 'string[]'
+    facet: false
+    optional: true
+    index: true
+    store: true
+    sort: false
+    sort_type: desc
+    infix: false
+    locale: en
+    stem: false
+    weight: 0
+  rendered_item:
+    type: string
+    facet: false
+    optional: false
+    index: true
+    store: true
+    sort: false
+    sort_type: desc
+    infix: false
+    locale: en
+    stem: false
+    weight: 0
+  sku:
+    type: 'string[]'
+    facet: false
+    optional: false
+    index: true
+    store: true
+    sort: false
+    sort_type: desc
+    infix: false
+    locale: en
+    stem: false
+    weight: 0
+  title:
+    type: 'string[]'
+    facet: false
+    optional: false
+    index: true
+    store: true
+    sort: false
+    sort_type: desc
+    infix: false
+    locale: en
+    stem: false
+    weight: 0
+  type:
+    type: string
+    facet: false
+    optional: false
+    index: true
+    store: true
+    sort: false
+    sort_type: desc
+    infix: false
+    locale: en
+    stem: false
+    weight: 0
+  url:
+    type: string
+    facet: false
+    optional: false
+    index: false
+    store: true
+    sort: false
+    sort_type: desc
+    infix: false
+    locale: en
+    stem: false
+    weight: 0
+  uuid:
+    type: 'string[]'
+    facet: false
+    optional: false
+    index: true
+    store: true
+    sort: false
+    sort_type: desc
+    infix: false
+    locale: en
+    stem: false
+    weight: 0
+enable_embedding: true
+embedding_fields:
+  body: body
+  product_brand_description: product_brand_description
+  product_brand_name: product_brand_name
+  product_collections_description: product_collections_description
+  product_collections_name: product_collections_name
+  product_tags_description: product_tags_description
+  product_tags_name: product_tags_name
+  sku: sku
+  title: title
+  type: type
+  currency_code: 0
+  langcode: 0
+  number: 0
+  rendered_item: 0
+  url: 0
+  uuid: 0
+embedding_model: ts/all-MiniLM-L12-v2
+chunk_size: 1000
+chunk_overlap_size: 10
+chunk_prepend_fields:
+  product_brand_name: product_brand_name
+  product_collections_name: product_collections_name
+  product_tags_name: product_tags_name
+  sku: sku
+  title: title
+  body: 0
+  currency_code: 0
+  langcode: 0
+  number: 0
+  product_brand_description: 0
+  product_collections_description: 0
+  product_tags_description: 0
+  rendered_item: 0
+  type: 0
+  url: 0
+  uuid: 0

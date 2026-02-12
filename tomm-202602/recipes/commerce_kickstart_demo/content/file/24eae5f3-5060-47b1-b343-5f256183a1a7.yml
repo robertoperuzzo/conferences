@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 24eae5f3-5060-47b1-b343-5f256183a1a7
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: pexels-heyho-6266186.jpg
+  uri:
+    -
+      value: 'public://2025-10/pexels-heyho-6266186.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 169845
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1759839025

@@ -1,0 +1,43 @@
+name: 'Commerce Kickstart: Admin UI'
+description: 'Enables Admin Toolbar and sets Gin as the default admin theme.'
+type: 'Commerce'
+recipes: []
+install:
+  - admin_toolbar
+  - admin_toolbar_tools
+  - coffee
+  - help
+  - gin
+  - gin_toolbar
+
+config:
+  strict: false
+  import:
+    admin_toolbar: '*'
+    admin_toolbar_tools: '*'
+    gin:
+      - block.block.gin_breadcrumbs
+      - block.block.gin_content
+      - block.block.gin_local_actions
+      - block.block.gin_messages
+      - block.block.gin_page_title
+      - block.block.gin_primary_local_tasks
+      - block.block.gin_secondary_local_tasks
+    claro:
+      - block.block.claro_breadcrumbs
+      - block.block.claro_content
+      - block.block.claro_local_actions
+      - block.block.claro_messages
+      - block.block.claro_page_title
+      - block.block.claro_primary_local_tasks
+      - block.block.claro_secondary_local_tasks
+
+  actions:
+    system.theme:
+      simpleConfigUpdate:
+        admin: gin
+    user.role.authenticated:
+      grantPermission: 'access coffee'
+    gin.settings:
+      simpleConfigUpdate:
+        classic_toolbar: vertical

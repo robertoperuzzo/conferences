@@ -1,0 +1,36 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 84c384a8-d36f-4b34-885d-2ca70bc28353
+  bundle: image
+  default_langcode: en
+  depends:
+    3f2c1600-1752-4ea8-a1b6-62c8f93178d3: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: pexels-andrea-piacquadio-3768724.jpg
+  created:
+    -
+      value: 1650277900
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  field_media_image:
+    -
+      entity: 3f2c1600-1752-4ea8-a1b6-62c8f93178d3
+      alt: Happy
+      title: ''
+      width: 7680
+      height: 5120

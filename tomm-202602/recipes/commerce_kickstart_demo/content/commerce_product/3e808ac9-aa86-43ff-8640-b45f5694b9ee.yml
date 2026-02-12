@@ -1,0 +1,71 @@
+_meta:
+  version: '1.0'
+  entity_type: commerce_product
+  uuid: 3e808ac9-aa86-43ff-8640-b45f5694b9ee
+  bundle: physical
+  default_langcode: en
+  depends:
+    f812b134-42ef-4fc9-9270-66ba5183e278: commerce_store
+    344d224b-5141-48db-8c2d-e7a9e0114a39: commerce_product_variation
+    d544bdaa-01dd-467f-9e36-3f8a09ad081c: file
+    63fdbc6f-497d-4a7e-a4dd-99aa1d595958: file
+    6280070d-3320-47e4-87fc-ddbce989d4ad: file
+    aeb7a7aa-60d0-4a45-80df-aa9ca4111333: taxonomy_term
+    077bc143-7067-4b4e-aa0b-adec28b9d26f: taxonomy_term
+default:
+  uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  stores:
+    -
+      entity: f812b134-42ef-4fc9-9270-66ba5183e278
+  title:
+    -
+      value: 'White sweatshirt'
+  variations:
+    -
+      entity: 344d224b-5141-48db-8c2d-e7a9e0114a39
+  default_variation:
+    -
+      entity: 344d224b-5141-48db-8c2d-e7a9e0114a39
+  path:
+    -
+      alias: /products/white-sweatshirt
+      langcode: en
+      pathauto: 1
+  created:
+    -
+      value: 1759836200
+  body:
+    -
+      value: '<p>Effortless comfort meets everyday style. Crafted from premium cotton, this white sweatshirt offers a smooth, breathable feel that keeps you cozy from morning to night. Its minimalist design makes it easy to dress up or down — from coffee runs to casual evenings out. A wardrobe staple that always feels right.</p>'
+      format: basic_html
+      summary: ''
+  images:
+    -
+      entity: d544bdaa-01dd-467f-9e36-3f8a09ad081c
+      alt: 'White sweatshirt'
+      title: ''
+      width: 1920
+      height: 1443
+    -
+      entity: 63fdbc6f-497d-4a7e-a4dd-99aa1d595958
+      alt: 'White sweatshirt with girl modeling it'
+      title: ''
+      width: 1280
+      height: 1920
+    -
+      entity: 6280070d-3320-47e4-87fc-ddbce989d4ad
+      alt: 'Girl modeling white sweatshirt '
+      title: ''
+      width: 1280
+      height: 1920
+  product_brand:
+    -
+      entity: aeb7a7aa-60d0-4a45-80df-aa9ca4111333
+  product_collections:
+    -
+      entity: 077bc143-7067-4b4e-aa0b-adec28b9d26f

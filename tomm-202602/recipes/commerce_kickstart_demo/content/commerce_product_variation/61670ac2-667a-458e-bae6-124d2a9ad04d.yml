@@ -1,0 +1,31 @@
+_meta:
+  version: '1.0'
+  entity_type: commerce_product_variation
+  uuid: 61670ac2-667a-458e-bae6-124d2a9ad04d
+  bundle: physical
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  sku:
+    -
+      value: '000001'
+  title:
+    -
+      value: 'Synthetic Clusterfibre Standard Pillow'
+  price:
+    -
+      number: '15.000000'
+      currency_code: USD
+      formatted: $15.00
+  weight:
+    -
+      number: '1.000000'
+      unit: kg
+  created:
+    -
+      value: 1631896615

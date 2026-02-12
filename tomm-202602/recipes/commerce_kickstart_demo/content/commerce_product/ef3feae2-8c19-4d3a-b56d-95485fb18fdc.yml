@@ -1,0 +1,63 @@
+_meta:
+  version: '1.0'
+  entity_type: commerce_product
+  uuid: ef3feae2-8c19-4d3a-b56d-95485fb18fdc
+  bundle: media
+  default_langcode: en
+  depends:
+    f812b134-42ef-4fc9-9270-66ba5183e278: commerce_store
+    ac2f5333-cc40-4a71-afcf-8ecbb9ee36f4: commerce_product_variation
+    5b934891-c2fd-4814-87b3-9682b902f06f: commerce_product_variation
+    cfb4fa35-ac69-470f-9b94-bf32a91e0267: file
+    4d5d9879-ab5d-45e8-b278-240f479845b1: taxonomy_term
+    5581e5e6-6145-44e4-8da6-51d5f22497a8: taxonomy_term
+    c6e79678-8cd0-4afc-acf9-4792f6010449: taxonomy_term
+default:
+  uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  stores:
+    -
+      entity: f812b134-42ef-4fc9-9270-66ba5183e278
+  title:
+    -
+      value: 'A Tale of Two Cities by Charles Dickens'
+  variations:
+    -
+      entity: ac2f5333-cc40-4a71-afcf-8ecbb9ee36f4
+    -
+      entity: 5b934891-c2fd-4814-87b3-9682b902f06f
+  default_variation:
+    -
+      entity: ac2f5333-cc40-4a71-afcf-8ecbb9ee36f4
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 1
+  created:
+    -
+      value: 1648464562
+  body:
+    -
+      value: "<p>Author:&nbsp;Dickens, Charles, 1812-1870</p>\r\n\r\n<p>Title: A Tale of Two Cities</p>\r\n\r\n<p>Original release date:&nbsp;November 26, 1859</p>\r\n\r\n<p>This book is available in hard copy and as digital download.</p>\r\n"
+      format: basic_html
+      summary: ''
+  images:
+    -
+      entity: cfb4fa35-ac69-470f-9b94-bf32a91e0267
+      alt: 'A Tale of Two Cities by Charles Dickens'
+      title: ''
+      width: 2718
+      height: 2480
+  product_brand:
+    -
+      entity: 4d5d9879-ab5d-45e8-b278-240f479845b1
+  product_collections:
+    -
+      entity: 5581e5e6-6145-44e4-8da6-51d5f22497a8
+    -
+      entity: c6e79678-8cd0-4afc-acf9-4792f6010449

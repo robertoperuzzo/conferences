@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 8ed843ed-c62b-4af2-87ef-bbca176365bf
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: pexels-anna-shvets-4588013.jpg
+  uri:
+    -
+      value: 'public://2022-04/pexels-anna-shvets-4588013.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 3505381
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1650279479

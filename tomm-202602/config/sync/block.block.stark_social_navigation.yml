@@ -1,0 +1,27 @@
+uuid: c9f1740d-8a1e-4842-8a20-f5e7f86e62e5
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.social
+  module:
+    - system
+  theme:
+    - stark
+_core:
+  default_config_hash: Dr78JU06qEPwMRS9CDsTk011MO9E7Dv6zPVNyM1rDNM
+id: stark_social_navigation
+theme: stark
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'system_menu_block:social'
+settings:
+  id: 'system_menu_block:social'
+  label: Social
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

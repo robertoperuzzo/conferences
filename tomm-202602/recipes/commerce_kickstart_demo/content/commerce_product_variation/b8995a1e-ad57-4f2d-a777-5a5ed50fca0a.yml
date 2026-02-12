@@ -1,0 +1,31 @@
+_meta:
+  version: '1.0'
+  entity_type: commerce_product_variation
+  uuid: b8995a1e-ad57-4f2d-a777-5a5ed50fca0a
+  bundle: media_physical
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  sku:
+    -
+      value: 'book-gulliver''s-travels-hard-copy'
+  title:
+    -
+      value: 'Gulliver''s Travels by Jonathan Swift - Hard copy'
+  price:
+    -
+      number: '10.000000'
+      currency_code: USD
+      formatted: $10.00
+  created:
+    -
+      value: 1648466969
+  weight:
+    -
+      number: '400.000000'
+      unit: g

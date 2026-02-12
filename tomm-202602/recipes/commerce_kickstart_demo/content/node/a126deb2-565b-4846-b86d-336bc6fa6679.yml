@@ -1,0 +1,62 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: a126deb2-565b-4846-b86d-336bc6fa6679
+  bundle: article
+  default_langcode: en
+  depends:
+    344e12f2-6c6c-4005-b481-9a35eac83c3f: file
+    9cc0234d-b8cc-48bd-806e-275d538e8496: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'When Décor Becomes Expression: How Objects Tug at Emotion'
+  created:
+    -
+      value: 1756729722
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /blog/lifestyle/when-decor-becomes-expression-how-objects-tug-emotion
+      langcode: en
+      pathauto: 1
+  body:
+    -
+      value: '<p>Every item in our homes has potential beyond function. A dining armchair in pink doesn’t just seat someone — it signals softness, boldness, or warmth. Objects evoke emotions, trigger stories, and become part of our living narratives.</p><p>Think about the contrast between a white &amp; wood chair and a flamboyant inflatable flamingo. The chair speaks of structure and permanence; the flamingo of whimsy and play. Even small pieces like a knit hat or décor accents reflect personal taste and mood.</p><p>When picking décor, ask: “How do I want to feel in the space?” Let your heart guide you as much as logic. Over time, a house filled only with “good deals” might feel hollow — but one curated with emotional resonance feels like home.</p><p>Ultimately, décor becomes expression when we root it in how we live, not just what looks good.</p>'
+      format: basic_html
+      summary: 'A chair, a stool, a lamp — they’re more than things. They carry emotion, memory, and identity.'
+  comment:
+    -
+      status: 2
+      cid: 0
+      last_comment_timestamp: 1759494662
+      last_comment_name: ''
+      last_comment_uid: 1
+      comment_count: 0
+  field_image:
+    -
+      entity: 344e12f2-6c6c-4005-b481-9a35eac83c3f
+      alt: 'When Décor Becomes Expression: How Objects Tug at Emotion'
+      title: ''
+      width: 1920
+      height: 1280
+  field_tags:
+    -
+      entity: 9cc0234d-b8cc-48bd-806e-275d538e8496

@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 2af41454-b5d5-42ef-8dd4-1b61eece7434
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: pexels-rafa-de-21730-97260.jpg
+  uri:
+    -
+      value: 'public://2025-10/pexels-rafa-de-21730-97260.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 22240
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1759837733

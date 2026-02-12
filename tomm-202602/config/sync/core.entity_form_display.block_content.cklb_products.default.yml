@@ -1,0 +1,42 @@
+uuid: ee63d9b7-8675-43cf-bde3-e1d3984026a6
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.cklb_products
+    - field.field.block_content.cklb_products.cklb_products
+    - field.field.block_content.cklb_products.cklb_title
+_core:
+  default_config_hash: tJsMV10sVefP8WN_4xVIR9dVfzf_EDGgN3JpGA4L-Ys
+id: block_content.cklb_products.default
+targetEntityType: block_content
+bundle: cklb_products
+mode: default
+content:
+  cklb_products:
+    type: entity_reference_autocomplete
+    weight: 2
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  cklb_title:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

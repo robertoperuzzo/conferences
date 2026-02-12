@@ -1,0 +1,63 @@
+_meta:
+  version: '1.0'
+  entity_type: commerce_product
+  uuid: 511e7616-1a04-46c4-a8c0-7d71515d316b
+  bundle: media
+  default_langcode: en
+  depends:
+    f812b134-42ef-4fc9-9270-66ba5183e278: commerce_store
+    3e687463-ff5e-428f-801a-e61c034d40e6: commerce_product_variation
+    19f2de85-1074-438a-9f9d-beafb59876aa: commerce_product_variation
+    1698d72b-26c6-4c15-8592-0c87cc753cb9: file
+    6e69664b-c364-4bb7-bff9-26f82592ef51: taxonomy_term
+    5581e5e6-6145-44e4-8da6-51d5f22497a8: taxonomy_term
+    a875c177-13be-4634-959c-cfee50241a28: taxonomy_term
+default:
+  uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  stores:
+    -
+      entity: f812b134-42ef-4fc9-9270-66ba5183e278
+  title:
+    -
+      value: 'Centarro The Book'
+  variations:
+    -
+      entity: 3e687463-ff5e-428f-801a-e61c034d40e6
+    -
+      entity: 19f2de85-1074-438a-9f9d-beafb59876aa
+  default_variation:
+    -
+      entity: 3e687463-ff5e-428f-801a-e61c034d40e6
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 1
+  created:
+    -
+      value: 1644322609
+  body:
+    -
+      value: "<p>Get the inside story of Centarro, the company behind Drupal Commerce, in this behind the scenes look at the company's formation and growth as told by its cofounders. Copiously researched with a healthy dose of anecdotes, pictures, and documents, this book answers the who, what, when, why, and how of Centarro to the Nth degree. This first edition includes a foreword by Drupal project founder Dries Buytaert.</p>\r\n\r\n<p>This book is available in hard copy and as digital download.</p>\r\n"
+      format: basic_html
+      summary: ''
+  images:
+    -
+      entity: 1698d72b-26c6-4c15-8592-0c87cc753cb9
+      alt: 'Centarro Logo'
+      title: ''
+      width: 2718
+      height: 2480
+  product_brand:
+    -
+      entity: 6e69664b-c364-4bb7-bff9-26f82592ef51
+  product_collections:
+    -
+      entity: 5581e5e6-6145-44e4-8da6-51d5f22497a8
+    -
+      entity: a875c177-13be-4634-959c-cfee50241a28

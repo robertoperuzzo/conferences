@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: e33e5021-d447-42f7-96ca-bb0186a92727
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: side-table.jpg
+  uri:
+    -
+      value: 'public://2021-09/side-table.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 1399478
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1631898021

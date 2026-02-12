@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 26723a4d-3e8d-44e5-a16d-2fe116de4d41
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: avery-klein-C_dRtsnBOQA-unsplash.jpg
+  uri:
+    -
+      value: 'public://2025-10/avery-klein-C_dRtsnBOQA-unsplash.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 417733
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1759838921

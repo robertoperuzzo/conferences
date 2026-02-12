@@ -1,0 +1,13 @@
+uuid: cf860842-e774-4b78-8b89-cf6a3faa7a34
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+_core:
+  default_config_hash: WIbXEg_S0Vg4ckUm0vsZBxCYEIv2ZiePmmhkutCRzqI
+id: block_content.cklb_large
+label: Large
+description: null
+targetEntityType: block_content
+cache: true

@@ -1,0 +1,64 @@
+_meta:
+  version: '1.0'
+  entity_type: commerce_product
+  uuid: b718cbe3-0f03-4329-88c9-d923e8f202aa
+  bundle: physical
+  default_langcode: en
+  depends:
+    f812b134-42ef-4fc9-9270-66ba5183e278: commerce_store
+    4ccd78f7-c5a6-43c0-805b-9d3a796b383a: commerce_product_variation
+    9806e5dd-28f1-4aa9-923b-f015fad58000: file
+    89ea4310-1f59-49a1-9db9-200a25823135: file
+    aeb7a7aa-60d0-4a45-80df-aa9ca4111333: taxonomy_term
+    d3c7e8e9-c79c-4f7d-949f-77353436a1d1: taxonomy_term
+default:
+  uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  stores:
+    -
+      entity: f812b134-42ef-4fc9-9270-66ba5183e278
+  title:
+    -
+      value: 'Black Headphones'
+  variations:
+    -
+      entity: 4ccd78f7-c5a6-43c0-805b-9d3a796b383a
+  default_variation:
+    -
+      entity: 4ccd78f7-c5a6-43c0-805b-9d3a796b383a
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 1
+  created:
+    -
+      value: 1648481446
+  body:
+    -
+      value: "<p>Our basic black headphones fit over the ear with comfortable, soft cushions. They function both as wired headphones via USB-C or as a Bluetooth headset with several hours of battery life.</p>\r\n"
+      format: basic_html
+      summary: ''
+  images:
+    -
+      entity: 9806e5dd-28f1-4aa9-923b-f015fad58000
+      alt: 'Black Headphones'
+      title: ''
+      width: 570
+      height: 536
+    -
+      entity: 89ea4310-1f59-49a1-9db9-200a25823135
+      alt: 'Black Headphones 2'
+      title: ''
+      width: 570
+      height: 536
+  product_brand:
+    -
+      entity: aeb7a7aa-60d0-4a45-80df-aa9ca4111333
+  product_collections:
+    -
+      entity: d3c7e8e9-c79c-4f7d-949f-77353436a1d1

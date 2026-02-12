@@ -1,0 +1,32 @@
+uuid: 68bc1c43-b73a-446b-af3d-ae832a0ec2ec
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.default
+    - core.entity_view_mode.commerce_product_variation.teaser
+  module:
+    - commerce_price
+_core:
+  default_config_hash: i1-U8Tq9iLdXil6x70Ugg3mOEaGo11m7-vIkAURvBTo
+id: commerce_product_variation.default.teaser
+targetEntityType: commerce_product_variation
+bundle: default
+mode: teaser
+content:
+  price:
+    type: commerce_price_default
+    weight: 6
+    region: content
+    label: hidden
+    settings:
+      strip_trailing_zeroes: false
+      currency_display: symbol
+    third_party_settings: {  }
+hidden:
+  commerce_variation_cart_form: true
+  list_price: true
+  product_id: true
+  search_api_excerpt: true
+  sku: true
+  title: true

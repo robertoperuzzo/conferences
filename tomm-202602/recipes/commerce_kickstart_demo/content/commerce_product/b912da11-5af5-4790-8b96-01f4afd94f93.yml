@@ -1,0 +1,84 @@
+_meta:
+  version: '1.0'
+  entity_type: commerce_product
+  uuid: b912da11-5af5-4790-8b96-01f4afd94f93
+  bundle: physical
+  default_langcode: en
+  depends:
+    f812b134-42ef-4fc9-9270-66ba5183e278: commerce_store
+    61670ac2-667a-458e-bae6-124d2a9ad04d: commerce_product_variation
+    1e590e30-c37b-48af-b6bb-ff5f3fa92372: file
+    4c8068cc-af94-413f-8742-3da6e6dbb74f: file
+    9ff96928-2e55-4eb4-ad37-9dcbfb0e006b: file
+    f6b132c3-2bd3-49b8-90d3-318d3a3da3ba: file
+    a4b5231d-6e37-40ba-be19-b97eb3f880b6: file
+    0a3e84ac-163b-4276-8e85-090aec9c3cdc: taxonomy_term
+    745624c0-6cae-42ca-91e7-45b2cc2f2ece: taxonomy_term
+default:
+  uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  stores:
+    -
+      entity: f812b134-42ef-4fc9-9270-66ba5183e278
+  title:
+    -
+      value: 'Synthetic Clusterfibre Standard Pillow'
+  variations:
+    -
+      entity: 61670ac2-667a-458e-bae6-124d2a9ad04d
+  default_variation:
+    -
+      entity: 61670ac2-667a-458e-bae6-124d2a9ad04d
+  path:
+    -
+      alias: /products/synthetic-clusterfibre-standard-pillow
+      langcode: en
+      pathauto: 1
+  created:
+    -
+      value: 1631896281
+  body:
+    -
+      value: "<p>Perfect for those who sleep on their back or side, this pillow helps keep your spine aligned for a comfortable and undisturbed night's sleep.</p>\r\n\r\n<p>This comfortably plump pillow bounces back after every use, thanks to the clusterfibre filling. It's machine-washable at 140°F / 60°C and the woven cotton cover is breathable.</p>\r\n\r\n<p><strong>Suitable for Regular Washing</strong><br />\r\nWashable at 60°C, for a hygienic clean that will kill dust mites.</p>\r\n\r\n<p><strong>Quick Drying</strong><br />\r\nDries quicker compared to standard duvet drying times, meaning it’ll be ready to go back on the bed in no time.</p>\r\n"
+      format: basic_html
+      summary: ''
+  images:
+    -
+      entity: 1e590e30-c37b-48af-b6bb-ff5f3fa92372
+      alt: 'Synthetic Clusterfibre Standard Pillow'
+      title: ''
+      width: 1920
+      height: 1920
+    -
+      entity: 4c8068cc-af94-413f-8742-3da6e6dbb74f
+      alt: 'Synthetic Clusterfibre Standard Pillow'
+      title: ''
+      width: 1920
+      height: 2880
+    -
+      entity: 9ff96928-2e55-4eb4-ad37-9dcbfb0e006b
+      alt: 'Synthetic Clusterfibre Standard Pillow'
+      title: ''
+      width: 1280
+      height: 1920
+    -
+      entity: f6b132c3-2bd3-49b8-90d3-318d3a3da3ba
+      alt: 'Synthetic Clusterfibre Standard Pillow'
+      title: ''
+      width: 1280
+      height: 1920
+    -
+      entity: a4b5231d-6e37-40ba-be19-b97eb3f880b6
+      alt: 'Synthetic Clusterfibre Standard Pillow'
+      title: ''
+      width: 1920
+      height: 2880
+  product_collections:
+    -
+      entity: 0a3e84ac-163b-4276-8e85-090aec9c3cdc
+    -
+      entity: 745624c0-6cae-42ca-91e7-45b2cc2f2ece

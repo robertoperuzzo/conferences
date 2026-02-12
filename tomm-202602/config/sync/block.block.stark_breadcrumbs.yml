@@ -1,0 +1,26 @@
+uuid: 02eba720-14ed-43be-a6c1-ccb4001dff6c
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - stark
+_core:
+  default_config_hash: o9654zFbOpjd88E5j5l4Cby3t-WwUuTfQ6xcKSLsodg
+id: stark_breadcrumbs
+theme: stark
+region: highlighted
+weight: -7
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: "/cart*\r\n/checkout*\r\n<front>"

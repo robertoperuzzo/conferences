@@ -1,0 +1,31 @@
+_meta:
+  version: '1.0'
+  entity_type: commerce_product_variation
+  uuid: 7890910d-bdc1-4faf-8e08-924e79be9008
+  bundle: media_physical
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  sku:
+    -
+      value: book-alice-hard-copy
+  title:
+    -
+      value: 'Alice''s Adventures in Wonderland by Lewis Carroll - Hard Copy'
+  price:
+    -
+      number: '10.000000'
+      currency_code: USD
+      formatted: $10.00
+  created:
+    -
+      value: 1648460697
+  weight:
+    -
+      number: '300.000000'
+      unit: g

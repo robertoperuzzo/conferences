@@ -1,0 +1,17 @@
+uuid: 3a34a8b0-98c0-4b9d-8ef5-67545fc350dc
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: MJW7KGMvEpbhi3RWy8cwlXqmiFwEwmedR2NylOJfh54
+name: cklb_container
+label: 'Container (1600px)'
+effects:
+  6ebebab3-365b-4967-930f-f5a6a073e9bc:
+    uuid: 6ebebab3-365b-4967-930f-f5a6a073e9bc
+    id: image_scale
+    weight: 1
+    data:
+      width: 1600
+      height: null
+      upscale: true

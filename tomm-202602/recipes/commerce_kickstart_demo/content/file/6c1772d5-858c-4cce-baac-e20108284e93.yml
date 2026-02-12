@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 6c1772d5-858c-4cce-baac-e20108284e93
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: pink-chair.jpg
+  uri:
+    -
+      value: 'public://2021-09/pink-chair.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 1800189
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1631897739

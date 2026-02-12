@@ -1,0 +1,31 @@
+_meta:
+  version: '1.0'
+  entity_type: commerce_product_variation
+  uuid: d5997717-7cd1-459d-b261-ec5a632feff7
+  bundle: physical
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  sku:
+    -
+      value: Flowers-001
+  title:
+    -
+      value: '24" x 36" Flowers Print'
+  price:
+    -
+      number: '49.000000'
+      currency_code: USD
+      formatted: $49.00
+  created:
+    -
+      value: 1647878489
+  weight:
+    -
+      number: '1.000000'
+      unit: kg

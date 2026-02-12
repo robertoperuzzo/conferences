@@ -1,0 +1,74 @@
+_meta:
+  version: '1.0'
+  entity_type: commerce_product
+  uuid: 574e7034-6763-4395-aebe-2951a5404fbb
+  bundle: physical
+  default_langcode: en
+  depends:
+    f812b134-42ef-4fc9-9270-66ba5183e278: commerce_store
+    4efe2d5c-36e5-4493-856e-55ae73abc4c9: commerce_product_variation
+    0102976d-cd64-4e69-8416-36261ff58250: file
+    01049eeb-d786-4e8e-8e76-e18eebfc5dad: file
+    f1608b09-b05f-43cb-b988-167c895fc1cb: file
+    dd15e8ce-a070-41b1-b24e-cbbcddf3f362: taxonomy_term
+    0a3e84ac-163b-4276-8e85-090aec9c3cdc: taxonomy_term
+    5f5b51cf-4d21-47d0-a5d9-620088db53f2: taxonomy_term
+default:
+  uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  stores:
+    -
+      entity: f812b134-42ef-4fc9-9270-66ba5183e278
+  title:
+    -
+      value: 'Elegant Mesh Lounge Chair'
+  variations:
+    -
+      entity: 4efe2d5c-36e5-4493-856e-55ae73abc4c9
+  default_variation:
+    -
+      entity: 4efe2d5c-36e5-4493-856e-55ae73abc4c9
+  path:
+    -
+      alias: /products/elegant-mesh-lounge-chair
+      langcode: en
+      pathauto: 1
+  created:
+    -
+      value: 1759842895
+  body:
+    -
+      value: '<p>Lightweight, sculptural, and stylish — this <strong>Elegant Mesh Lounge Chair</strong> blends artistry with functionality. The black wire mesh design gives it a modern, airy presence, while its subtle curves and open structure ensure it doesn’t overwhelm the space. Perfect for reading nooks, minimalist interiors, or pairing with a sleek desk, it brings both form and function to your home.</p>'
+      format: basic_html
+      summary: ''
+  images:
+    -
+      entity: 0102976d-cd64-4e69-8416-36261ff58250
+      alt: 'Elegant Mesh Lounge Chair'
+      title: ''
+      width: 1280
+      height: 2276
+    -
+      entity: 01049eeb-d786-4e8e-8e76-e18eebfc5dad
+      alt: 'Elegant Mesh Lounge Chair'
+      title: ''
+      width: 1280
+      height: 2276
+    -
+      entity: f1608b09-b05f-43cb-b988-167c895fc1cb
+      alt: 'Elegant Mesh Lounge Chair'
+      title: ''
+      width: 1280
+      height: 1920
+  product_brand:
+    -
+      entity: dd15e8ce-a070-41b1-b24e-cbbcddf3f362
+  product_collections:
+    -
+      entity: 0a3e84ac-163b-4276-8e85-090aec9c3cdc
+    -
+      entity: 5f5b51cf-4d21-47d0-a5d9-620088db53f2

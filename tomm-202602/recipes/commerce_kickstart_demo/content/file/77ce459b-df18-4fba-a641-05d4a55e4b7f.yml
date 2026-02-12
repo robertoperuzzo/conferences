@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 77ce459b-df18-4fba-a641-05d4a55e4b7f
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: 829-0.pdf
+  uri:
+    -
+      value: 'private://2022-03/829-0.pdf'
+  filemime:
+    -
+      value: application/pdf
+  filesize:
+    -
+      value: 872726
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1648467877

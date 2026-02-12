@@ -1,0 +1,63 @@
+_meta:
+  version: '1.0'
+  entity_type: commerce_product
+  uuid: 0e0a7d89-28cf-45e7-a020-fd0ca8cb8510
+  bundle: media
+  default_langcode: en
+  depends:
+    f812b134-42ef-4fc9-9270-66ba5183e278: commerce_store
+    c0087beb-7401-4af5-a86b-3c9245c8b7f5: commerce_product_variation
+    8efe83e9-00f0-41c8-b860-0da6d74c7c67: commerce_product_variation
+    cb45953c-d9bb-473f-9cf1-6f8ea6bdaab5: file
+    4d5d9879-ab5d-45e8-b278-240f479845b1: taxonomy_term
+    5581e5e6-6145-44e4-8da6-51d5f22497a8: taxonomy_term
+    0dbaec23-00d5-4327-9ec0-6a2e13e45c70: taxonomy_term
+default:
+  uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  stores:
+    -
+      entity: f812b134-42ef-4fc9-9270-66ba5183e278
+  title:
+    -
+      value: 'The Adventures of Sherlock Holmes by Arthur Conan Doyle'
+  variations:
+    -
+      entity: c0087beb-7401-4af5-a86b-3c9245c8b7f5
+    -
+      entity: 8efe83e9-00f0-41c8-b860-0da6d74c7c67
+  default_variation:
+    -
+      entity: c0087beb-7401-4af5-a86b-3c9245c8b7f5
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 1
+  created:
+    -
+      value: 1648463517
+  body:
+    -
+      value: "<p>Author:&nbsp;Doyle, Arthur Conan, 1859-1930</p>\r\n\r\n<p>Title: The Adventures of Sherlock Holmes</p>\r\n\r\n<p>Original release date:&nbsp;October 14, 1892</p>\r\n\r\n<p>This book is available in hard copy and as digital download.</p>\r\n"
+      format: basic_html
+      summary: ''
+  images:
+    -
+      entity: cb45953c-d9bb-473f-9cf1-6f8ea6bdaab5
+      alt: 'The Adventures of Sherlock Holmes by Arthur Conan Doyle'
+      title: ''
+      width: 2718
+      height: 2480
+  product_brand:
+    -
+      entity: 4d5d9879-ab5d-45e8-b278-240f479845b1
+  product_collections:
+    -
+      entity: 5581e5e6-6145-44e4-8da6-51d5f22497a8
+    -
+      entity: 0dbaec23-00d5-4327-9ec0-6a2e13e45c70

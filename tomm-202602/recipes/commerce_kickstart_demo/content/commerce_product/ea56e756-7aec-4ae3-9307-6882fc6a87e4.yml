@@ -1,0 +1,71 @@
+_meta:
+  version: '1.0'
+  entity_type: commerce_product
+  uuid: ea56e756-7aec-4ae3-9307-6882fc6a87e4
+  bundle: physical
+  default_langcode: en
+  depends:
+    f812b134-42ef-4fc9-9270-66ba5183e278: commerce_store
+    47cd2854-378b-4b5a-a203-2bf26b7c877b: commerce_product_variation
+    716becbe-2bcf-41ae-a57b-800e137e5f20: file
+    3f662f6e-171e-48c9-a846-53d35c68003b: file
+    4ebab698-906c-4563-9b92-2b06d987d246: file
+    aeb7a7aa-60d0-4a45-80df-aa9ca4111333: taxonomy_term
+    ce96c75a-d532-4707-a346-56b4dce2fe19: taxonomy_term
+default:
+  uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  stores:
+    -
+      entity: f812b134-42ef-4fc9-9270-66ba5183e278
+  title:
+    -
+      value: 'Cocoa Fedora'
+  variations:
+    -
+      entity: 47cd2854-378b-4b5a-a203-2bf26b7c877b
+  default_variation:
+    -
+      entity: 47cd2854-378b-4b5a-a203-2bf26b7c877b
+  path:
+    -
+      alias: /products/cocoa-fedora
+      langcode: en
+      pathauto: 1
+  created:
+    -
+      value: 1647871649
+  body:
+    -
+      value: "<p>This rich brown fedora appears to be made of stiff canvas with an elastic band. It features a 2\" brim and silk liner. Currently only available in 7 3/8; returns not accepted.</p>\r\n"
+      format: basic_html
+      summary: ''
+  images:
+    -
+      entity: 716becbe-2bcf-41ae-a57b-800e137e5f20
+      alt: 'Cocoa Fedora'
+      title: ''
+      width: 670
+      height: 630
+    -
+      entity: 3f662f6e-171e-48c9-a846-53d35c68003b
+      alt: 'Cocoa Fedora'
+      title: ''
+      width: 1280
+      height: 1920
+    -
+      entity: 4ebab698-906c-4563-9b92-2b06d987d246
+      alt: 'Cocoa Fedora'
+      title: ''
+      width: 1280
+      height: 853
+  product_brand:
+    -
+      entity: aeb7a7aa-60d0-4a45-80df-aa9ca4111333
+  product_collections:
+    -
+      entity: ce96c75a-d532-4707-a346-56b4dce2fe19

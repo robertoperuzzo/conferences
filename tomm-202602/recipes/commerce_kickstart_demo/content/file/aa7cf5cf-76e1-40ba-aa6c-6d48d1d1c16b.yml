@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: aa7cf5cf-76e1-40ba-aa6c-6d48d1d1c16b
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: pexels-ifreestock-565999.jpg
+  uri:
+    -
+      value: 'public://2025-10/pexels-ifreestock-565999.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 160871
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1759834505

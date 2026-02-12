@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 344e12f2-6c6c-4005-b481-9a35eac83c3f
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: clay-banks-Ph2AIj8vOwo-unsplash.jpg
+  uri:
+    -
+      value: 'public://2025-10/clay-banks-Ph2AIj8vOwo-unsplash.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 460505
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1759494645

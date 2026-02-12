@@ -1,0 +1,62 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: d5c82670-7ab3-4f79-b66e-7ed8b0d9bd6b
+  bundle: article
+  default_langcode: en
+  depends:
+    cf9cadcc-5a42-42a0-8d46-4c6727356a2a: file
+    9cc0234d-b8cc-48bd-806e-275d538e8496: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Thoughtful Gift Ideas for Every Occasion'
+  created:
+    -
+      value: 1753974210
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /blog/lifestyle/thoughtful-gift-ideas-every-occasion
+      langcode: en
+      pathauto: 1
+  body:
+    -
+      value: '<p>Choosing a gift is more than just ticking an item off a list — it’s a chance to show someone you truly care. A well-chosen present reflects the recipient’s personality, your relationship, and the occasion itself.</p><ul><li><strong>Personalized touches.</strong> Whether it’s an engraved keepsake, a custom-printed mug, or a handwritten note, small details can transform an ordinary gift into something special.</li><li><strong>Experiences over things.</strong> Consider gifting an experience, like a cooking class, concert tickets, or a weekend getaway. Memories often last longer than material items.</li><li><strong>Wellness and self-care.</strong> Thoughtful gifts that encourage relaxation — candles, cozy blankets, or a spa voucher — are always appreciated.</li><li><strong>Books and hobbies.</strong> If they’re a reader, crafter, or gamer, leaning into their hobbies ensures the gift will be enjoyed and used.</li><li><strong>Seasonal surprises.</strong> From festive holiday bundles to summer picnic kits, tying your gift to the season adds an extra layer of thoughtfulness.</li></ul><p>The most memorable gifts don’t have to be the most expensive ones — they just need to show that you’ve thought about what will make someone smile.</p><p><a href="/products">You can find some gift inspirations here.</a></p>'
+      format: basic_html
+      summary: 'Finding the perfect gift doesn’t have to be stressful. With a little creativity and attention to detail, you can choose presents that feel personal and meaningful.'
+  comment:
+    -
+      status: 2
+      cid: 0
+      last_comment_timestamp: 1759417892
+      last_comment_name: ''
+      last_comment_uid: 1
+      comment_count: 0
+  field_image:
+    -
+      entity: cf9cadcc-5a42-42a0-8d46-4c6727356a2a
+      alt: 'Thoughtful Gift Ideas for Every Occasion'
+      title: ''
+      width: 1920
+      height: 1080
+  field_tags:
+    -
+      entity: 9cc0234d-b8cc-48bd-806e-275d538e8496

@@ -1,0 +1,31 @@
+_meta:
+  version: '1.0'
+  entity_type: commerce_product_variation
+  uuid: 080815af-a8d5-4519-bc8c-38b89842297b
+  bundle: media_physical
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  sku:
+    -
+      value: book-poirot-investigates-hard-copy
+  title:
+    -
+      value: 'Poirot Investigates by Agatha Christie - Hard copy'
+  price:
+    -
+      number: '9.000000'
+      currency_code: USD
+      formatted: $9.00
+  created:
+    -
+      value: 1648466327
+  weight:
+    -
+      number: '700.000000'
+      unit: g

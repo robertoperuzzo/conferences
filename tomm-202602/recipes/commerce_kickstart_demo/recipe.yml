@@ -1,0 +1,1831 @@
+name: 'Commerce Kickstart: Demo'
+description: 'Commerce Kickstart Demo is a recipe to be applied to a Commerce Kickstart installation that creates the entire demo store, including its configuration and default content.'
+type: 'Commerce'
+recipes:
+  - commerce_kickstart_base
+  - commerce_recipe_shipping
+  - core/recipes/article_content_type
+  - core/recipes/article_tags
+  - core/recipes/article_comment
+install:
+  - advancedqueue
+  - better_exposed_filters
+  - block_visibility_conditions
+  - block_visibility_conditions_node
+  - block_visibility_conditions_taxonomy
+  - bootstrap_layout_builder
+  - bootstrap_styles
+  - commerce_file
+  - commerce_license
+  - commerce_number_pattern
+  - commerce_payment_example
+  - config_rewrite
+  - config_split
+  - core_views_facets
+  - entity_reference_revisions
+  - facets
+  - facets_pretty_paths
+  - field_group
+  - image_delta_formatter
+  - inline_block_title_automatic
+  - interval
+  - layout_builder
+  - layout_builder_blocks
+  - layout_builder_expose_all_field_blocks
+  - layout_builder_lock
+  - layout_builder_modal
+  - layout_builder_operation_link
+  - layout_builder_restrictions
+  - layout_builder_restrictions_by_region
+  - layout_discovery
+  - link
+  - media
+  - media_library
+  - media_library_form_element
+  - path_alias
+  - physical
+  - responsive_image
+  - search_api
+  - search_api_db
+  - section_library
+  - text
+  - token
+  - commerce_kickstart_demo_assets
+config:
+  strict: true
+  import:
+    advancedqueue: '*'
+    better_exposed_filters: '*'
+    block_visibility_conditions: '*'
+    block_visibility_conditions_node: '*'
+    block_visibility_conditions_taxonomy: '*'
+    bootstrap_layout_builder: '*'
+    bootstrap_styles: '*'
+    commerce_file: '*'
+    commerce_license:
+      - advancedqueue.advancedqueue_queue.commerce_license
+      - advancedqueue.advancedqueue_queue.commerce_license_notify
+      - system.action.commerce_license_delete_action
+      - views.view.commerce_licenses
+    commerce_number_pattern: '*'
+    commerce_payment_example: '*'
+    config_rewrite: '*'
+    config_split: '*'
+    core_views_facets: '*'
+    entity_reference_revisions: '*'
+    facets: '*'
+    facets_pretty_paths: '*'
+    field_group: '*'
+    image_delta_formatter: '*'
+    inline_block_title_automatic: '*'
+    interval: '*'
+    layout_builder: '*'
+    layout_builder_blocks: '*'
+    layout_builder_expose_all_field_blocks: '*'
+    layout_builder_lock: '*'
+    layout_builder_modal: '*'
+    layout_builder_operation_link: '*'
+    layout_builder_restrictions: '*'
+    layout_builder_restrictions_by_region: '*'
+    layout_discovery: '*'
+    link: '*'
+    media: '*'
+    media_library: '*'
+    media_library_form_element: '*'
+    path_alias: '*'
+    physical: '*'
+    search_api:
+      - search_api.settings
+    search_api_db: '*'
+    section_library: '*'
+    text: '*'
+    token: '*'
+    commerce_kickstart_demo_assets: '*'
+  actions:
+    system.cron:
+      simpleConfigUpdate:
+        threshold.requirements_warning: 172800
+        threshold.requirements_error: 1209600
+    system.site:
+      simpleConfigUpdate:
+        page.front: '/frontpage'
+    commerce_checkout.commerce_checkout_flow.default:
+      simpleConfigUpdate:
+        configuration.panes.order_summary.view: commerce_checkout_order_summary
+    block.block.belgrade_page_title:
+      simpleConfigUpdate:
+        visibility:
+          request_path:
+            id: request_path
+            negate: true
+            context_mapping: {  }
+            pages: "<front>\r\n/product/*\r\n/products*\r\n"
+          not_node_type:
+            id: not_node_type
+            bundles:
+              landing_page: cklb_landing_page
+            negate: null
+          not_taxonomy_vocabulary:
+            id: not_taxonomy_vocabulary
+            bundles: {  }
+            negate: null
+    bootstrap_styles.settings:
+      simpleConfigUpdate:
+        layout_builder_theme: dark
+        background_colors: "bg-primary|Primary\r\nbg-dark|Dark\r\nbg-light|Light"
+        background_image:
+          bundle: image
+          field: field_media_image
+        background_local_video:
+          bundle: video
+          field: field_media_video_file
+        text_colors: "text-white|White\r\ntext-black|Black"
+        text_alignment: "text-start|Left\r\ntext-center|Center\r\ntext-end|Right"
+        padding: "p-1|Padding 1\r\np-2|Padding 2\r\np-3|Padding 3\r\np-4|Padding 4\r\np-5|Padding 5\r\np-6|Padding 6"
+        padding_left: "ps-1|Padding Left 1\r\nps-2|Padding Left 2\r\nps-3|Padding Left 3\r\nps-4|Padding Left 4\r\nps-5|Padding Left 5\r\nps-6|Padding Left 6"
+        padding_top: "pt-1|Padding Top 1\r\npt-2|Padding Top 2\r\npt-3|Padding Top 3\r\npt-4|Padding Top 4\r\npt-5|Padding Top 5\r\npt-6|Padding Top 6"
+        padding_right: "pe-1|Padding Right 1\r\npe-2|Padding Right 2\r\npe-3|Padding Right 3\r\npe-4|Padding Right 4\r\npe-5|Padding Right 5\r\npe-6|Padding Right 6"
+        padding_bottom: "pb-1|Padding Bottom 1\r\npb-2|Padding Bottom 2\r\npb-3|Padding Bottom 3\r\npb-4|Padding Bottom 4\r\npb-5|Padding Bottom 5\r\npb-6|Padding Bottom 6"
+        margin: "m-1|Margin 1\r\nm-2|Margin 2\r\nm-3|Margin 3\r\nm-4|Margin 4\r\nm-5|Margin 5\r\nm-6|Margin 6"
+        margin_left: "ms-1|Margin Left 1\r\nms-2|Margin Left 2\r\nms-3|Margin Left 3\r\nms-4|Margin Left 4\r\nms-5|Margin Left 5\r\nms-6|Margin Left 6"
+        margin_top: "mt-1|Margin Top 1\r\nmt-2|Margin Top 2\r\nmt-3|Margin Top 3\r\nmt-4|Margin Top 4\r\nmt-5|Margin Top 5\r\nmt-6|Margin Top 6"
+        margin_right: "me-1|Margin Right 1\r\nme-2|Margin Right 2\r\nme-3|Margin Right 3\r\nme-4|Margin Right 4\r\nme-5|Margin Right 5\r\nme-6|Margin Right 6"
+        margin_bottom: "mb-1|Margin Bottom 1\r\nmb-2|Margin Bottom 2\r\nmb-3|Margin Bottom 3\r\nmb-4|Margin Bottom 4\r\nmb-5|Margin Bottom 5\r\nmb-6|Margin Bottom 6"
+        border_style: "bs-border-style-solid|Solid\r\nbs-border-style-dashed|Dashed\r\nbs-border-style-dotted|Dotted"
+        border_left_style: "bs-border-style-left-solid|Solid\r\nbs-border-style-left-dashed|Dashed\r\nbs-border-style-left-dotted|Dotted"
+        border_top_style: "bs-border-style-top-solid|Solid\r\nbs-border-style-top-dashed|Dashed\r\nbs-border-style-top-dotted|Dotted"
+        border_right_style: "bs-border-style-right-solid|Solid\r\nbs-border-style-right-dashed|Dashed\r\nbs-border-style-right-dotted|Dotted"
+        border_bottom_style: "bs-border-style-bottom-solid|Solid\r\nbs-border-style-bottom-dashed|Dashed\r\nbs-border-style-bottom-dotted|Dotted"
+        border_width: "bs-border-width-1|Width 1\r\nbs-border-width-2|Width 2\r\nbs-border-width-3|Width 3"
+        border_left_width: "bs-border-width-left-1|Width 1\r\nbs-border-width-left-2|Width 2\r\nbs-border-width-left-3|Width 3"
+        border_top_width: "bs-border-width-top-1|Width 1\r\nbs-border-width-top-2|Width 2\r\nbs-border-width-top-3|Width 3"
+        border_right_width: "bs-border-width-right-1|Width 1\r\nbs-border-width-right-2|Width 2\r\nbs-border-width-right-3|Width 3"
+        border_bottom_width: "bs-border-width-bottom-1|Width 1\r\nbs-border-width-bottom-2|Width 2\r\nbs-border-width-bottom-3|Width 3"
+        border_color: "bs-border-color-red|Red\r\nbs-border-color-green|Green\r\nbs-border-color-blue|Blue"
+        border_left_color: "bs-border-color-left-red|Red\r\nbs-border-color-left-green|Green\r\nbs-border-color-left-blue|Blue"
+        border_top_color: "bs-border-color-top-red|Red\r\nbs-border-color-top-green|Green\r\nbs-border-color-top-blue|Blue"
+        border_right_color: "bs-border-color-right-red|Red\r\nbs-border-color-right-green|Green\r\nbs-border-color-right-blue|Blue"
+        border_bottom_color: "bs-border-color-bottom-red|Red\r\nbs-border-color-bottom-green|Green\r\nbs-border-color-bottom-blue|Blue"
+        rounded_corners: "bs-border-radius-1|Radius 1\r\nbs-border-radius-2|Radius 2\r\nbs-border-radius-3|Radius 3"
+        rounded_corner_top_left: "bs-border-radius-top-left-1|Radius 1\r\nbs-border-radius-top-left-2|Radius 2\r\nbs-border-radius-top-left-3|Radius 3"
+        rounded_corner_top_right: "bs-border-radius-top-right-1|Radius 1\r\nbs-border-radius-top-right-2|Radius 2\r\nbs-border-radius-top-right-3|Radius 3"
+        rounded_corner_bottom_left: "bs-border-radius-bottom-left-1|Radius 1\r\nbs-border-radius-bottom-left-2|Radius 2\r\nbs-border-radius-bottom-left-3|Radius 3"
+        rounded_corner_bottom_right: "bs-border-radius-bottom-right-1|Radius 1\r\nbs-border-radius-bottom-right-2|Radius 2\r\nbs-border-radius-bottom-right-3|Radius 3"
+        scroll_effects: "fade-up|Fade Up\r\nfade-down|Fade Down\r\nfade-left|Fade Left\r\nfade-right|Fade Right\r\nfade-up-right|Fade Up Right\r\nfade-up-left|Fade Up Left\r\nfade-down-right|Fade Down Right\r\nfade-down-left|Fade Down Left\r\nflip-left|Flip Left\r\nflip-right|Flip Right\r\nflip-up|Flip Up\r\nflip-down|Flip Down\r\nzoom-in|Zoom In\r\nzoom-in-up|Zoom In Up\r\nzoom-in-down|Zoom In Down\r\nzoom-in-left|Zoom In Left\r\nzoom-in-right|Zoom In Right\r\nzoom-out|Zoom Out\r\nzoom-out-up|Zoom Out Up\r\nzoom-out-down|Zoom Out Down\r\nzoom-out-right|Zoom Out Right\r\nzoom-out-left|Zoom Out Left"
+        attribute_type: data
+        data_key: aos
+        scroll_effects_attr_type: 1
+        scroll_effects_data_key: data-aos
+        scroll_effects_library_type: external
+    commerce_order.commerce_order_type.default:
+      simpleConfigUpdate:
+        third_party_settings:
+          commerce_checkout:
+            checkout_flow: shipping
+          commerce_shipping:
+            shipment_type: default
+    core.entity_view_display.commerce_product.default.default:
+      simpleConfigUpdate:
+        langcode: en
+        status: true
+        dependencies:
+          config:
+            - commerce_product.commerce_product_type.default
+            - field.field.commerce_product.default.body
+            - field.field.commerce_product.default.images
+            - field.field.commerce_product.default.layout_builder__layout
+            - field.field.commerce_product.default.product_brand
+            - field.field.commerce_product.default.product_collections
+            - field.field.commerce_product.default.product_tags
+          module:
+            - commerce_product
+            - layout_builder
+            - layout_builder_restrictions
+            - text
+        third_party_settings:
+          layout_builder:
+            enabled: true
+            allow_custom: true
+            sections:
+              - layout_id: 'bootstrap_layout_builder:blb_col_2'
+                layout_settings:
+                  label: 'Main content'
+                  context_mapping: { }
+                  container_wrapper_classes: ''
+                  container_wrapper_attributes: null
+                  container_wrapper:
+                    bootstrap_styles:
+                      background:
+                        background_type: color
+                      background_color:
+                        class: null
+                      background_media:
+                        image:
+                          media_id: null
+                        video:
+                          media_id: null
+                        background_options:
+                          background_position: center
+                          background_repeat: no-repeat
+                          background_attachment: not_fixed
+                          background_size: cover
+                      padding:
+                        class: _none
+                      padding_left:
+                        class: _none
+                      padding_top:
+                        class: _none
+                      padding_right:
+                        class: _none
+                      padding_bottom:
+                        class: _none
+                      margin:
+                        class: _none
+                      margin_left:
+                        class: _none
+                      margin_top:
+                        class: _none
+                      margin_right:
+                        class: _none
+                      margin_bottom:
+                        class: _none
+                  container_wrapper_bg_color_class: ''
+                  container_wrapper_bg_media: null
+                  container: container
+                  section_classes: ''
+                  section_attributes: null
+                  regions_classes:
+                    blb_region_col_1: ''
+                    blb_region_col_2: ''
+                  regions_attributes:
+                    blb_region_col_1: null
+                    blb_region_col_2: null
+                  breakpoints:
+                    desktop: blb_col_6_6
+                    tablet: blb_col_6_6
+                    mobile: blb_col_12
+                  layout_regions_classes:
+                    blb_region_col_1:
+                      - col-lg-6
+                      - col-md-6
+                      - col-12
+                    blb_region_col_2:
+                      - col-lg-6
+                      - col-md-6
+                      - col-12
+                  remove_gutters: '0'
+                components:
+                  397b61c5-4636-4dfe-9ed5-033357a82444:
+                    uuid: 397b61c5-4636-4dfe-9ed5-033357a82444
+                    region: blb_region_col_1
+                    configuration:
+                      id: 'field_block:commerce_product:default:images'
+                      label: Images
+                      label_display: '0'
+                      provider: layout_builder
+                      context_mapping:
+                        entity: layout_builder.entity
+                        view_mode: view_mode
+                      formatter:
+                        type: image
+                        label: visually_hidden
+                        settings:
+                          image_link: ''
+                          image_style: cklb_medium_max_1144px
+                          image_loading:
+                            attribute: lazy
+                        third_party_settings: {  }
+                    weight: 0
+                    additional:
+                      bootstrap_styles:
+                        block_style:
+                          background:
+                            background_type: color
+                          background_color:
+                            class: null
+                          background_media:
+                            image:
+                              media_id: null
+                            video:
+                              media_id: null
+                            background_options:
+                              background_position: center
+                              background_repeat: no-repeat
+                              background_attachment: not_fixed
+                              background_size: cover
+                          text_color:
+                            class: null
+                          text_alignment:
+                            class: null
+                          padding:
+                            class: _none
+                          padding_left:
+                            class: _none
+                          padding_top:
+                            class: _none
+                          padding_right:
+                            class: _none
+                          padding_bottom:
+                            class: _none
+                          margin:
+                            class: _none
+                          margin_left:
+                            class: _none
+                          margin_top:
+                            class: _none
+                          margin_right:
+                            class: _none
+                          margin_bottom:
+                            class: _none
+                          scroll_effects:
+                            class: null
+                  43909e69-d171-4cbc-ac03-09568c23cd95:
+                    uuid: 43909e69-d171-4cbc-ac03-09568c23cd95
+                    region: blb_region_col_2
+                    configuration:
+                      id: 'field_block:commerce_product:default:product_collections'
+                      label: 'Product Collections'
+                      label_display: '0'
+                      provider: layout_builder
+                      context_mapping:
+                        entity: layout_builder.entity
+                        view_mode: view_mode
+                      formatter:
+                        type: entity_reference_label
+                        label: visually_hidden
+                        settings:
+                          link: false
+                        third_party_settings: { }
+                    weight: 0
+                    additional:
+                      bootstrap_styles:
+                        block_style:
+                          background:
+                            background_type: color
+                          background_color:
+                            class: null
+                          background_media:
+                            image:
+                              media_id: null
+                            video:
+                              media_id: null
+                            background_options:
+                              background_position: center
+                              background_repeat: no-repeat
+                              background_attachment: not_fixed
+                              background_size: cover
+                          text_color:
+                            class: null
+                          text_alignment:
+                            class: null
+                          padding:
+                            class: _none
+                          padding_left:
+                            class: _none
+                          padding_top:
+                            class: _none
+                          padding_right:
+                            class: _none
+                          padding_bottom:
+                            class: _none
+                          margin:
+                            class: _none
+                          margin_left:
+                            class: _none
+                          margin_top:
+                            class: _none
+                          margin_right:
+                            class: _none
+                          margin_bottom:
+                            class: mb-4
+                          scroll_effects:
+                            class: null
+                  ae461d70-7f44-41d8-8c73-a5797026ff16:
+                    uuid: ae461d70-7f44-41d8-8c73-a5797026ff16
+                    region: blb_region_col_2
+                    configuration:
+                      id: 'field_block:commerce_product:default:title'
+                      label: Title
+                      label_display: '0'
+                      provider: layout_builder
+                      context_mapping:
+                        entity: layout_builder.entity
+                        view_mode: view_mode
+                      formatter:
+                        type: string
+                        label: visually_hidden
+                        settings:
+                          link_to_entity: false
+                        third_party_settings: { }
+                    weight: 1
+                    additional:
+                      bootstrap_styles:
+                        block_style:
+                          background:
+                            background_type: color
+                          background_color:
+                            class: null
+                          background_media:
+                            image:
+                              media_id: null
+                            video:
+                              media_id: null
+                            background_options:
+                              background_position: center
+                              background_repeat: no-repeat
+                              background_attachment: not_fixed
+                              background_size: cover
+                          text_color:
+                            class: null
+                          text_alignment:
+                            class: null
+                          padding:
+                            class: _none
+                          padding_left:
+                            class: _none
+                          padding_top:
+                            class: _none
+                          padding_right:
+                            class: _none
+                          padding_bottom:
+                            class: _none
+                          margin:
+                            class: _none
+                          margin_left:
+                            class: _none
+                          margin_top:
+                            class: _none
+                          margin_right:
+                            class: _none
+                          margin_bottom:
+                            class: _none
+                          scroll_effects:
+                            class: null
+                  16fd72a9-5bc0-494d-a77b-ead238bf3428:
+                    uuid: 16fd72a9-5bc0-494d-a77b-ead238bf3428
+                    region: blb_region_col_2
+                    configuration:
+                      id: 'field_block:commerce_product_variation:default:price'
+                      label: Price
+                      label_display: '0'
+                      provider: layout_builder
+                      context_mapping:
+                        entity: '@commerce_product.product_variation_route_context:commerce_product_variation'
+                        view_mode: view_mode
+                      formatter:
+                        type: commerce_price_calculated
+                        label: visually_hidden
+                        settings:
+                          strip_trailing_zeroes: false
+                          currency_display: symbol
+                          adjustment_types:
+                            fee: fee
+                            promotion: promotion
+                            tax: '0'
+                            shipping: '0'
+                            shipping_promotion: '0'
+                        third_party_settings: { }
+                    weight: 2
+                    additional:
+                      bootstrap_styles:
+                        block_style:
+                          background:
+                            background_type: color
+                          background_color:
+                            class: null
+                          background_media:
+                            image:
+                              media_id: null
+                            video:
+                              media_id: null
+                            background_options:
+                              background_position: center
+                              background_repeat: no-repeat
+                              background_attachment: not_fixed
+                              background_size: cover
+                          text_color:
+                            class: null
+                          text_alignment:
+                            class: null
+                          padding:
+                            class: _none
+                          padding_left:
+                            class: _none
+                          padding_top:
+                            class: _none
+                          padding_right:
+                            class: _none
+                          padding_bottom:
+                            class: _none
+                          margin:
+                            class: _none
+                          margin_left:
+                            class: _none
+                          margin_top:
+                            class: _none
+                          margin_right:
+                            class: _none
+                          margin_bottom:
+                            class: _none
+                          scroll_effects:
+                            class: null
+                  39bf0690-64ad-468a-bd48-cee419b97789:
+                    uuid: 39bf0690-64ad-468a-bd48-cee419b97789
+                    region: blb_region_col_2
+                    configuration:
+                      id: 'field_block:commerce_product:default:body'
+                      label: Body
+                      label_display: '0'
+                      provider: layout_builder
+                      context_mapping:
+                        entity: layout_builder.entity
+                        view_mode: view_mode
+                      formatter:
+                        type: text_default
+                        label: visually_hidden
+                        settings: { }
+                        third_party_settings: { }
+                    weight: 3
+                    additional:
+                      bootstrap_styles:
+                        block_style:
+                          background:
+                            background_type: color
+                          background_color:
+                            class: null
+                          background_media:
+                            image:
+                              media_id: null
+                            video:
+                              media_id: null
+                            background_options:
+                              background_position: center
+                              background_repeat: no-repeat
+                              background_attachment: not_fixed
+                              background_size: cover
+                          text_color:
+                            class: null
+                          text_alignment:
+                            class: null
+                          padding:
+                            class: _none
+                          padding_left:
+                            class: _none
+                          padding_top:
+                            class: _none
+                          padding_right:
+                            class: _none
+                          padding_bottom:
+                            class: _none
+                          margin:
+                            class: _none
+                          margin_left:
+                            class: _none
+                          margin_top:
+                            class: mt-4
+                          margin_right:
+                            class: _none
+                          margin_bottom:
+                            class: _none
+                          scroll_effects:
+                            class: null
+                  6aee2ed5-2697-4d41-85ba-7eecae09508f:
+                    uuid: 6aee2ed5-2697-4d41-85ba-7eecae09508f
+                    region: blb_region_col_2
+                    configuration:
+                      id: 'field_block:commerce_product:default:variations'
+                      label: Variations
+                      label_display: '0'
+                      provider: layout_builder
+                      context_mapping:
+                        entity: layout_builder.entity
+                        view_mode: view_mode
+                      formatter:
+                        type: commerce_add_to_cart
+                        label: visually_hidden
+                        settings:
+                          combine: true
+                        third_party_settings: { }
+                    weight: 4
+                    additional:
+                      bootstrap_styles:
+                        block_style:
+                          background:
+                            background_type: color
+                          background_color:
+                            class: null
+                          background_media:
+                            image:
+                              media_id: null
+                            video:
+                              media_id: null
+                            background_options:
+                              background_position: center
+                              background_repeat: no-repeat
+                              background_attachment: not_fixed
+                              background_size: cover
+                          text_color:
+                            class: null
+                          text_alignment:
+                            class: null
+                          padding:
+                            class: _none
+                          padding_left:
+                            class: _none
+                          padding_top:
+                            class: _none
+                          padding_right:
+                            class: _none
+                          padding_bottom:
+                            class: _none
+                          margin:
+                            class: _none
+                          margin_left:
+                            class: _none
+                          margin_top:
+                            class: _none
+                          margin_right:
+                            class: _none
+                          margin_bottom:
+                            class: _none
+                          scroll_effects:
+                            class: null
+                third_party_settings:
+                  layout_builder_lock:
+                    lock:
+                      1: 1
+                      2: 2
+                      4: 4
+          layout_builder_restrictions:
+            allowed_block_categories:
+              - 'Chaos Tools'
+              - Commerce
+              - 'Content fields'
+              - 'Custom block types'
+              - Forms
+              - Help
+              - 'Inline blocks'
+              - 'Lists (Views)'
+              - Menus
+              - System
+              - User
+              - core
+            entity_view_mode_restriction:
+              allowed_layouts:
+                - 'bootstrap_layout_builder:blb_col_1'
+                - 'bootstrap_layout_builder:blb_col_2'
+                - 'bootstrap_layout_builder:blb_col_3'
+                - 'bootstrap_layout_builder:blb_col_4'
+                - 'bootstrap_layout_builder:blb_col_5'
+                - 'bootstrap_layout_builder:blb_col_6'
+                - 'bootstrap_layout_builder:blb_col_7'
+                - 'bootstrap_layout_builder:blb_col_8'
+                - 'bootstrap_layout_builder:blb_col_9'
+                - 'bootstrap_layout_builder:blb_col_10'
+                - 'bootstrap_layout_builder:blb_col_11'
+                - 'bootstrap_layout_builder:blb_col_12'
+                - cklb_slideshow
+              blacklisted_blocks: { }
+              whitelisted_blocks: { }
+              restricted_categories: { }
+            entity_view_mode_restriction_by_region:
+              allowed_layouts:
+                - 'bootstrap_layout_builder:blb_col_1'
+                - 'bootstrap_layout_builder:blb_col_2'
+                - 'bootstrap_layout_builder:blb_col_3'
+                - 'bootstrap_layout_builder:blb_col_4'
+                - 'bootstrap_layout_builder:blb_col_5'
+                - 'bootstrap_layout_builder:blb_col_6'
+                - 'bootstrap_layout_builder:blb_col_7'
+                - 'bootstrap_layout_builder:blb_col_8'
+                - 'bootstrap_layout_builder:blb_col_9'
+                - 'bootstrap_layout_builder:blb_col_10'
+                - 'bootstrap_layout_builder:blb_col_11'
+                - 'bootstrap_layout_builder:blb_col_12'
+                - cklb_slideshow
+        id: commerce_product.default.default
+        targetEntityType: commerce_product
+        bundle: default
+        mode: default
+        content:
+          body:
+            type: text_default
+            label: hidden
+            settings: { }
+            third_party_settings: { }
+            weight: 0
+            region: content
+          title:
+            type: string
+            label: hidden
+            settings:
+              link_to_entity: false
+            third_party_settings: { }
+            weight: -5
+            region: content
+          variations:
+            type: commerce_add_to_cart
+            label: hidden
+            settings:
+              combine: true
+            third_party_settings: { }
+            weight: 1
+            region: content
+        hidden:
+          created: true
+          images: true
+          layout_builder__layout: true
+          product_brand: true
+          product_collections: true
+          product_tags: true
+          search_api_excerpt: true
+          stores: true
+          uid: true
+    views.view.commerce_checkout_order_summary:
+      simpleConfigUpdate:
+        langcode: en
+        status: true
+        dependencies:
+          config:
+            - field.storage.commerce_product.images
+            - image.style.thumbnail
+          module:
+            - commerce_order
+            - commerce_price
+            - commerce_product
+            - image
+          enforced:
+            module:
+              - commerce_checkout
+              - commerce_order
+        id: commerce_checkout_order_summary
+        label: 'Checkout order summary'
+        module: views
+        description: ''
+        tag: commerce_order_summary
+        base_table: commerce_order
+        base_field: order_id
+        display:
+          default:
+            id: default
+            display_title: Master
+            display_plugin: default
+            position: 0
+            display_options:
+              fields:
+                quantity:
+                  id: quantity
+                  table: commerce_order_item
+                  field: quantity
+                  relationship: order_items
+                  group_type: group
+                  admin_label: ''
+                  entity_type: commerce_order_item
+                  entity_field: quantity
+                  plugin_id: field
+                  label: ''
+                  exclude: false
+                  alter:
+                    alter_text: true
+                    text: '{{ quantity }}&nbsp;x'
+                    make_link: false
+                    path: ''
+                    absolute: false
+                    external: false
+                    replace_spaces: false
+                    path_case: none
+                    trim_whitespace: false
+                    alt: ''
+                    rel: ''
+                    link_class: ''
+                    prefix: ''
+                    suffix: ''
+                    target: ''
+                    nl2br: false
+                    max_length: 0
+                    word_boundary: true
+                    ellipsis: true
+                    more_link: false
+                    more_link_text: ''
+                    more_link_path: ''
+                    strip_tags: false
+                    trim: false
+                    preserve_tags: ''
+                    html: false
+                  element_type: ''
+                  element_class: ''
+                  element_label_type: ''
+                  element_label_class: ''
+                  element_label_colon: false
+                  element_wrapper_type: ''
+                  element_wrapper_class: ''
+                  element_default_classes: true
+                  empty: ''
+                  hide_empty: false
+                  empty_zero: false
+                  hide_alter_empty: true
+                  click_sort_column: value
+                  type: number_decimal
+                  settings:
+                    thousand_separator: ''
+                    decimal_separator: .
+                    scale: 0
+                    prefix_suffix: false
+                  group_column: value
+                  group_columns: { }
+                  group_rows: true
+                  delta_limit: 0
+                  delta_offset: 0
+                  delta_reversed: false
+                  delta_first_last: false
+                  multi_type: separator
+                  separator: ', '
+                  field_api_classes: false
+                images:
+                  id: images
+                  table: commerce_product__images
+                  field: images
+                  relationship: product_id
+                  group_type: group
+                  admin_label: ''
+                  plugin_id: field
+                  label: ''
+                  exclude: false
+                  alter:
+                    alter_text: false
+                    text: ''
+                    make_link: false
+                    path: ''
+                    absolute: false
+                    external: false
+                    replace_spaces: false
+                    path_case: none
+                    trim_whitespace: false
+                    alt: ''
+                    rel: ''
+                    link_class: ''
+                    prefix: ''
+                    suffix: ''
+                    target: ''
+                    nl2br: false
+                    max_length: 0
+                    word_boundary: true
+                    ellipsis: true
+                    more_link: false
+                    more_link_text: ''
+                    more_link_path: ''
+                    strip_tags: false
+                    trim: false
+                    preserve_tags: ''
+                    html: false
+                  element_type: ''
+                  element_class: ''
+                  element_label_type: ''
+                  element_label_class: ''
+                  element_label_colon: false
+                  element_wrapper_type: ''
+                  element_wrapper_class: ''
+                  element_default_classes: true
+                  empty: ''
+                  hide_empty: false
+                  empty_zero: false
+                  hide_alter_empty: true
+                  click_sort_column: target_id
+                  type: image
+                  settings:
+                    image_link: ''
+                    image_style: thumbnail
+                  group_column: ''
+                  group_columns: { }
+                  group_rows: true
+                  delta_limit: 1
+                  delta_offset: 0
+                  delta_reversed: false
+                  delta_first_last: false
+                  multi_type: separator
+                  separator: ', '
+                  field_api_classes: false
+                title:
+                  id: title
+                  table: commerce_product_variation_field_data
+                  field: title
+                  relationship: commerce_product_variation
+                  group_type: group
+                  admin_label: ''
+                  entity_type: commerce_product_variation
+                  entity_field: title
+                  plugin_id: field
+                  label: ''
+                  exclude: false
+                  alter:
+                    alter_text: false
+                    text: ''
+                    make_link: false
+                    path: ''
+                    absolute: false
+                    external: false
+                    replace_spaces: false
+                    path_case: none
+                    trim_whitespace: false
+                    alt: ''
+                    rel: ''
+                    link_class: ''
+                    prefix: ''
+                    suffix: ''
+                    target: ''
+                    nl2br: false
+                    max_length: 0
+                    word_boundary: true
+                    ellipsis: true
+                    more_link: false
+                    more_link_text: ''
+                    more_link_path: ''
+                    strip_tags: false
+                    trim: false
+                    preserve_tags: ''
+                    html: false
+                  element_type: ''
+                  element_class: ''
+                  element_label_type: ''
+                  element_label_class: ''
+                  element_label_colon: false
+                  element_wrapper_type: ''
+                  element_wrapper_class: ''
+                  element_default_classes: true
+                  empty: ''
+                  hide_empty: false
+                  empty_zero: false
+                  hide_alter_empty: true
+                  click_sort_column: value
+                  type: string
+                  settings: { }
+                  group_column: value
+                  group_columns: { }
+                  group_rows: true
+                  delta_limit: 0
+                  delta_offset: 0
+                  delta_reversed: false
+                  delta_first_last: false
+                  multi_type: separator
+                  separator: ', '
+                  field_api_classes: false
+                total_price__number:
+                  id: total_price__number
+                  table: commerce_order_item
+                  field: total_price__number
+                  relationship: order_items
+                  group_type: group
+                  admin_label: ''
+                  entity_type: commerce_order_item
+                  entity_field: total_price
+                  plugin_id: field
+                  label: ''
+                  exclude: false
+                  alter:
+                    alter_text: false
+                    text: ''
+                    make_link: false
+                    path: ''
+                    absolute: false
+                    external: false
+                    replace_spaces: false
+                    path_case: none
+                    trim_whitespace: false
+                    alt: ''
+                    rel: ''
+                    link_class: ''
+                    prefix: ''
+                    suffix: ''
+                    target: ''
+                    nl2br: false
+                    max_length: 0
+                    word_boundary: true
+                    ellipsis: true
+                    more_link: false
+                    more_link_text: ''
+                    more_link_path: ''
+                    strip_tags: false
+                    trim: false
+                    preserve_tags: ''
+                    html: false
+                  element_type: ''
+                  element_class: ''
+                  element_label_type: ''
+                  element_label_class: ''
+                  element_label_colon: false
+                  element_wrapper_type: ''
+                  element_wrapper_class: ''
+                  element_default_classes: true
+                  empty: ''
+                  hide_empty: false
+                  empty_zero: false
+                  hide_alter_empty: true
+                  click_sort_column: number
+                  type: commerce_price_default
+                  settings:
+                    strip_trailing_zeroes: false
+                    currency_display: symbol
+                  group_column: ''
+                  group_columns: { }
+                  group_rows: true
+                  delta_limit: 0
+                  delta_offset: 0
+                  delta_reversed: false
+                  delta_first_last: false
+                  multi_type: separator
+                  separator: ', '
+                  field_api_classes: false
+              pager:
+                type: none
+                options:
+                  offset: 0
+              exposed_form:
+                type: basic
+                options:
+                  submit_button: Apply
+                  reset_button: false
+                  reset_button_label: Reset
+                  exposed_sorts_label: 'Sort by'
+                  expose_sort_order: true
+                  sort_asc_label: Asc
+                  sort_desc_label: Desc
+              access:
+                type: none
+                options: { }
+              cache:
+                type: tag
+                options: { }
+              empty: { }
+              sorts:
+                order_item_id:
+                  id: order_item_id
+                  table: commerce_order_item
+                  field: order_item_id
+                  relationship: order_items
+                  group_type: group
+                  admin_label: ''
+                  entity_type: commerce_order_item
+                  entity_field: order_item_id
+                  plugin_id: standard
+                  order: ASC
+                  expose:
+                    label: ''
+                    field_identifier: order_item_id
+                  exposed: false
+              arguments:
+                order_id:
+                  id: order_id
+                  table: commerce_order
+                  field: order_id
+                  relationship: none
+                  group_type: group
+                  admin_label: ''
+                  entity_type: commerce_order
+                  entity_field: order_id
+                  plugin_id: numeric
+                  default_action: default
+                  exception:
+                    value: all
+                    title_enable: false
+                    title: All
+                  title_enable: false
+                  title: ''
+                  default_argument_type: fixed
+                  default_argument_options:
+                    argument: ''
+                  default_argument_skip_url: false
+                  summary_options:
+                    base_path: ''
+                    count: true
+                    override: false
+                    items_per_page: 25
+                  summary:
+                    sort_order: asc
+                    number_of_records: 0
+                    format: default_summary
+                  specify_validation: false
+                  validate:
+                    type: none
+                    fail: 'not found'
+                  validate_options: { }
+                  break_phrase: false
+                  not: false
+              filters: { }
+              style:
+                type: table
+                options:
+                  grouping: { }
+                  row_class: ''
+                  default_row_class: true
+                  columns:
+                    order_number: order_number
+                  default: '-1'
+                  info:
+                    order_number:
+                      sortable: false
+                      default_sort_order: asc
+                      align: ''
+                      separator: ''
+                      empty_column: false
+                      responsive: ''
+                  override: true
+                  sticky: false
+                  summary: ''
+                  empty_table: false
+                  caption: ''
+                  description: ''
+              row:
+                type: fields
+                options:
+                  default_field_elements: true
+                  inline: { }
+                  separator: ''
+                  hide_empty: false
+              query:
+                type: views_query
+                options:
+                  query_comment: ''
+                  disable_sql_rewrite: false
+                  distinct: false
+                  replica: false
+                  query_tags: { }
+              relationships:
+                order_items:
+                  id: order_items
+                  table: commerce_order__order_items
+                  field: order_items_target_id
+                  relationship: none
+                  group_type: group
+                  admin_label: 'order_items: Order Item'
+                  entity_type: commerce_order
+                  entity_field: order_items
+                  plugin_id: standard
+                  required: true
+                commerce_product_variation:
+                  id: commerce_product_variation
+                  table: commerce_order_item
+                  field: commerce_product_variation
+                  relationship: order_items
+                  group_type: group
+                  admin_label: 'Product variation'
+                  entity_type: commerce_order_item
+                  plugin_id: standard
+                  required: true
+                product_id:
+                  id: product_id
+                  table: commerce_product_variation_field_data
+                  field: product_id
+                  relationship: commerce_product_variation
+                  group_type: group
+                  admin_label: Product
+                  entity_type: commerce_product_variation
+                  entity_field: product_id
+                  plugin_id: standard
+                  required: true
+              header: { }
+              footer:
+                commerce_order_total:
+                  id: commerce_order_total
+                  table: views
+                  field: commerce_order_total
+                  relationship: none
+                  group_type: group
+                  admin_label: ''
+                  plugin_id: commerce_order_total
+                  empty: false
+              display_extenders: { }
+            cache_metadata:
+              max-age: -1
+              contexts:
+                - 'languages:language_content'
+                - 'languages:language_interface'
+                - url
+              tags:
+                - 'config:field.storage.commerce_product.images'
+    views.view.commerce_cart_form:
+      simpleConfigUpdate:
+        langcode: en
+        status: true
+        dependencies:
+          config:
+            - field.storage.commerce_product.images
+            - image.style.thumbnail
+          module:
+            - commerce_cart
+            - commerce_order
+            - commerce_price
+            - commerce_product
+            - image
+          enforced:
+            module:
+              - commerce_cart
+        id: commerce_cart_form
+        label: 'Cart form'
+        module: views
+        description: ''
+        tag: commerce_cart_form
+        base_table: commerce_order
+        base_field: order_id
+        display:
+          default:
+            id: default
+            display_title: Master
+            display_plugin: default
+            position: 0
+            display_options:
+              fields:
+                images:
+                  id: images
+                  table: commerce_product__images
+                  field: images
+                  relationship: product_id
+                  group_type: group
+                  admin_label: ''
+                  plugin_id: field
+                  label: Item
+                  exclude: false
+                  alter:
+                    alter_text: false
+                    text: ''
+                    make_link: false
+                    path: ''
+                    absolute: false
+                    external: false
+                    replace_spaces: false
+                    path_case: none
+                    trim_whitespace: false
+                    alt: ''
+                    rel: ''
+                    link_class: ''
+                    prefix: ''
+                    suffix: ''
+                    target: ''
+                    nl2br: false
+                    max_length: 0
+                    word_boundary: true
+                    ellipsis: true
+                    more_link: false
+                    more_link_text: ''
+                    more_link_path: ''
+                    strip_tags: false
+                    trim: false
+                    preserve_tags: ''
+                    html: false
+                  element_type: ''
+                  element_class: ''
+                  element_label_type: ''
+                  element_label_class: ''
+                  element_label_colon: false
+                  element_wrapper_type: ''
+                  element_wrapper_class: ''
+                  element_default_classes: true
+                  empty: ''
+                  hide_empty: false
+                  empty_zero: false
+                  hide_alter_empty: true
+                  click_sort_column: target_id
+                  type: image
+                  settings:
+                    image_link: content
+                    image_style: thumbnail
+                  group_column: ''
+                  group_columns: { }
+                  group_rows: true
+                  delta_limit: 1
+                  delta_offset: 0
+                  delta_reversed: false
+                  delta_first_last: false
+                  multi_type: separator
+                  separator: ', '
+                  field_api_classes: false
+                view_commerce_product:
+                  id: view_commerce_product
+                  table: commerce_product
+                  field: view_commerce_product
+                  relationship: product_id
+                  group_type: group
+                  admin_label: ''
+                  entity_type: commerce_product
+                  plugin_id: entity_link
+                  label: ''
+                  exclude: true
+                  alter:
+                    alter_text: false
+                    text: ''
+                    make_link: false
+                    path: ''
+                    absolute: false
+                    external: false
+                    replace_spaces: false
+                    path_case: none
+                    trim_whitespace: false
+                    alt: ''
+                    rel: ''
+                    link_class: ''
+                    prefix: ''
+                    suffix: ''
+                    target: ''
+                    nl2br: false
+                    max_length: 0
+                    word_boundary: true
+                    ellipsis: true
+                    more_link: false
+                    more_link_text: ''
+                    more_link_path: ''
+                    strip_tags: false
+                    trim: false
+                    preserve_tags: ''
+                    html: false
+                  element_type: ''
+                  element_class: ''
+                  element_label_type: ''
+                  element_label_class: ''
+                  element_label_colon: false
+                  element_wrapper_type: ''
+                  element_wrapper_class: ''
+                  element_default_classes: true
+                  empty: ''
+                  hide_empty: false
+                  empty_zero: false
+                  hide_alter_empty: true
+                  text: view
+                  output_url_as_text: true
+                  absolute: false
+                title:
+                  id: title
+                  table: commerce_order_item
+                  field: title
+                  relationship: order_items
+                  group_type: group
+                  admin_label: ''
+                  entity_type: commerce_order_item
+                  entity_field: title
+                  plugin_id: field
+                  label: ''
+                  exclude: false
+                  alter:
+                    alter_text: false
+                    text: ''
+                    make_link: true
+                    path: '{{ view_commerce_product }}'
+                    absolute: false
+                    external: false
+                    replace_spaces: false
+                    path_case: none
+                    trim_whitespace: false
+                    alt: ''
+                    rel: ''
+                    link_class: ''
+                    prefix: ''
+                    suffix: ''
+                    target: ''
+                    nl2br: false
+                    max_length: 0
+                    word_boundary: true
+                    ellipsis: true
+                    more_link: false
+                    more_link_text: ''
+                    more_link_path: ''
+                    strip_tags: false
+                    trim: false
+                    preserve_tags: ''
+                    html: false
+                  element_type: ''
+                  element_class: ''
+                  element_label_type: ''
+                  element_label_class: ''
+                  element_label_colon: false
+                  element_wrapper_type: ''
+                  element_wrapper_class: ''
+                  element_default_classes: true
+                  empty: ''
+                  hide_empty: false
+                  empty_zero: false
+                  hide_alter_empty: true
+                  click_sort_column: value
+                  type: string
+                  settings: { }
+                  group_column: value
+                  group_columns: { }
+                  group_rows: true
+                  delta_limit: 0
+                  delta_offset: 0
+                  delta_reversed: false
+                  delta_first_last: false
+                  multi_type: separator
+                  separator: ', '
+                  field_api_classes: false
+                unit_price__number:
+                  id: unit_price__number
+                  table: commerce_order_item
+                  field: unit_price__number
+                  relationship: order_items
+                  group_type: group
+                  admin_label: ''
+                  entity_type: commerce_order_item
+                  entity_field: unit_price
+                  plugin_id: field
+                  label: Price
+                  exclude: false
+                  alter:
+                    alter_text: false
+                    text: ''
+                    make_link: false
+                    path: ''
+                    absolute: false
+                    external: false
+                    replace_spaces: false
+                    path_case: none
+                    trim_whitespace: false
+                    alt: ''
+                    rel: ''
+                    link_class: ''
+                    prefix: ''
+                    suffix: ''
+                    target: ''
+                    nl2br: false
+                    max_length: 0
+                    word_boundary: true
+                    ellipsis: true
+                    more_link: false
+                    more_link_text: ''
+                    more_link_path: ''
+                    strip_tags: false
+                    trim: false
+                    preserve_tags: ''
+                    html: false
+                  element_type: ''
+                  element_class: ''
+                  element_label_type: ''
+                  element_label_class: ''
+                  element_label_colon: true
+                  element_wrapper_type: ''
+                  element_wrapper_class: ''
+                  element_default_classes: true
+                  empty: ''
+                  hide_empty: false
+                  empty_zero: false
+                  hide_alter_empty: true
+                  click_sort_column: number
+                  type: commerce_price_default
+                  settings:
+                    strip_trailing_zeroes: false
+                    currency_display: symbol
+                  group_column: ''
+                  group_columns: { }
+                  group_rows: true
+                  delta_limit: 0
+                  delta_offset: 0
+                  delta_reversed: false
+                  delta_first_last: false
+                  multi_type: separator
+                  separator: ', '
+                  field_api_classes: false
+                edit_quantity:
+                  id: edit_quantity
+                  table: commerce_order_item
+                  field: edit_quantity
+                  relationship: order_items
+                  group_type: group
+                  admin_label: ''
+                  entity_type: commerce_order_item
+                  plugin_id: commerce_order_item_edit_quantity
+                  label: Quantity
+                  exclude: false
+                  alter:
+                    alter_text: false
+                    text: ''
+                    make_link: false
+                    path: ''
+                    absolute: false
+                    external: false
+                    replace_spaces: false
+                    path_case: none
+                    trim_whitespace: false
+                    alt: ''
+                    rel: ''
+                    link_class: ''
+                    prefix: ''
+                    suffix: ''
+                    target: ''
+                    nl2br: false
+                    max_length: 0
+                    word_boundary: true
+                    ellipsis: true
+                    more_link: false
+                    more_link_text: ''
+                    more_link_path: ''
+                    strip_tags: false
+                    trim: false
+                    preserve_tags: ''
+                    html: false
+                  element_type: ''
+                  element_class: ''
+                  element_label_type: ''
+                  element_label_class: ''
+                  element_label_colon: true
+                  element_wrapper_type: ''
+                  element_wrapper_class: ''
+                  element_default_classes: true
+                  empty: ''
+                  hide_empty: false
+                  empty_zero: false
+                  hide_alter_empty: true
+                  allow_decimal: false
+                remove_button:
+                  id: remove_button
+                  table: commerce_order_item
+                  field: remove_button
+                  relationship: order_items
+                  group_type: group
+                  admin_label: ''
+                  entity_type: commerce_order_item
+                  plugin_id: commerce_order_item_remove_button
+                  label: Remove
+                  exclude: false
+                  alter:
+                    alter_text: false
+                    text: ''
+                    make_link: false
+                    path: ''
+                    absolute: false
+                    external: false
+                    replace_spaces: false
+                    path_case: none
+                    trim_whitespace: false
+                    alt: ''
+                    rel: ''
+                    link_class: ''
+                    prefix: ''
+                    suffix: ''
+                    target: ''
+                    nl2br: false
+                    max_length: 0
+                    word_boundary: true
+                    ellipsis: true
+                    more_link: false
+                    more_link_text: ''
+                    more_link_path: ''
+                    strip_tags: false
+                    trim: false
+                    preserve_tags: ''
+                    html: false
+                  element_type: ''
+                  element_class: ''
+                  element_label_type: ''
+                  element_label_class: ''
+                  element_label_colon: true
+                  element_wrapper_type: ''
+                  element_wrapper_class: ''
+                  element_default_classes: true
+                  empty: ''
+                  hide_empty: false
+                  empty_zero: false
+                  hide_alter_empty: true
+                total_price__number:
+                  id: total_price__number
+                  table: commerce_order_item
+                  field: total_price__number
+                  relationship: order_items
+                  group_type: group
+                  admin_label: ''
+                  entity_type: commerce_order_item
+                  entity_field: total_price
+                  plugin_id: field
+                  label: Total
+                  exclude: false
+                  alter:
+                    alter_text: false
+                    text: ''
+                    make_link: false
+                    path: ''
+                    absolute: false
+                    external: false
+                    replace_spaces: false
+                    path_case: none
+                    trim_whitespace: false
+                    alt: ''
+                    rel: ''
+                    link_class: ''
+                    prefix: ''
+                    suffix: ''
+                    target: ''
+                    nl2br: false
+                    max_length: 0
+                    word_boundary: true
+                    ellipsis: true
+                    more_link: false
+                    more_link_text: ''
+                    more_link_path: ''
+                    strip_tags: false
+                    trim: false
+                    preserve_tags: ''
+                    html: false
+                  element_type: ''
+                  element_class: ''
+                  element_label_type: ''
+                  element_label_class: ''
+                  element_label_colon: true
+                  element_wrapper_type: ''
+                  element_wrapper_class: ''
+                  element_default_classes: true
+                  empty: ''
+                  hide_empty: false
+                  empty_zero: false
+                  hide_alter_empty: true
+                  click_sort_column: number
+                  type: commerce_price_default
+                  settings:
+                    strip_trailing_zeroes: false
+                    currency_display: symbol
+                  group_column: ''
+                  group_columns: { }
+                  group_rows: true
+                  delta_limit: 0
+                  delta_offset: 0
+                  delta_reversed: false
+                  delta_first_last: false
+                  multi_type: separator
+                  separator: ', '
+                  field_api_classes: false
+              pager:
+                type: none
+                options:
+                  offset: 0
+              exposed_form:
+                type: basic
+                options:
+                  submit_button: Apply
+                  reset_button: false
+                  reset_button_label: Reset
+                  exposed_sorts_label: 'Sort by'
+                  expose_sort_order: true
+                  sort_asc_label: Asc
+                  sort_desc_label: Desc
+              access:
+                type: none
+                options: { }
+              cache:
+                type: tag
+                options: { }
+              empty: { }
+              sorts:
+                order_item_id:
+                  id: order_item_id
+                  table: commerce_order_item
+                  field: order_item_id
+                  relationship: order_items
+                  group_type: group
+                  admin_label: ''
+                  entity_type: commerce_order_item
+                  entity_field: order_item_id
+                  plugin_id: standard
+                  order: ASC
+                  expose:
+                    label: ''
+                    field_identifier: order_item_id
+                  exposed: false
+              arguments:
+                order_id:
+                  id: order_id
+                  table: commerce_order
+                  field: order_id
+                  relationship: none
+                  group_type: group
+                  admin_label: ''
+                  entity_type: commerce_order
+                  entity_field: order_id
+                  plugin_id: numeric
+                  default_action: default
+                  exception:
+                    value: all
+                    title_enable: false
+                    title: All
+                  title_enable: false
+                  title: ''
+                  default_argument_type: fixed
+                  default_argument_options:
+                    argument: ''
+                  default_argument_skip_url: false
+                  summary_options:
+                    base_path: ''
+                    count: true
+                    override: false
+                    items_per_page: 25
+                  summary:
+                    sort_order: asc
+                    number_of_records: 0
+                    format: default_summary
+                  specify_validation: false
+                  validate:
+                    type: none
+                    fail: 'not found'
+                  validate_options: { }
+                  break_phrase: false
+                  not: false
+              filters: { }
+              style:
+                type: table
+                options:
+                  grouping: { }
+                  row_class: ''
+                  default_row_class: true
+                  columns:
+                    order_number: order_number
+                  default: '-1'
+                  info:
+                    order_number:
+                      sortable: false
+                      default_sort_order: asc
+                      align: ''
+                      separator: ''
+                      empty_column: false
+                      responsive: ''
+                  override: true
+                  sticky: false
+                  summary: ''
+                  empty_table: false
+                  caption: ''
+                  description: ''
+              row:
+                type: fields
+                options:
+                  default_field_elements: true
+                  inline: { }
+                  separator: ''
+                  hide_empty: false
+              query:
+                type: views_query
+                options:
+                  query_comment: ''
+                  disable_sql_rewrite: false
+                  distinct: false
+                  replica: false
+                  query_tags: { }
+              relationships:
+                order_items:
+                  id: order_items
+                  table: commerce_order__order_items
+                  field: order_items_target_id
+                  relationship: none
+                  group_type: group
+                  admin_label: 'order_items: Order Item'
+                  entity_type: commerce_order
+                  entity_field: order_items
+                  plugin_id: standard
+                  required: true
+                commerce_product_variation:
+                  id: commerce_product_variation
+                  table: commerce_order_item
+                  field: commerce_product_variation
+                  relationship: order_items
+                  group_type: group
+                  admin_label: 'Product variation'
+                  entity_type: commerce_order_item
+                  plugin_id: standard
+                  required: true
+                product_id:
+                  id: product_id
+                  table: commerce_product_variation_field_data
+                  field: product_id
+                  relationship: commerce_product_variation
+                  group_type: group
+                  admin_label: Product
+                  entity_type: commerce_product_variation
+                  entity_field: product_id
+                  plugin_id: standard
+                  required: true
+              header: { }
+              footer:
+                commerce_order_total:
+                  id: commerce_order_total
+                  table: views
+                  field: commerce_order_total
+                  relationship: none
+                  group_type: group
+                  admin_label: ''
+                  plugin_id: commerce_order_total
+                  empty: false
+              display_extenders: { }
+            cache_metadata:
+              max-age: -1
+              contexts:
+                - 'languages:language_content'
+                - 'languages:language_interface'
+                - url
+              tags:
+                - 'config:field.storage.commerce_product.images'
+    core.entity_view_display.node.article.teaser:
+      setComponent:
+        name: field_image
+        options:
+          type: image
+          label: hidden
+          settings:
+            image_link: content
+            image_style: cklb_small_max_600px
+            image_loading:
+              attribute: lazy
+          third_party_settings: {  }
+          weight: -1
+          region: content

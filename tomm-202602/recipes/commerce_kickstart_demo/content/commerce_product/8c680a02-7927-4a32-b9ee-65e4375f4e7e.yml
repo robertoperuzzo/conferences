@@ -1,0 +1,63 @@
+_meta:
+  version: '1.0'
+  entity_type: commerce_product
+  uuid: 8c680a02-7927-4a32-b9ee-65e4375f4e7e
+  bundle: physical
+  default_langcode: en
+  depends:
+    f812b134-42ef-4fc9-9270-66ba5183e278: commerce_store
+    9ca10da5-ddec-407c-9d81-b8e64fdedebb: commerce_product_variation
+    dc089643-0df6-4a15-9966-79e79e30e2f5: file
+    d6d21052-9e2c-4f0a-9bb3-c9742c616618: taxonomy_term
+    077bc143-7067-4b4e-aa0b-adec28b9d26f: taxonomy_term
+    3919bf43-38a0-44f8-8302-0d7ffc685679: taxonomy_term
+    a875c177-13be-4634-959c-cfee50241a28: taxonomy_term
+default:
+  uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  stores:
+    -
+      entity: f812b134-42ef-4fc9-9270-66ba5183e278
+  title:
+    -
+      value: 'Miss Dior Eau De Toilette, 50 mL'
+  variations:
+    -
+      entity: 9ca10da5-ddec-407c-9d81-b8e64fdedebb
+  default_variation:
+    -
+      entity: 9ca10da5-ddec-407c-9d81-b8e64fdedebb
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 1
+  created:
+    -
+      value: 1647870513
+  body:
+    -
+      value: "<p>While we much prefer to sell our own EdP, this guest fragrance returns to our store by popular demand. Light and flirty, this floral fragrance features hints of elegant rose, sweet tea olive, and a hint of earthy lavender. Bring a smile to your lover's face as you dance through your next gala.</p>\r\n\r\n<p>Application notes: spray one pump onto pressure points; do not rub into skin.</p>\r\n"
+      format: basic_html
+      summary: ''
+  images:
+    -
+      entity: dc089643-0df6-4a15-9966-79e79e30e2f5
+      alt: 'Miss Dior Eau De Toilette, 50 mL'
+      title: ''
+      width: 670
+      height: 630
+  product_brand:
+    -
+      entity: d6d21052-9e2c-4f0a-9bb3-c9742c616618
+  product_collections:
+    -
+      entity: 077bc143-7067-4b4e-aa0b-adec28b9d26f
+    -
+      entity: 3919bf43-38a0-44f8-8302-0d7ffc685679
+    -
+      entity: a875c177-13be-4634-959c-cfee50241a28

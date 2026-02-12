@@ -1,0 +1,81 @@
+_meta:
+  version: '1.0'
+  entity_type: commerce_product
+  uuid: a6d380fb-5a96-4193-bb5d-f845510ef34f
+  bundle: physical
+  default_langcode: en
+  depends:
+    f812b134-42ef-4fc9-9270-66ba5183e278: commerce_store
+    e1aa841e-30c3-4b18-bb61-6e41f09d6fae: commerce_product_variation
+    e3beb761-721d-4bbd-8407-0cc6fa0cbd2c: file
+    3ebf5fc6-1bfb-4fac-bb59-7db83112b987: file
+    c35b87b1-213e-4836-a051-fcc06c158b65: file
+    9a612216-1db4-4e41-8cb6-014b3578496c: file
+    dd15e8ce-a070-41b1-b24e-cbbcddf3f362: taxonomy_term
+    0a3e84ac-163b-4276-8e85-090aec9c3cdc: taxonomy_term
+    adb9a461-2a5a-4449-ab39-3ec102661dc4: taxonomy_term
+default:
+  uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  stores:
+    -
+      entity: f812b134-42ef-4fc9-9270-66ba5183e278
+  title:
+    -
+      value: 'Artisan Ceramic Candle Set – 4 pcs'
+  variations:
+    -
+      entity: e1aa841e-30c3-4b18-bb61-6e41f09d6fae
+  default_variation:
+    -
+      entity: e1aa841e-30c3-4b18-bb61-6e41f09d6fae
+  path:
+    -
+      alias: /products/artisan-ceramic-candle-set-4-pcs
+      langcode: en
+      pathauto: 1
+  created:
+    -
+      value: 1759840144
+  body:
+    -
+      value: '<p>Bring calm and character to your home with this set of four hand-poured candles in ceramic holders. Each candle features a natural wax blend and a wooden wick that crackles softly as it burns, creating a cozy, relaxing atmosphere.</p><p>The unique glaze finish on every holder — from speckled blue to soft sand tones — adds texture and warmth to any room. Once the candles are finished, the ceramic cups can be reused as small planters or decorative containers, making this set as sustainable as it is beautiful. Perfect for quiet evenings, thoughtful gifts, or elevating everyday moments.</p>'
+      format: basic_html
+      summary: ''
+  images:
+    -
+      entity: e3beb761-721d-4bbd-8407-0cc6fa0cbd2c
+      alt: 'Artisan Ceramic Candle Set – 4 pcs'
+      title: ''
+      width: 1920
+      height: 2551
+    -
+      entity: 3ebf5fc6-1bfb-4fac-bb59-7db83112b987
+      alt: 'Black candle'
+      title: ''
+      width: 1920
+      height: 2884
+    -
+      entity: c35b87b1-213e-4836-a051-fcc06c158b65
+      alt: 'Grey candle'
+      title: ''
+      width: 1920
+      height: 2634
+    -
+      entity: 9a612216-1db4-4e41-8cb6-014b3578496c
+      alt: 'Multicolored candle'
+      title: ''
+      width: 1920
+      height: 2884
+  product_brand:
+    -
+      entity: dd15e8ce-a070-41b1-b24e-cbbcddf3f362
+  product_collections:
+    -
+      entity: 0a3e84ac-163b-4276-8e85-090aec9c3cdc
+    -
+      entity: adb9a461-2a5a-4449-ab39-3ec102661dc4

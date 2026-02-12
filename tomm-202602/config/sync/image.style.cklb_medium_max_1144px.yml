@@ -1,0 +1,17 @@
+uuid: 424f9af9-60fd-4c2d-9437-a369cde3968a
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: eGL8hZMQZWkSOE7HoyE2-H7-jjysp1FsIWvdNKK0YQc
+name: cklb_medium_max_1144px
+label: 'Medium (max 1144px)'
+effects:
+  5847302e-818e-4d42-91a1-570df551420f:
+    uuid: 5847302e-818e-4d42-91a1-570df551420f
+    id: image_scale
+    weight: 1
+    data:
+      width: 1144
+      height: null
+      upscale: true

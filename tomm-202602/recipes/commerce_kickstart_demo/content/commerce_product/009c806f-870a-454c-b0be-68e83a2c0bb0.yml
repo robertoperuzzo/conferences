@@ -1,0 +1,63 @@
+_meta:
+  version: '1.0'
+  entity_type: commerce_product
+  uuid: 009c806f-870a-454c-b0be-68e83a2c0bb0
+  bundle: media
+  default_langcode: en
+  depends:
+    f812b134-42ef-4fc9-9270-66ba5183e278: commerce_store
+    b8995a1e-ad57-4f2d-a777-5a5ed50fca0a: commerce_product_variation
+    f2d80f0c-7730-44bc-bd4e-accaf13d994d: commerce_product_variation
+    df36b248-c490-4095-8819-5307d102b452: file
+    4d5d9879-ab5d-45e8-b278-240f479845b1: taxonomy_term
+    5581e5e6-6145-44e4-8da6-51d5f22497a8: taxonomy_term
+    eae42806-0fb3-4b4f-901e-4e8126eda222: taxonomy_term
+default:
+  uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  stores:
+    -
+      entity: f812b134-42ef-4fc9-9270-66ba5183e278
+  title:
+    -
+      value: 'Gulliver''s Travels by Jonathan Swift'
+  variations:
+    -
+      entity: b8995a1e-ad57-4f2d-a777-5a5ed50fca0a
+    -
+      entity: f2d80f0c-7730-44bc-bd4e-accaf13d994d
+  default_variation:
+    -
+      entity: b8995a1e-ad57-4f2d-a777-5a5ed50fca0a
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 1
+  created:
+    -
+      value: 1648466826
+  body:
+    -
+      value: "<p>Author:&nbsp;Swift, Jonathan, 1667-1745</p>\r\n\r\n<p>Title: Gulliver's Travels into Several Remote Nations of the World</p>\r\n\r\n<p>Original release date:&nbsp;October 28, 1726</p>\r\n\r\n<p>This book is available in hard copy and as digital download.</p>\r\n"
+      format: basic_html
+      summary: ''
+  images:
+    -
+      entity: df36b248-c490-4095-8819-5307d102b452
+      alt: 'Gulliver''s Travels into Several Remote Nations of the World by Jonathan Swift'
+      title: ''
+      width: 2718
+      height: 2480
+  product_brand:
+    -
+      entity: 4d5d9879-ab5d-45e8-b278-240f479845b1
+  product_collections:
+    -
+      entity: 5581e5e6-6145-44e4-8da6-51d5f22497a8
+    -
+      entity: eae42806-0fb3-4b4f-901e-4e8126eda222

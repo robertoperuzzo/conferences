@@ -1,0 +1,11 @@
+langcode: en
+status: true
+dependencies: {  }
+id: shipping
+label: Shipping
+display_label: ''
+multiple: true
+registration: false
+roles: {  }
+allow_revisions: false
+new_revision: false

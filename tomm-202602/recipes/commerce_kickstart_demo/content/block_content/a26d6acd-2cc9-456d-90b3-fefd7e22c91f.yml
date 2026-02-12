@@ -1,0 +1,19 @@
+_meta:
+  version: '1.0'
+  entity_type: block_content
+  uuid: a26d6acd-2cc9-456d-90b3-fefd7e22c91f
+  bundle: cklb_title
+  default_langcode: en
+default:
+  status:
+    -
+      value: true
+  info:
+    -
+      value: 'Inline block'
+  reusable:
+    -
+      value: false
+  cklb_title:
+    -
+      value: 'Commerce Kickstart'

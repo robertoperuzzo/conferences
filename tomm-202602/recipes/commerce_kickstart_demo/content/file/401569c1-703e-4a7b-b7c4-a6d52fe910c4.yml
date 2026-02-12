@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 401569c1-703e-4a7b-b7c4-a6d52fe910c4
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: jonny-caspari-KuudDjBHIlA-unsplash.jpg
+  uri:
+    -
+      value: 'public://2025-10/jonny-caspari-KuudDjBHIlA-unsplash.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 343729
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1759489967

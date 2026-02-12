@@ -1,0 +1,31 @@
+_meta:
+  version: '1.0'
+  entity_type: commerce_product_variation
+  uuid: 97d4db89-f70d-48a9-8e6f-02757a225365
+  bundle: physical
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  sku:
+    -
+      value: PT-GiganticFlamingo-001
+  title:
+    -
+      value: 'Gigantic Inflatable Flamingo'
+  price:
+    -
+      number: '49.990000'
+      currency_code: USD
+      formatted: $49.99
+  created:
+    -
+      value: 1647873495
+  weight:
+    -
+      number: '50.000000'
+      unit: g

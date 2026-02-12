@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: cf9cadcc-5a42-42a0-8d46-4c6727356a2a
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: olena-bohovyk-ayeVnVjLJCs-unsplash.jpg
+  uri:
+    -
+      value: 'public://2025-10/olena-bohovyk-ayeVnVjLJCs-unsplash.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 1239028
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1759496143

@@ -1,0 +1,62 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: df5860eb-6f96-41e4-998b-48db1cc906f9
+  bundle: article
+  default_langcode: en
+  depends:
+    1db5db72-e636-4ef2-905b-99271aed2292: file
+    9cc0234d-b8cc-48bd-806e-275d538e8496: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Our Favs This Month'
+  created:
+    -
+      value: 1758208982
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /blog/lifestyle/our-favs-month
+      langcode: en
+      pathauto: 1
+  body:
+    -
+      value: '<p>Every season offers something unique, and this month we’ve found ourselves falling in love with a mix of small comforts and inspiring discoveries. These aren’t big luxury items, but little things that add brightness to everyday life — the kinds of details that make routines more pleasant and give you a reason to pause and smile.</p><p>At the top of our list are cozy essentials. A soft sweater or blanket can completely change how you feel at home during colder days. Pair that with a warm drink in your favorite mug, and you’ve got an instant comfort zone. These small rituals remind us that creating a sense of coziness doesn’t require much — just attention to what makes you feel at ease.</p><p>Another favorite has been reconnecting with books. With so many distractions from screens, picking up a paperback has felt refreshing. Whether it’s fiction that transports you to another world or a practical guide that teaches a new skill, books have a way of grounding and expanding your perspective at the same time.</p><p>Finally, we’ve been rediscovering music as a mood-setter. A new playlist for work, a calming track for evenings, or upbeat songs for mornings can change the tone of your entire day. These may be simple joys, but they’re meaningful — a reminder that happiness often lies in the everyday choices we make.</p>'
+      format: basic_html
+      summary: 'Every month brings new finds worth sharing. From cozy essentials to small daily joys, here are our current top picks.'
+  comment:
+    -
+      status: 2
+      cid: 0
+      last_comment_timestamp: 1759418669
+      last_comment_name: ''
+      last_comment_uid: 1
+      comment_count: 0
+  field_image:
+    -
+      entity: 1db5db72-e636-4ef2-905b-99271aed2292
+      alt: 'Our Favs This Month'
+      title: ''
+      width: 1920
+      height: 1080
+  field_tags:
+    -
+      entity: 9cc0234d-b8cc-48bd-806e-275d538e8496

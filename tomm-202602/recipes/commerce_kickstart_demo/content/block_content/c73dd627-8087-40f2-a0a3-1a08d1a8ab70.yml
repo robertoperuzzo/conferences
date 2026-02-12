@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: block_content
+  uuid: c73dd627-8087-40f2-a0a3-1a08d1a8ab70
+  bundle: cklb_hero
+  default_langcode: en
+default:
+  status:
+    -
+      value: true
+  info:
+    -
+      value: 'Inline block'
+  reusable:
+    -
+      value: false
+  cklb_cta:
+    -
+      uri: 'internal:/products/cocoa-fedora'
+      title: 'Buy now'
+      options: {  }
+  cklb_subtitle:
+    -
+      value: 'Cocoa Fedora only $35!'
+  cklb_title:
+    -
+      value: 'We can''t believe it either!'

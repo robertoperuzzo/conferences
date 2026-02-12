@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 229b6a1e-d9cc-46b2-8298-77efa1378033
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: pexels-nietjuhart-776656.jpg
+  uri:
+    -
+      value: 'public://2025-10/pexels-nietjuhart-776656.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 344203
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1759837714

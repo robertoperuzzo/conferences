@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 6df0e79d-be86-4384-a549-f9917c51b82b
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: 2610-0.pdf
+  uri:
+    -
+      value: 'private://2022-03/2610-0.pdf'
+  filemime:
+    -
+      value: application/pdf
+  filesize:
+    -
+      value: 1746571
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1648467729

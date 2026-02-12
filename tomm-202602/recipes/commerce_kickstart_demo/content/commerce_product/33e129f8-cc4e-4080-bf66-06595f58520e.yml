@@ -1,0 +1,63 @@
+_meta:
+  version: '1.0'
+  entity_type: commerce_product
+  uuid: 33e129f8-cc4e-4080-bf66-06595f58520e
+  bundle: media
+  default_langcode: en
+  depends:
+    f812b134-42ef-4fc9-9270-66ba5183e278: commerce_store
+    7890910d-bdc1-4faf-8e08-924e79be9008: commerce_product_variation
+    a3382268-c2ad-46b0-a1e3-e47d94d6010f: commerce_product_variation
+    8052e939-5a36-405e-b374-495cd761947f: file
+    4d5d9879-ab5d-45e8-b278-240f479845b1: taxonomy_term
+    5581e5e6-6145-44e4-8da6-51d5f22497a8: taxonomy_term
+    eae42806-0fb3-4b4f-901e-4e8126eda222: taxonomy_term
+default:
+  uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  stores:
+    -
+      entity: f812b134-42ef-4fc9-9270-66ba5183e278
+  title:
+    -
+      value: 'Alice''s Adventures in Wonderland by Lewis Carroll'
+  variations:
+    -
+      entity: 7890910d-bdc1-4faf-8e08-924e79be9008
+    -
+      entity: a3382268-c2ad-46b0-a1e3-e47d94d6010f
+  default_variation:
+    -
+      entity: 7890910d-bdc1-4faf-8e08-924e79be9008
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 1
+  created:
+    -
+      value: 1648460195
+  body:
+    -
+      value: "<p>Author:&nbsp;Carroll, Lewis, 1832-1898</p>\r\n\r\n<p>Title: Alice's Adventures in Wonderland</p>\r\n\r\n<p>Alternate Title: Alice in Wonderland</p>\r\n\r\n<p>Original release date:&nbsp;November 18, 1865</p>\r\n\r\n<p>This book is available in hard copy and as digital download.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n"
+      format: basic_html
+      summary: ''
+  images:
+    -
+      entity: 8052e939-5a36-405e-b374-495cd761947f
+      alt: 'Alice''s Adventures in Wonderland by Lewis Carroll'
+      title: ''
+      width: 2718
+      height: 2480
+  product_brand:
+    -
+      entity: 4d5d9879-ab5d-45e8-b278-240f479845b1
+  product_collections:
+    -
+      entity: 5581e5e6-6145-44e4-8da6-51d5f22497a8
+    -
+      entity: eae42806-0fb3-4b4f-901e-4e8126eda222

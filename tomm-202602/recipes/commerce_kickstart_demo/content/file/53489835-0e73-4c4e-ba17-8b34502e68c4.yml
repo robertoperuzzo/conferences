@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 53489835-0e73-4c4e-ba17-8b34502e68c4
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: pexels-darina-belonogova-8004110.jpg
+  uri:
+    -
+      value: 'public://2025-10/pexels-darina-belonogova-8004110.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 103371
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1759842029
