@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.commerce_product.teaser
     - field.storage.commerce_product.body
     - field.storage.commerce_product.product_brand
     - field.storage.commerce_product.product_collections
@@ -14,7 +15,7 @@ dependencies:
     - taxonomy
 id: products_typesense
 name: 'Products (typesense)'
-description: ''
+description: 'This collection contains information about all products available for sale in the e-commerce platform.'
 read_only: false
 field_settings:
   body:
@@ -25,11 +26,27 @@ field_settings:
     dependencies:
       config:
         - field.storage.commerce_product.body
+  currency_code:
+    label: 'Variations » Product variation » Price » Currency code'
+    datasource_id: 'entity:commerce_product'
+    property_path: 'variations:entity:price:currency_code'
+    type: 'typesense_string[]'
+    dependencies:
+      module:
+        - commerce_product
   langcode:
     label: Language
     datasource_id: 'entity:commerce_product'
     property_path: langcode
     type: typesense_string
+    dependencies:
+      module:
+        - commerce_product
+  number:
+    label: 'Variations » Product variation » Price » Number'
+    datasource_id: 'entity:commerce_product'
+    property_path: 'variations:entity:price:number'
+    type: 'typesense_string[]'
     dependencies:
       module:
         - commerce_product
@@ -93,6 +110,19 @@ field_settings:
         - field.storage.commerce_product.product_tags
       module:
         - taxonomy
+  rendered_item:
+    label: 'Rendered HTML output'
+    property_path: rendered_item
+    type: typesense_string
+    configuration:
+      roles:
+        - anonymous
+      view_mode:
+        'entity:commerce_product':
+          ':default': teaser
+          default: ':default'
+          media: ':default'
+          physical: ':default'
   sku:
     label: 'Variations » Product variation » SKU'
     datasource_id: 'entity:commerce_product'

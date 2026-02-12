@@ -6,7 +6,7 @@ dependencies:
     - search_api_typesense
 id: typesense
 name: Typesense
-description: ''
+description: 'This is the Typesense server to performe the RAG Search.'
 backend: search_api_typesense
 backend_config:
   nodes:

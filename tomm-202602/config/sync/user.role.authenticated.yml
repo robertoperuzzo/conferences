@@ -5,6 +5,7 @@ dependencies:
   config:
     - filter.format.basic_html
   module:
+    - ai_chatbot
     - coffee
     - comment
     - commerce_checkout
@@ -26,6 +27,7 @@ permissions:
   - 'access coffee'
   - 'access comments'
   - 'access content'
+  - 'access deepchat api'
   - 'delete own files'
   - 'manage own commerce_payment_method'
   - 'post comments'
